@@ -59,21 +59,27 @@ function App() {
 
 
         <div className="flex-1 bg-blue-600 p-4 text-white flex flex-col w-full h-full gap-2 ">
-          <div className="border-4 border-double border-gray-400 p-2 w-50 flex-auto relative">
+          <div className="border-4 border-double border-gray-400 p-2 w-50 flex-auto relative  w-1/2">
             <div className="absolute -top-3 left-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">home.MD</div>
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">main.txt</div>
             <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm"> 4</div>
             <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
 
-            <p>
-              🎯 Full Stack Engineer con sólida experiencia laboral en análisis, desarrollo, implementación, migración y mantenimiento de plataformas web empresariales. He trabajado en diversos proyectos dentro de los sectores comercial, educativo, financiero, energía-combustibles y administración pública.
-            </p>
-            <p>
-              🚀 Especializado en desarrollo full stack, optimización de código, aseguramiento de calidad y CI/CD con Azure DevOps. Apasionado por la tecnología, la arquitectura de software y la mejora continua en cada proyecto.
-            </p>
-            <p>
-              📌 Siempre en búsqueda de nuevas soluciones tecnológicas que impulsen la eficiencia y escalabilidad de las aplicaciones.
-            </p>
+            <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400">
+
+              RAUL JONATAN | Full stack engineering
+              <p className="my-4">
+                Bienvenido a esta seccion de la web, aqui voy a compartir una parte  de mi en el plano tec
+                en el que encontraras información acerca de mi, trabajos, experiencias, pasatiempos
+                y cosas que tengo en comun con un coder al que le encanta explorar crear, unir componentes para dar vida a herramientas digitales como si de unir bloques de lego se trataran .
+                <br />
+                <br />Suelo enfocar mi atención en materializar ideas que puedan ayudar o simplificar alguna necesidad,<br />
+                Busco, defino y planteo alternativas de mejora las veces que se requiera despues de todo siempre hay algo que hacer mejor cada día 
+                <br />
+                creo que soy bueno en la música especialmente cuando enciendo el Sintetizador e imagino que soy el gran: Carlos Trilha mientras intento modular frecuencias del modo que suene algo audible, disfruto la buena comida sin olvidar que lo 'bueno' es subjetivo y los paseos al aire libre  a pie o en bici me relajan y recargan como no te lo puedes imaginar!! ^_^</p>
+
+
+            </div>
           </div>
 
 
