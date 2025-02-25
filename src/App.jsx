@@ -59,25 +59,27 @@ function App() {
 
 
         <div className="flex-1 bg-blue-600 p-4 text-white flex flex-col w-full h-full gap-2 ">
-          <div className="border-4 border-double border-gray-400 p-2 w-50 flex-auto relative  w-1/2">
+          <div className="border-4 border-double border-gray-400 p-2 w-50 flex-auto relative  w-1/2 ">
             <div className="absolute -top-3 left-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">main.txt</div>
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">github.julnarot/main.prev</div>
             <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm"> 4</div>
             <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
 
-            <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400">
-
-              RAUL JONATAN | Full stack engineering
+            <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto">
+              <p className='my-4'>
+                RAUL JONATAN | Full stack engineering
+              </p>
+              <img src="https://avatars.githubusercontent.com/u/2840577?v=4" alt="@Julnarot" className='max-h-10' />
               <p className="my-4">
-                Bienvenido a esta seccion de la web, aqui voy a compartir una parte  de mi en el plano tec
-                en el que encontraras información acerca de mi, trabajos, experiencias, pasatiempos
-                y cosas que tengo en comun con un coder al que le encanta explorar crear, unir componentes para dar vida a herramientas digitales como si de unir bloques de lego se trataran .
-                <br />
-                <br />Suelo enfocar mi atención en materializar ideas que puedan ayudar o simplificar alguna necesidad,<br />
-                Busco, defino y planteo alternativas de mejora las veces que se requiera despues de todo siempre hay algo que hacer mejor cada día 
-                <br />
-                creo que soy bueno en la música especialmente cuando enciendo el Sintetizador e imagino que soy el gran: Carlos Trilha mientras intento modular frecuencias del modo que suene algo audible, disfruto la buena comida sin olvidar que lo 'bueno' es subjetivo y los paseos al aire libre  a pie o en bici me relajan y recargan como no te lo puedes imaginar!! ^_^</p>
-
+                Hola!. Soy desarrollador de software con mas de 7 años de experiencia en la construcción de plataformas web corporativas  para empresas del secto privado y público
+              </p>
+              <p className="my-4">
+                Gracias a esta maravillosa aventura profesional logre desempeñar actividades que van desde el analisis y diseño de sistemas  a la  implementación de productos de software  <br />
+                pero prefiero y me especializo en el desarrollo de software como: Desarrollador full stack ya que disfruto y me gusta estar vinculado a situaciones en la que se tenga en cuenta la resolución de desafios técnicos, uso y formación tecnológica continua, busqueda y correxión de incidencias, .
+              </p>
+              <p className="my-4">
+                Ademas de tratar de siempre reinventarme procuro siempre  colaborar y contribuir con cada miembro del equipo de trabajo, comprendiendo la siguiente analogia:  El motor logra mover el vehículo por que cada componente del sistema funciona y se encuentra correctamente sincronizado 
+              </p>
 
             </div>
           </div>
