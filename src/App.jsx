@@ -57,13 +57,14 @@ function App() {
           </div>
         )}
 
-        <div className="flex-1 bg-blue-600 p-4 text-white flex flex-col w-full h-full gap-2 ">
-          <div className="border-4 border-double border-gray-400 p-2 w-50 flex-auto relative w-1/2 h-full ">
+        <div className="flex-1 bg-blue-600 p-4 text-white flex flex-col md:flex-row w-full h-full gap-2 overflow-auto">
+
+
+          <div className="border-4 border-double border-gray-400 p-2 w-50 basis-1/2 relative h-full ">
             <div className="absolute -top-3 left-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">github.julnarot/main.prev</div>
             <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm"> 4</div>
             <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
-
             <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto">
               <p className='my-4'>
                 RAUL JONATAN | Full stack engineering
@@ -81,7 +82,26 @@ function App() {
               <p className="my-4">
                 Creo en el trabajo en equipo y la colaboración como pilares fundamentales para el éxito de cualquier proyecto. Mi objetivo es aportar valor en cada desarrollo, buscando siempre soluciones eficientes, escalables y de alta calidad.
               </p>
+            </div>
+          </div>
 
+          <div className="border-4 border-double border-gray-400 p-2 w-50 basis-1/2 relative h-full ">
+            <div className="absolute -top-3 left-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">github.julnarot/skills.prev</div>
+            <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm"> 4</div>
+            <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
+            <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto">
+              <p className='my-4'>
+                Tecnologías y habilidades:
+              </p>
+              <ul className='list-disc list-inside'>
+                <li>JavaScript (ES6+), TypeScript</li>
+                <li>React, Next.js</li>
+                <li>Node.js, Express.js</li>
+                <li>SQL, NoSQL (MongoDB, PostgreSQL)</li>
+                <li>Docker, Kubernetes</li>
+                <li>CI/CD con Azure DevOps</li>
+              </ul>
             </div>
           </div>
 
