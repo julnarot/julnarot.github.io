@@ -1,9 +1,5 @@
 name: DevOps-GitHibActions
-on: 
-  pull_request:
-    branches: 
-      - main
-    types: closed
+on: push
 jobs:
   # Build Job
   build:
