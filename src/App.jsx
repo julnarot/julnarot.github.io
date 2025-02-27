@@ -32,7 +32,7 @@ function App() {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 relative flex flex-col w-full h-full">
+      <div className="flex-1 relative flex flex-col w-full h-full overflow-hidden">
         {showFileMenu && (
           <div className="absolute left-2 top-0 w-48 bg-gray-200 border-2 border-gray-400 shadow-lg z-50">
             {fileMenuItems.map((item, index) => (
@@ -57,9 +57,8 @@ function App() {
           </div>
         )}
 
-
         <div className="flex-1 bg-blue-600 p-4 text-white flex flex-col w-full h-full gap-2 ">
-          <div className="border-4 border-double border-gray-400 p-2 w-50 flex-auto relative  w-1/2 ">
+          <div className="border-4 border-double border-gray-400 p-2 w-50 flex-auto relative w-1/2 h-full ">
             <div className="absolute -top-3 left-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">github.julnarot/main.prev</div>
             <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm"> 4</div>
@@ -69,25 +68,24 @@ function App() {
               <p className='my-4'>
                 RAUL JONATAN | Full stack engineering
               </p>
-              <img src="https://avatars.githubusercontent.com/u/2840577?v=4" alt="@Julnarot" className='max-h-10' />
+              <img src="https://avatars.githubusercontent.com/u/2840577?v=4" alt="@Julnarot" className='max-h-40' />
               <p className="my-4">
-                Hola!. Soy desarrollador de software con mas de 7 años de experiencia en la construcción de plataformas web corporativas  para empresas del secto privado y público
+                ¡Hola! Soy desarrollador de software con más de 7 años de experiencia en la construcción de plataformas web corporativas para distintos sectores empresariales.
               </p>
               <p className="my-4">
-                Gracias a esta maravillosa aventura profesional logre desempeñar actividades que van desde el analisis y diseño de sistemas  a la  implementación de productos de software  <br />
-                pero prefiero y me especializo en el desarrollo de software como: Desarrollador full stack ya que disfruto y me gusta estar vinculado a situaciones en la que se tenga en cuenta la resolución de desafios técnicos, uso y formación tecnológica continua, busqueda y correxión de incidencias, .
+                A lo largo de mi trayectoria, he tenido la oportunidad de asumir roles clave en el análisis, diseño e implementación de soluciones tecnológicas, gracias a la confianza de mis empleadores y mi compromiso con el aprendizaje continuo.
               </p>
               <p className="my-4">
-                Ademas de tratar de siempre reinventarme procuro siempre  colaborar y contribuir con cada miembro del equipo de trabajo, comprendiendo la siguiente analogia:  El motor logra mover el vehículo por que cada componente del sistema funciona y se encuentra correctamente sincronizado 
+                Me especializo en desarrollo Full Stack, un campo que encuentro desafiante y emocionante, ya que me permite reinventarme constantemente, explorar tecnologías emergentes y abordar la resolución de problemas con creatividad.
+              </p>
+              <p className="my-4">
+                Creo en el trabajo en equipo y la colaboración como pilares fundamentales para el éxito de cualquier proyecto. Mi objetivo es aportar valor en cada desarrollo, buscando siempre soluciones eficientes, escalables y de alta calidad.
               </p>
 
             </div>
           </div>
 
-
         </div>
-
-
 
       </div>
 
