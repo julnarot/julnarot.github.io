@@ -87,21 +87,86 @@ function App() {
 
           <div className="border-4 border-double border-gray-400 p-2 w-50 basis-1/2 relative h-full ">
             <div className="absolute -top-3 left-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">github.julnarot/skills.prev</div>
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">github.julnarot/complements.prev</div>
             <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm"> 4</div>
             <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
             <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto">
               <p className='my-4'>
-                Tecnologías y habilidades:
+                Experiencia Laboral
               </p>
               <ul className='list-disc list-inside'>
-                <li>JavaScript (ES6+), TypeScript</li>
-                <li>React, Next.js</li>
-                <li>Node.js, Express.js</li>
-                <li>SQL, NoSQL (MongoDB, PostgreSQL)</li>
-                <li>Docker, Kubernetes</li>
-                <li>CI/CD con Azure DevOps</li>
+                <li>
+                  NTT DATA
+                  <div className='ml-5'>
+                    Desigha | DGTIC | Generalitat Valenciana (Offshore)
+                    <ul className='list-disc list-inside'>
+                      <li>Colaborar con un equipo de ingenieros y analista para implementar y validar nuevas caracteristicas  en software de recaudación de impuestos</li>
+                      <li>Analisis y diseño de software</li>
+                      <li>Migración</li>
+
+                    </ul>
+                  </div>
+                  <div className='ml-5'>
+                    Igualdad | DGTIC | Generalitat Valenciana (Offshore)
+                    <ul className='list-disc list-inside'>
+                      <li>Colaborar con un equipo de ingenieros y analista para implementar y validar nuevas caracteristicas  en software de recaudación de impuestos</li>
+                      <li>Analisis y diseño de software</li>
+                      <li>Migración</li>
+
+                    </ul>
+                  </div>
+                  <div className='ml-5'>
+                    Unify proyect | YPF
+                    <ul className='list-disc list-inside'>
+                      <li>Desarrollador frontend</li>
+                      <li>Desarrollador backend</li>
+                      <li>Desarrollador de jobs node</li>
+                    </ul>
+                  </div>
+                  <div className='ml-5 mb-2'>
+                    Integra | YPF
+                    <ul className='list-disc list-inside'>
+                      <li>Programador frontend</li>
+                      <li>Arquitecto</li>
+                      <li>migracion a google maps</li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  Universidad Peruana Unión
+                  <div className='ml-5'>
+                    Departamento general de tecnologías de la información
+                    <ul className='list-disc list-inside'>
+                      <li>Programador java</li>
+                      <li>Analisis y diseño de software</li>
+                      <li>Migración</li>
+
+                    </ul>
+                  </div>
+                  <div className='ml-5'>
+                    Vicerrectorado académico
+                    <ul className='list-disc list-inside'>
+                      <li>Programador java</li>
+                      <li>Analisis y diseño de software</li>
+                      <li>Migración</li>
+
+                    </ul>
+                  </div>
+                  <div className='ml-5'>
+                    Dirección general de sistemas - Sede juliaca
+                    <ul className='list-disc list-inside'>
+                      <li>Programador java</li>
+                      <li>Analisis y diseño de software</li>
+                      <li>Migración</li>
+
+                    </ul>
+                  </div>
+                </li>
               </ul>
+              |
+
+
             </div>
           </div>
 
