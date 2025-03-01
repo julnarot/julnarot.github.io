@@ -97,26 +97,26 @@ function App() {
               <ul className='list-disc list-inside'>
                 <li>
                   NTT DATA
-                  <div className='ml-5'>
-                    Desigha | DGTIC | Generalitat Valenciana (Offshore)
+                  <div className='ml-5 mt-2'>
+                    DESIGHA | DGTIC | Generalitat Valenciana (Offshore)
                     <ul className='list-disc list-inside'>
-                      <li>Colaborar con un equipo de ingenieros y analista para implementar y validar nuevas caracteristicas  en software de recaudación de impuestos</li>
-                      <li>Analisis y diseño de software</li>
-                      <li>Migración</li>
+                      <li>Colaborar con un equipo de ingenieros para desarrollar y validar nuevas caracteristicas  de software de recaudación de impuestos </li>
+                      <li>Se aplicarón buenas practicas para la escritura limpia de codigo, legible, mantenible, escalable y testeable</li>
+                      <li>Documentar manual de uso por cada requerimiento entregado </li>
+                    </ul>
+                  </div>
+                  <div className='ml-5 mt-2'>
+                    IGUALDAD | DGTIC | Generalitat Valenciana (Offshore)
+                    <ul className='list-disc list-inside'>
+                      <li>Colaborar con un equipo de ingenieros, analistas y testers para migrar y validar funcionalidad software existentes a nueva tecnologia en software para la gestion de expedientes de Dependencia</li>
+                      <li>Se aplicarón buenas prácticas para la escritura limpia de codigo y testeable</li>
+                      <li>Analicé y Diseñé módulo de formularios dinámicos para solicitudes con el objetivo de automatizar el proceso de creado, visualizacion y recopilación dinámica de información en cada fase del proceso de solicitud  </li>
+                      <li>Implementé  prueba de concepto de módulo de formularios dinámicos para solicitudes que comprende  configuración de formulario de solicitud y  visualizacion dinámica de contenido </li>
 
                     </ul>
                   </div>
-                  <div className='ml-5'>
-                    Igualdad | DGTIC | Generalitat Valenciana (Offshore)
-                    <ul className='list-disc list-inside'>
-                      <li>Colaborar con un equipo de ingenieros y analista para implementar y validar nuevas caracteristicas  en software de recaudación de impuestos</li>
-                      <li>Analisis y diseño de software</li>
-                      <li>Migración</li>
-
-                    </ul>
-                  </div>
-                  <div className='ml-5'>
-                    Unify proyect | YPF
+                  <div className='ml-5 mt-2'>
+                    Unify (Fase 2) | YPF
                     <ul className='list-disc list-inside'>
                       <li>Desarrollador frontend</li>
                       <li>Desarrollador backend</li>
