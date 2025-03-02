@@ -100,7 +100,7 @@ function App() {
                   <div className='ml-5 mt-2'>
                     DESIGHA | DGTIC | Generalitat Valenciana (Offshore)
                     <ul className='list-disc list-inside'>
-                      <li>Colaborar con un equipo de ingenieros para desarrollar y validar nuevas caracteristicas  de software de recaudación de impuestos </li>
+                      <li>Colaboré con un equipo de ingenieros para desarrollar y validar nuevas caracteristicas  de software de recaudación de impuestos </li>
                       <li>Se aplicarón buenas practicas para la escritura limpia de codigo, legible, mantenible, escalable y testeable</li>
                       <li>Documentar manual de uso por cada requerimiento entregado </li>
                     </ul>
@@ -108,7 +108,7 @@ function App() {
                   <div className='ml-5 mt-2'>
                     IGUALDAD | DGTIC | Generalitat Valenciana (Offshore)
                     <ul className='list-disc list-inside'>
-                      <li>Colaborar con un equipo de ingenieros, analistas y testers para migrar y validar funcionalidad software existentes a nueva tecnologia en software para la gestion de expedientes de Dependencia</li>
+                      <li>Colaboré con un equipo de ingenieros, analistas y testers para migrar y validar funcionalidad software existentes a nueva tecnologia en software para la gestion de expedientes de Dependencia</li>
                       <li>Se aplicarón buenas prácticas para la escritura limpia de codigo y testeable</li>
                       <li>Analicé y Diseñé módulo de formularios dinámicos para solicitudes con el objetivo de automatizar el proceso de creado, visualizacion y recopilación dinámica de información en cada fase del proceso de solicitud  </li>
                       <li>Implementé  prueba de concepto de módulo de formularios dinámicos para solicitudes que comprende  configuración de formulario de solicitud y  visualizacion dinámica de contenido </li>
@@ -116,19 +116,18 @@ function App() {
                     </ul>
                   </div>
                   <div className='ml-5 mt-2'>
-                    Unify (Fase 2) | YPF
+                    Célula Unify - Fase 2 | YPF
                     <ul className='list-disc list-inside'>
-                      <li>Desarrollador frontend</li>
-                      <li>Desarrollador backend</li>
-                      <li>Desarrollador de jobs node</li>
+                      <li>Colaboré con un equipo de ingenieros bajo el cargo de fullstack developer para  Desarrollar  e implementar nuevos funcionalidades priorizadas por el negocio en software cliente implementado en una plataforma web implementado en  DecisionSpace® Integration Server (DSIS) </li>
+                      <li>Colaboré en la implementación y sincronizacion de nuevos origenes de datos en una plataforma job  para el upstream </li>
                     </ul>
                   </div>
                   <div className='ml-5 mb-2'>
                     Integra | YPF
                     <ul className='list-disc list-inside'>
-                      <li>Programador frontend</li>
-                      <li>Arquitecto</li>
-                      <li>migracion a google maps</li>
+                      <li>Colaboré con un equipo de ingenieros, analistas, y testers bajo el cargo de Frontend angular developer para crear una plataforma web para la gestion y configuracion de recursos de un sistema de  seguimientos de transportes de elementos quimicos.</li>
+                      <li>Diseñe e implemente una plataforma spa para la visualizacion de informacion de contenedores de elementos químicos </li>
+                      <li>Integración de tecnologia de geolocalizacion</li>
                     </ul>
                   </div>
                 </li>
