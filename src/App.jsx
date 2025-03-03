@@ -87,21 +87,84 @@ function App() {
 
           <div className="border-4 border-double border-gray-400 p-2 w-50 basis-1/2 relative h-full ">
             <div className="absolute -top-3 left-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">github.julnarot/skills.prev</div>
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">github.julnarot/complements.prev</div>
             <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm"> 4</div>
             <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
             <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto">
               <p className='my-4'>
-                Tecnologías y habilidades:
+                Experiencia Laboral
               </p>
               <ul className='list-disc list-inside'>
-                <li>JavaScript (ES6+), TypeScript</li>
-                <li>React, Next.js</li>
-                <li>Node.js, Express.js</li>
-                <li>SQL, NoSQL (MongoDB, PostgreSQL)</li>
-                <li>Docker, Kubernetes</li>
-                <li>CI/CD con Azure DevOps</li>
+                <li>
+                  NTT DATA
+                  <div className='ml-5 mt-2'>
+                    DESIGHA | DGTIC - Generalitat Valenciana
+                    <ul className='list-disc list-inside'>
+                      <li>Desarrollé nuevas funcionalidades para el software de recaudación de impuestos en colaboración con un equipo de ingenieros. </li>
+                      <li>Apliqué buenas prácticas de código limpio, asegurando que fuera legible, mantenible, escalable y testeable.</li>
+                      <li>Documenté manuales de uso para cada requerimiento entregado.</li>
+                    </ul>
+                  </div>
+                  <div className='ml-5 mt-2'>
+                    IGUALDAD | DGTIC - Generalitat Valenciana
+                    <ul className='list-disc list-inside'>
+                      <li>Trabajé con ingenieros, analistas y testers en la migración de funcionalidades a una nueva tecnología para la gestión de expedientes de Dependencia.</li>
+                      <li>Apliqué principios de desarrollo de software enfocados en la mantenibilidad y testabilidad del código.</li>
+                      <li>Analicé y diseñé un módulo de formularios dinámicos para automatizar la creación, visualización y recopilación de información en cada fase del proceso de solicitud.</li>
+                      <li>Implementé una prueba de concepto para la configuración y visualización dinámica de formularios de solicitud. </li>
+
+                    </ul>
+                  </div>
+                  <div className='ml-5 mt-2'>
+                    Célula Unify - Fase 2 | YPF
+                    <ul className='list-disc list-inside'>
+                      <li>Desarrollé e implementé nuevas funcionalidades priorizadas por el negocio en un software cliente basado en DecisionSpace® Integration Server (DSIS). </li>
+                      <li>Trabajé en la integración y sincronización de nuevos orígenes de datos en una plataforma de procesamiento de dattos para Upstream. </li>
+                    </ul>
+                  </div>
+                  <div className='ml-5 mb-2'>
+                    Sistema Integra | YPF
+                    <ul className='list-disc list-inside'>
+                      <li>Colaboré con un equipo de ingenieros, analistas, y testers para crear un sistema de gestión y configuración de recursos de sistema de control de productos fitosanitarios.</li>
+                      <li>Integré tecnologías de autenticación y geolocalización para mejorar la seguridad y funcionalidad de la plataforma.</li>
+                      <li>Diseñé y desarrollé una interfaz web para la visualización de información pública como manuales, guías y documentos importantes para el sistema</li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  Universidad Peruana Unión
+                  <div className='ml-5'>
+                    Departamento general de tecnologías de la información
+                    <ul className='list-disc list-inside'>
+                      <li>Colaboré con múltiples equipos de especialistas tecnológicos en la construcción del ERP institucional con enfoque financiero y educativo. Analicé, diseñé e implementé funcionalidades en módulos backend y frontend aplicando buenas prácticas de desarrollo y optimización de arquitectura de software en cada módulo del sistema</li>
+                      <li>Participé en la identificación, definición y organización de los componentes clave del ecosistema de aplicaciones.</li>
+                      <li>Apoyé en el proceso de onboarding de nuevos colaboradores, facilitando su integración en tecnologías, metodologías y dinámicas del equipo.</li>
+
+                    </ul>
+                  </div>
+                  <div className='ml-5'>
+                    Vicerrectorado académico
+                    <ul className='list-disc list-inside'>
+                      <li>Desarrollé funcionalidades para el ERP Académico y CRM institucional, colaborando con analistas y desarrolladores en aplicaciones backend y frontend.</li>
+                      <li>Implementé reportes estadísticos según requerimientos utilizando herramientas de visualización de datos, gráficos y optimización de consultas SQL.</li>
+                      <li>Optimizé y automatizé procesos de minificación para la generación de artefactos de software en módulos frontend.</li>
+                      <li>Participé en el upgrade tecnológico de aplicaciones, migrando funcionalidades de AngularJS a Angular, asegurando la continuidad operativa y escalabilidad.</li>
+                    </ul>
+                  </div>
+                  <div className='ml-5'>
+                    Dirección general de sistemas - Sede Juliaca
+                    <ul className='list-disc list-inside'>
+                      <li>Contribuí en el analisis y desarrollo de un sistema para la gestión de acuerdos académicos, facilitando la autoevaluación y cumplimiento de estándares del Modelo de Gestión Educativa.</li>
+                      <li>Instalé y configuré servicios web para aplicaciones backend y frontend.</li>
+                      <li>Implementé mecanismos de integración y despliegue en entornos de pruebas y desarrollo para aplicaciones backend y frontend.</li>
+                    </ul>
+                  </div>
+                </li>
               </ul>
+              |
+
+
             </div>
           </div>
 
