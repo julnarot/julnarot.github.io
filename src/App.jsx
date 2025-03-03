@@ -98,36 +98,36 @@ function App() {
                 <li>
                   NTT DATA
                   <div className='ml-5 mt-2'>
-                    DESIGHA | DGTIC | Generalitat Valenciana (Offshore)
+                    DESIGHA | DGTIC - Generalitat Valenciana
                     <ul className='list-disc list-inside'>
-                      <li>Colaboré con un equipo de ingenieros para desarrollar y validar nuevas caracteristicas  de software de recaudación de impuestos </li>
-                      <li>Se aplicarón buenas practicas para la escritura limpia de codigo, legible, mantenible, escalable y testeable</li>
-                      <li>Documentar manual de uso por cada requerimiento entregado </li>
+                      <li>Desarrollé nuevas funcionalidades para el software de recaudación de impuestos en colaboración con un equipo de ingenieros. </li>
+                      <li>Apliqué buenas prácticas de código limpio, asegurando que fuera legible, mantenible, escalable y testeable.</li>
+                      <li>Documenté manuales de uso para cada requerimiento entregado.</li>
                     </ul>
                   </div>
                   <div className='ml-5 mt-2'>
-                    IGUALDAD | DGTIC | Generalitat Valenciana (Offshore)
+                    IGUALDAD | DGTIC - Generalitat Valenciana
                     <ul className='list-disc list-inside'>
-                      <li>Colaboré con un equipo de ingenieros, analistas y testers para migrar y validar funcionalidad software existentes a nueva tecnologia en software para la gestion de expedientes de Dependencia</li>
-                      <li>Se aplicarón buenas prácticas para la escritura limpia de codigo y testeable</li>
-                      <li>Analicé y Diseñé módulo de formularios dinámicos para solicitudes con el objetivo de automatizar el proceso de creado, visualizacion y recopilación dinámica de información en cada fase del proceso de solicitud  </li>
-                      <li>Implementé  prueba de concepto de módulo de formularios dinámicos para solicitudes que comprende  configuración de formulario de solicitud y  visualizacion dinámica de contenido </li>
+                      <li>Trabajé con ingenieros, analistas y testers en la migración de funcionalidades a una nueva tecnología para la gestión de expedientes de Dependencia.</li>
+                      <li>Apliqué principios de desarrollo de software enfocados en la mantenibilidad y testabilidad del código.</li>
+                      <li>Analicé y diseñé un módulo de formularios dinámicos para automatizar la creación, visualización y recopilación de información en cada fase del proceso de solicitud.</li>
+                      <li>Implementé una prueba de concepto para la configuración y visualización dinámica de formularios de solicitud. </li>
 
                     </ul>
                   </div>
                   <div className='ml-5 mt-2'>
                     Célula Unify - Fase 2 | YPF
                     <ul className='list-disc list-inside'>
-                      <li>Colaboré con un equipo de ingenieros bajo el cargo de fullstack developer para  Desarrollar  e implementar nuevos funcionalidades priorizadas por el negocio en software cliente implementado en una plataforma web implementado en  DecisionSpace® Integration Server (DSIS) </li>
-                      <li>Colaboré en la implementación y sincronizacion de nuevos origenes de datos en una plataforma job  para el upstream </li>
+                      <li>Desarrollé e implementé nuevas funcionalidades priorizadas por el negocio en un software cliente basado en DecisionSpace® Integration Server (DSIS). </li>
+                      <li>Trabajé en la integración y sincronización de nuevos orígenes de datos en una plataforma de procesamiento de dattos para Upstream. </li>
                     </ul>
                   </div>
                   <div className='ml-5 mb-2'>
-                    Integra | YPF
+                    Sistema Integra | YPF
                     <ul className='list-disc list-inside'>
-                      <li>Colaboré con un equipo de ingenieros, analistas, y testers bajo el cargo de Frontend angular developer para crear una plataforma web para la gestion y configuracion de recursos de un sistema de  seguimientos de transportes de elementos quimicos.</li>
-                      <li>Diseñe e implemente una plataforma spa para la visualizacion de informacion de contenedores de elementos químicos </li>
-                      <li>Integración de tecnologia de geolocalizacion</li>
+                      <li>Colaboré con un equipo de ingenieros, analistas, y testers para crear un sistema de gestión y configuración de recursos de sistema de control de productos fitosanitarios.</li>
+                      <li>Integré tecnologías de autenticación y geolocalización para mejorar la seguridad y funcionalidad de la plataforma.</li>
+                      <li>Diseñé y desarrollé una interfaz web para la visualización de información pública como manuales, guías y documentos importantes para el sistema</li>
                     </ul>
                   </div>
                 </li>
@@ -137,28 +137,27 @@ function App() {
                   <div className='ml-5'>
                     Departamento general de tecnologías de la información
                     <ul className='list-disc list-inside'>
-                      <li>Programador java</li>
-                      <li>Analisis y diseño de software</li>
-                      <li>Migración</li>
+                      <li>Colaboré con múltiples equipos de especialistas tecnológicos en la construcción del ERP institucional con enfoque financiero y educativo. Analicé, diseñé e implementé funcionalidades en módulos backend y frontend aplicando buenas prácticas de desarrollo y optimización de arquitectura de software en cada módulo del sistema</li>
+                      <li>Participé en la identificación, definición y organización de los componentes clave del ecosistema de aplicaciones.</li>
+                      <li>Apoyé en el proceso de onboarding de nuevos colaboradores, facilitando su integración en tecnologías, metodologías y dinámicas del equipo.</li>
 
                     </ul>
                   </div>
                   <div className='ml-5'>
                     Vicerrectorado académico
                     <ul className='list-disc list-inside'>
-                      <li>Programador java</li>
-                      <li>Analisis y diseño de software</li>
-                      <li>Migración</li>
-
+                      <li>Desarrollé funcionalidades para el ERP Académico y CRM institucional, colaborando con analistas y desarrolladores en aplicaciones backend y frontend.</li>
+                      <li>Implementé reportes estadísticos según requerimientos utilizando herramientas de visualización de datos, gráficos y optimización de consultas SQL.</li>
+                      <li>Optimizé y automatizé procesos de minificación para la generación de artefactos de software en módulos frontend.</li>
+                      <li>Participé en el upgrade tecnológico de aplicaciones, migrando funcionalidades de AngularJS a Angular, asegurando la continuidad operativa y escalabilidad.</li>
                     </ul>
                   </div>
                   <div className='ml-5'>
-                    Dirección general de sistemas - Sede juliaca
+                    Dirección general de sistemas - Sede Juliaca
                     <ul className='list-disc list-inside'>
-                      <li>Programador java</li>
-                      <li>Analisis y diseño de software</li>
-                      <li>Migración</li>
-
+                      <li>Contribuí en el analisis y desarrollo de un sistema para la gestión de acuerdos académicos, facilitando la autoevaluación y cumplimiento de estándares del Modelo de Gestión Educativa.</li>
+                      <li>Instalé y configuré servicios web para aplicaciones backend y frontend.</li>
+                      <li>Implementé mecanismos de integración y despliegue en entornos de pruebas y desarrollo para aplicaciones backend y frontend.</li>
                     </ul>
                   </div>
                 </li>
