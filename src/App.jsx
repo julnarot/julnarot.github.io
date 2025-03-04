@@ -11,7 +11,7 @@ function App() {
     setIsOpen((isOpen) => !isOpen);
   }
 
-  
+
 
   const menuItems = [
     { title: 'About', key: 'A' },
@@ -23,6 +23,114 @@ function App() {
     { title: 'New', shortcut: 'F3' },
     { title: 'Open...', shortcut: 'F2' }
   ];
+
+
+
+  const WORk_EXPERIENCE = [
+    {
+      companyName: 'NTT DATA',
+      departmentName: 'DGTIC - Generalitat Valenciana',
+      proyect: 'DESIGHA',
+      activities: [
+        'Desarrollé nuevas funcionalidades para el software de recaudación de impuestos en colaboración con un equipo de ingenieros.',
+        'Apliqué buenas prácticas de código limpio, asegurando que fuera legible, mantenible, escalable y testeable.',
+        'Documenté manuales de uso para cada requerimiento entregado.'
+      ],
+      tecnologies: [
+        'Spring Framework',
+        'JPA',
+        'Oracle SQL Developer',
+        'JUnit',
+        'Thymeleaf',
+        'jQuery',
+      ]
+    }, {
+      companyName: 'NTT DATA',
+      departmentName: 'DGTIC - Generalitat Valenciana',
+      proyect: 'IGUALDAD',
+      activities: [
+        'Trabajé con ingenieros, analistas y testers en la migración de funcionalidades a una nueva tecnología para la gestión de expedientes de Dependencia.',
+        'Apliqué principios de desarrollo de software enfocados en la mantenibilidad y testabilidad del código.',
+        'Analicé y diseñé un módulo de formularios dinámicos para automatizar la creación, visualización y recopilación de información en cada fase del proceso de solicitud.',
+        'Implementé una prueba de concepto para la configuración y visualización dinámica de formularios de solicitud.'
+      ],
+      tecnologies: [
+        'ZK',
+        'Spring Framework',
+        'JPA',
+        'Oracle SQL Developer',
+        'JUnit',
+      ]
+    }, {
+      companyName: 'NTT DATA',
+      departmentName: 'YPF',
+      proyect: 'Célula Unify - Fase 2',
+      activities: [
+        'Desarrollé e implementé nuevas funcionalidades priorizadas por el negocio en un software cliente basado en DecisionSpace® Integration Server (DSIS).',
+        'Trabajé en la integración y sincronización de nuevos orígenes de datos en una plataforma de procesamiento de datos para Upstream.',
+      ],
+      tecnologies: [
+        'Angular', 'Jasmine', 'Jest', 'Node JS', 'DecisionSpace® Integration Server', 'Apache Solr', 'Azure DevOps',
+      ]
+    }, {
+      companyName: 'NTT DATA',
+      departmentName: 'YPF',
+      proyect: 'Sistema Integra',
+      activities: [
+        'Colaboré con un equipo de ingenieros, analistas, y testers para crear un sistema de gestión y configuración de recursos de sistema de control de productos fitosanitarios.',
+        'Integré tecnologías de autenticación y geolocalización para mejorar la seguridad y funcionalidad de la plataforma.',
+        'Diseñé y desarrollé una interfaz web para la visualización de información pública como manuales, guías y documentos importantes para el sistema.'
+      ],
+      tecnologies: [
+        'Angular', 'Jest', 'Azure DevOps', 'SAML', 'Maps JavaScript API'
+      ]
+    }, {
+      companyName: 'Universidad Peruana Unión',
+      departmentName: 'Departamento general de tecnologías de la información',
+      proyect: 'Área de desarrollo de software',
+      activities: [
+        'Colaboré con múltiples equipos de especialistas tecnológicos en la construcción del ERP institucional con enfoque financiero y educativo. Analicé, diseñé e implementé funcionalidades en módulos backend y frontend aplicando buenas prácticas de desarrollo y optimización de arquitectura de software en cada módulo del sistema',
+        'Participé en la identificación, definición y organización de los componentes clave del ecosistema de aplicaciones.',
+        'Brindé soporte y mantenimiento a una aplicación cliente-servidor para la gestión de eventos, habilitándola en un entorno local, resolviendo dependencias y agregando funcionalidades faltantes antes de prepararla para su despliegue en CI/CD.',
+        'Apoyé en el proceso de onboarding de nuevos colaboradores, facilitando su integración en tecnologías, metodologías y dinámicas del equipo.',
+      ],
+      tecnologies: [
+        'Angular', 'Laravel', 'Oracle Database', 'Eloquent', 'PostgreSQL', 'OAuth', 'Angular Material', 'Nebular UI', 'Jenkins', 'DjangoRestFramework', 'Angular JS'
+      ]
+    }, {
+      companyName: 'Universidad Peruana Unión',
+      departmentName: 'Vicerrectorado académico',
+      proyect: 'ERP institucional',
+      activities: [
+        'Desarrollé funcionalidades para el ERP Académico y CRM institucional, colaborando con analistas y desarrolladores en aplicaciones backend y frontend.',
+        'Implementé reportes estadísticos según requerimientos utilizando herramientas de visualización de datos, gráficos y optimización de consultas SQL.',
+        'Optimizé y automatizé procesos de minificación para la generación de artefactos de software en módulos frontend.',
+        'Participé en el upgrade tecnológico de aplicaciones, migrando funcionalidades de AngularJS a Angular, asegurando la continuidad operativa y escalabilidad.',
+      ],
+      tecnologies: [
+        'Angular JS',
+        'Angular JS Material',
+        'DjangoRestFramework',
+        'Angular',
+        'Angular Material',
+        'Oracle Database',
+      ]
+    }, {
+      companyName: 'Universidad Peruana Unión - FJ',
+      departmentName: 'Dirección general de sistemas',
+      proyect: 'Área de desarrollo de software',
+      activities: [
+        'Contribuí en el analisis y desarrollo de un sistema para la gestión de acuerdos académicos, facilitando la autoevaluación y cumplimiento de estándares del Modelo de Gestión Educativa.',
+        'Instalé y configuré servicios web para aplicaciones backend y frontend.',
+        'Implementé mecanismos de integración y despliegue en entornos de pruebas y desarrollo para aplicaciones backend y frontend.',
+        'Brindé soporte y mantenimiento a una aplicación móvil informativa para programas y conferencias, agregando nuevas secciones y vistas con contenido actualizado acorde al evento, integrando de forma embebida la transmisión en vivo y generando los APKs para su despliegue en Google Play Store.',
+      ],
+      tecnologies: [
+        'Angular JS', 'Angular JS Material', 'Django', 'Django REST framework', 'MySQL', 'Ionic Framework', 'Nginx', 'Trello',
+      ]
+    }
+
+  ]
   return (
 
     <div className="h-screen w-screen bg-gray-800 flex flex-col overflow-hidden">
@@ -96,7 +204,7 @@ function App() {
 
           <div className="border-4 border-double border-gray-400 p-2 w-50 basis-1/2 relative h-full ">
             <div className="absolute -top-3 left-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">github.julnarot/complements.prev</div>
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">github.julnarot/work-exp.prev</div>
             <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm"> 4</div>
             <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
             <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto">
@@ -187,7 +295,7 @@ function App() {
         <div>F1 Help | Create a new file in a new Edit window</div>
       </div>
 
-      {isOpen && <Popup onClose={toggle}/>}
+      {isOpen && <Popup onClose={toggle} />}
 
     </div>
 
