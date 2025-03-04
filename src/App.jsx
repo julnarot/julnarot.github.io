@@ -1,8 +1,17 @@
 import { useState } from 'react'
 import './App.css'
+import Popup from './popup'
 
 function App() {
   const [showFileMenu, setShowFileMenu] = useState(false);
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggle() {
+    setIsOpen((isOpen) => !isOpen);
+  }
+
+  
 
   const menuItems = [
     { title: 'About', key: 'A' },
@@ -97,7 +106,7 @@ function App() {
               <ul className='list-disc list-inside'>
                 <li>
                   NTT DATA
-                  <div className='ml-5 mt-2'>
+                  <div className='ml-5 mt-2' onClick={toggle}>
                     DESIGHA | DGTIC - Generalitat Valenciana
                     <ul className='list-disc list-inside'>
                       <li>Desarrollé nuevas funcionalidades para el software de recaudación de impuestos en colaboración con un equipo de ingenieros. </li>
@@ -177,8 +186,16 @@ function App() {
         <div>1:1</div>
         <div>F1 Help | Create a new file in a new Edit window</div>
       </div>
+
+      {isOpen && <Popup onClose={toggle}/>}
+
     </div>
+
+
+
   )
 }
 
 export default App
+
+
