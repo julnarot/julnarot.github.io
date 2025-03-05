@@ -6,25 +6,23 @@ export default function Popup({ onClose, experience }) {
 
       <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
         <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-          <div className="relative transform overflow-hidden  bg-gray-300 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+          <div className="relative transform overflow-hidden  bg-gray-400 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg shadow-[16px_23px_0px_-9px_rgba(0,_0,_0,_1)]">
 
 
             <div className="flex-1  p-1 pt-2 text-white flex flex-col md:flex-row w-full h-full gap-2 overflow-auto">
 
               <div className="border-4 border-double border-white p-2  relative h-full w-full ">
-                <div className="absolute -top-3 left-3 bg-gray-300 px-1 text-sm cursor-pointer" onClick={onClose}> [<span className="text-green-400">&#9632;</span>]</div>
-                <div className="absolute -top-3 left-1/2 bg-gray-300 transform -translate-x-1/2  px-2 text-sm">{experience.proyect}</div>
+                <div className="absolute -top-3 left-3 bg-gray-400 px-1 text-sm cursor-pointer"> [<span className="text-green-400">&#9632;</span>]</div>
+                <div className="absolute -top-3 left-1/2 bg-gray-400 transform -translate-x-1/2  px-2 text-sm">{experience.proyect}</div>
 
                 <div className="font-mono px-1 pt-2 text-stone-950 selection:bg-cyan-400 h-full overflow-auto">
 
                   <div className="flex flex-col md:flex-row">
 
-
-
                     <div className="border-4 border-double border-yellow-300 p-2 flex-auto relative h-full w-full ">
-                      <div className="absolute -top-3 left-1/2 bg-gray-300 transform -translate-x-1/2 text-yellow-300 px-2 text-sm">Actividades</div>
+                      <div className="absolute -top-3 left-1/2 bg-gray-400 transform -translate-x-1/2 text-yellow-300 px-2 text-sm">Actividades</div>
                       <div className="font-mono p-2 text-stone-950 text-gray-500 selection:bg-cyan-400 h-full overflow-auto">
-                        <ul className='list-disc list-inside text-sm'>
+                        <ul className='list-disc list-inside text-sm text-white'>
                           {experience.activities.map((activity, index) =>
                             <li key={index}>
                               {activity}
@@ -37,24 +35,22 @@ export default function Popup({ onClose, experience }) {
 
                     <div className="px-2 w-32 flex-none ">
                       <span className="text-white">Tecnologías</span>
-                      <div className="bg-green-100  h-32 overflow-y-auto">
+                      <div className="bg-green-100  h-64 overflow-y-auto px-2
+                      [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-bluen-600 [&::-webkit-scrollbar-thumb]:bg-cyan-500">
                         <ul className='list-none text-sm'>
-                          {experience.tecnologies.map((tecno, i)=>
-                          <li key={i}>[x] {tecno}</li>
+                          {experience.tecnologies.map((tecno, i) =>
+                            <li key={i}>[x] {tecno}</li>
                           )}
                         </ul>
                       </div>
                     </div>
 
-
-
-
-
-
-
                   </div>
-
-
+                  <div className="flex justify-center p-2">
+                    <button class="bg-green-300 text-white font-bold py-1 px-3 border border-green-300 shadow-[5px_7px_0px_0px_rgba(0,_0,_0,_1)]"  onClick={onClose}>
+                      Cerrar
+                    </button>
+                  </div>
                 </div>
               </div>
 

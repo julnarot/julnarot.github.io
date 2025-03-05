@@ -184,7 +184,8 @@ function App() {
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">github.julnarot/main.prev</div>
             <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm"> 4</div>
             <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
-            <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto">
+            <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto 
+            [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-bluen-600 [&::-webkit-scrollbar-thumb]:bg-cyan-500">
               <p className='my-4'>
                 RAUL JONATAN | Full stack engineering
               </p>
@@ -213,14 +214,14 @@ function App() {
               <p className='my-4'>
                 Experiencia Laboral
               </p>
-              <ul className='list-disc list-inside'>
+              <ul className='list-disc list-inside text-sm'>
 
                 {workExperiences.map((item, index) => (
                   <li key={index}>
 
                     {item.companyName}
                     <div className='ml-5 mb-2' >
-                      <a className="cursor-pointer text-gray-900 underline" onClick={()=> toggle(item)}>{item.proyect}</a> | {item.departmentName}
+                      <a className="cursor-pointer  underline" onClick={() => toggle(item)}>{item.proyect}</a> | {item.departmentName}
                     </div>
 
                   </li>
