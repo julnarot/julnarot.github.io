@@ -16,9 +16,9 @@ function App() {
 
 
   const menuItems = [
-    { title: 'About', key: 'A' },
-    { title: 'Experience', key: 'E' },
-    { title: 'Contact', key: 'C' }
+    { title: 'File', key: 'F' },
+    { title: 'Edit', key: 'E' },
+    { title: 'Search', key: 'S' }
   ];
 
   const fileMenuItems = [
@@ -141,7 +141,7 @@ function App() {
         {menuItems.map((item, index) => (
           <button
             key={index}
-            onClick={() => item.title === 'About' && setShowFileMenu(!showFileMenu)}
+            onClick={() => item.title === 'File' && setShowFileMenu(!showFileMenu)}
             className="px-2 hover:bg-blue-600 hover:text-white focus:outline-none"
           >
             <span className="text-red-600">{item.key}</span>
