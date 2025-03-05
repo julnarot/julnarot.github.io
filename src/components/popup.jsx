@@ -1,4 +1,7 @@
 import Button from "./button";
+import ShowWindow from "./showWindow";
+
+
 
 export default function Popup({ onClose, experience }) {
   return (
@@ -17,23 +20,19 @@ export default function Popup({ onClose, experience }) {
                 <div className="absolute -top-3 left-3 bg-gray-400 px-1 text-sm cursor-pointer"> [<span className="text-green-400">&#9632;</span>]</div>
                 <div className="absolute -top-3 left-1/2 bg-gray-400 transform -translate-x-1/2  px-2 text-sm">{experience.proyect}</div>
 
-                <div className="font-mono px-1 pt-2 text-stone-950 selection:bg-cyan-400 h-full overflow-auto">
+                <div className="font-mono px-1 pt-2 text-stone-950 selection:bg-cyan-400 flex flex-col">
 
                   <div className="flex flex-col md:flex-row">
 
-                    <div className="border-4 border-double border-yellow-300 p-2 flex-auto relative h-full w-full ">
-                      <div className="absolute -top-3 left-1/2 bg-gray-400 transform -translate-x-1/2 text-yellow-300 px-2 text-sm">Actividades</div>
-                      <div className="font-mono p-2 text-stone-950 text-gray-500 selection:bg-cyan-400 h-full overflow-auto">
-                        <ul className='list-disc list-inside text-sm text-white'>
-                          {experience.activities.map((activity, index) =>
-                            <li key={index}>
-                              {activity}
-                            </li>
-                          )}
-                        </ul>
-
-                      </div>
-                    </div>
+                    <ShowWindow titleWindow="Actividades">
+                      <ul className='list-disc list-inside text-sm text-white'>
+                        {experience.activities.map((activity, index) =>
+                          <li key={index}>
+                            {activity}
+                          </li>
+                        )}
+                      </ul>
+                    </ShowWindow>
 
                     <div className="px-2 w-32 flex-none ">
                       <span className="text-white">Tecnologías</span>
@@ -48,8 +47,9 @@ export default function Popup({ onClose, experience }) {
                     </div>
 
                   </div>
+                  
                   <div className="flex justify-center p-2">
-                    <Button value="Cerrar" onClick={onClose}/>
+                    <Button value="Cerrar" onClick={onClose} />
                   </div>
                 </div>
               </div>

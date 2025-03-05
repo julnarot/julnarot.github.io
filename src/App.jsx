@@ -6,7 +6,6 @@ import MenuBar from './components/menuBar';
 import StatusBar from './components/statusBar';
 
 function App() {
-  const [showFileMenu, setShowFileMenu] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
   const [workExperience, setWorkExperience] = useState(null);
@@ -21,10 +20,6 @@ function App() {
     setWorkExperience(workExperience);
   }
 
-
-
-
-
   return (
 
     <div className="h-screen w-screen bg-gray-800 flex flex-col overflow-hidden">
@@ -33,35 +28,12 @@ function App() {
 
       {/* Main Content */}
       <div className="flex-1 relative flex flex-col w-full h-full overflow-hidden">
-        {showFileMenu && (
-          <div className="absolute left-2 top-0 w-48 bg-gray-200 border-2 border-gray-400 shadow-lg z-50">
-            {fileMenuItems.map((item, index) => (
-              <div
-                key={index}
-                className="px-4 py-1 hover:bg-blue-600 hover:text-white cursor-pointer flex justify-between"
-              >
-                <span>
-                  {item.title.split('').map((char, i) =>
-                    char.toLowerCase() === 'n' || char.toLowerCase() === 'o' ||
-                      char.toLowerCase() === 's' || char.toLowerCase() === 'c' ||
-                      char.toLowerCase() === 'p' || char.toLowerCase() === 'd' ||
-                      char.toLowerCase() === 'q' ?
-                      <span key={i} className="text-red-600">{char}</span> : char
-                  )}
-                </span>
-                {item.shortcut && (
-                  <span className="ml-4 text-gray-600">{item.shortcut}</span>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
 
         <div className="flex-1 bg-blue-600 p-4 text-white flex flex-col md:flex-row w-full h-full gap-2 overflow-auto">
 
           <div className="border-4 border-double border-gray-400 p-2 w-50 basis-1/2 relative h-full ">
             <div className="absolute -top-3 left-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">github.julnarot/main.prev</div>
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">~/main.prev</div>
             <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm"> 4</div>
             <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
             <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto 
@@ -87,7 +59,7 @@ function App() {
 
           <div className="border-4 border-double border-gray-400 p-2 w-50 basis-1/2 relative h-full ">
             <div className="absolute -top-3 left-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">github.julnarot/work-exp.prev</div>
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">~/work-exp.prev</div>
             <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm"> 4</div>
             <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
             <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto">
@@ -101,7 +73,7 @@ function App() {
 
                     {item.companyName}
                     <div className='ml-5 mb-2' >
-                      <a className="cursor-pointer  underline" onClick={() => toggle(item)}>{item.proyect}</a> | {item.departmentName}
+                      <a className="cursor-pointer font-bold no-underline hover:underline" onClick={() => toggle(item)}>{item.proyect}</a> | {item.departmentName}
                     </div>
 
                   </li>
