@@ -1,3 +1,5 @@
+import Button from "./button";
+
 export default function Popup({ onClose, experience }) {
   return (
     <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -47,9 +49,7 @@ export default function Popup({ onClose, experience }) {
 
                   </div>
                   <div className="flex justify-center p-2">
-                    <button class="bg-green-300 text-white font-bold py-1 px-3 border border-green-300 shadow-[5px_7px_0px_0px_rgba(0,_0,_0,_1)]"  onClick={onClose}>
-                      Cerrar
-                    </button>
+                    <Button value="Cerrar" onClick={onClose}/>
                   </div>
                 </div>
               </div>
