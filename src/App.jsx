@@ -80,10 +80,7 @@ function App() {
                 {workExperiences.map((item, index) => (
                   <li key={index}>
 
-                    {item.companyName} · {item.startDateStr} - {item.endDateStr}
-                    <div className='ml-5 mb-2' >
-                      <a className="cursor-pointer font-bold no-underline hover:underline text-xs" onClick={() => toggle(item)}>{item.proyect}</a> | {item.departmentName}
-                    </div>
+                    {item.companyName} | {item.departmentName} |  <a className="cursor-pointer font-bold no-underline hover:underline" onClick={() => toggle(item)}>{item.proyect}</a> · <span className='text-xs'>{item.startDateStr} - {item.endDateStr}</span>
 
                   </li>
                 ))}

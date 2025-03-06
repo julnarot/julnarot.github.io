@@ -44,7 +44,7 @@
     {
         "companyName": "NTT DATA",
         "departmentName": "YPF",
-        "proyect": "Célula Unify - Fase 2",
+        "proyect": "Célula Unify",
         "activities": [
             "Desarrollé e implementé nuevas funcionalidades priorizadas por el negocio en un software cliente basado en DecisionSpace® Integration Server (DSIS).",
             "Trabajé en la integración y sincronización de nuevos orígenes de datos en una plataforma de procesamiento de datos para Upstream."
@@ -84,7 +84,7 @@
     },
     {
         "companyName": "Universidad Peruana Unión",
-        "departmentName": "Departamento general de tecnologías de la información",
+        "departmentName": "DIGETI",
         "proyect": "Área de desarrollo de software",
         "activities": [
             "Colaboré con múltiples equipos de especialistas tecnológicos en la construcción del ERP institucional con enfoque financiero y educativo. Analicé, diseñé e implementé funcionalidades en módulos backend y frontend aplicando buenas prácticas de desarrollo y optimización de arquitectura de software en cada módulo del sistema",
@@ -133,7 +133,7 @@
     },
     {
         "companyName": "Universidad Peruana Unión - FJ",
-        "departmentName": "Dirección general de sistemas",
+        "departmentName": "DIGESI",
         "proyect": "Área de desarrollo de software",
         "activities": [
             "Contribuí en el analisis y desarrollo de un sistema para la gestión de acuerdos académicos, facilitando la autoevaluación y cumplimiento de estándares del Modelo de Gestión Educativa.",
