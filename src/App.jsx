@@ -12,7 +12,16 @@ function App() {
   const [workExperiences, setWorkExperiences] = useState([]);
 
   useEffect(() => {
-    getWorkExperiences().then(data => setWorkExperiences(data));
+    getWorkExperiences().then(data =>
+
+      setWorkExperiences(data.map(we => {
+        const _startDate = new Date(we.startDate);
+        const _endDate = new Date(we.endDate);
+        we.startDateStr = `${_startDate.getMonth() + 1}/${_startDate.getFullYear()}`;
+        we.endDateStr = `${_endDate.getMonth() + 1}/${_endDate.getFullYear()}`;
+        return we
+      }))
+    );
   }, []);
 
   function toggle(workExperience) {
@@ -24,7 +33,7 @@ function App() {
 
     <div className="h-screen w-screen bg-gray-800 flex flex-col overflow-hidden">
       {/* Top Menu Bar */}
-      <MenuBar/>
+      <MenuBar />
 
       {/* Main Content */}
       <div className="flex-1 relative flex flex-col w-full h-full overflow-hidden">
@@ -71,9 +80,9 @@ function App() {
                 {workExperiences.map((item, index) => (
                   <li key={index}>
 
-                    {item.companyName}
+                    {item.companyName} · {item.startDateStr} - {item.endDateStr}
                     <div className='ml-5 mb-2' >
-                      <a className="cursor-pointer font-bold no-underline hover:underline" onClick={() => toggle(item)}>{item.proyect}</a> | {item.departmentName}
+                      <a className="cursor-pointer font-bold no-underline hover:underline text-xs" onClick={() => toggle(item)}>{item.proyect}</a> | {item.departmentName}
                     </div>
 
                   </li>
@@ -88,7 +97,7 @@ function App() {
       </div>
 
       {/* Status Bar */}
-      <StatusBar/>
+      <StatusBar />
 
       {isOpen && <Popup onClose={toggle} experience={workExperience} />}
 

@@ -15,7 +15,10 @@
             "JUnit",
             "Thymeleaf",
             "jQuery"
-        ]
+        ],
+        "startDate": "2024-10-01T12:00:00.000Z",
+        "endDate": "2025-01-01T12:00:00.000Z",
+        "modality": "Contrato"
     },
     {
         "companyName": "NTT DATA",
@@ -33,7 +36,10 @@
             "JPA",
             "Oracle SQL Developer",
             "JUnit"
-        ]
+        ],
+        "startDate": "2024-03-01T12:00:00.000Z",
+        "endDate": "2024-09-01T12:00:00.000Z",
+        "modality": "Contrato"
     },
     {
         "companyName": "NTT DATA",
@@ -51,7 +57,10 @@
             "DecisionSpace® Integration Server",
             "Apache Solr",
             "Azure DevOps"
-        ]
+        ],
+        "startDate": "2022-10-01T12:00:00.000Z",
+        "endDate": "2024-02-01T12:00:00.000Z",
+        "modality": "Contrato"
     },
     {
         "companyName": "NTT DATA",
@@ -68,7 +77,10 @@
             "Azure DevOps",
             "SAML",
             "Maps JavaScript API"
-        ]
+        ],
+        "startDate": "2022-04-01T12:00:00.000Z",
+        "endDate": "2022-09-01T12:00:00.000Z",
+        "modality": "Contrato"
     },
     {
         "companyName": "Universidad Peruana Unión",
@@ -92,12 +104,15 @@
             "Jenkins",
             "DjangoRestFramework",
             "Angular JS"
-        ]
+        ],
+        "startDate": "2019-01-01T12:00:00.000Z",
+        "endDate": "2021-12-01T12:00:00.000Z",
+        "modality": "Contrato"
     },
     {
         "companyName": "Universidad Peruana Unión",
         "departmentName": "Vicerrectorado académico",
-        "proyect": "ERP institucional",
+        "proyect": "ERP Académico",
         "activities": [
             "Desarrollé funcionalidades para el ERP Académico y CRM institucional, colaborando con analistas y desarrolladores en aplicaciones backend y frontend.",
             "Implementé reportes estadísticos según requerimientos utilizando herramientas de visualización de datos, gráficos y optimización de consultas SQL.",
@@ -111,7 +126,10 @@
             "Angular",
             "Angular Material",
             "Oracle Database"
-        ]
+        ],
+        "startDate": "2018-01-01T12:00:00.000Z",
+        "endDate": "2018-12-01T12:00:00.000Z",
+        "modality": "Contrato"
     },
     {
         "companyName": "Universidad Peruana Unión - FJ",
@@ -132,6 +150,9 @@
             "Ionic Framework",
             "Nginx",
             "Trello"
-        ]
+        ],
+        "startDate": "2017-05-01T12:00:00.000Z",
+        "endDate": "2017-12-01T12:00:00.000Z",
+        "modality": "Practicas PRE-Profesionales"
     }
 ]
