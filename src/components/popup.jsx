@@ -23,10 +23,10 @@ export default function Popup({ onClose, experience }) {
 
                 <div className="font-mono px-1 pt-2 text-stone-950 selection:bg-cyan-400 flex flex-col">
 
-                  <div className="mb-3 flex flex-wrap">
+                  <div className="mb-3 w-full">
                     <Input label="T. Empleo" value={experience.typeEmployment} />
                     <Input label="Modalidad" value={experience.modality} />
-                    <Input label="Duración" value={experience.duration} />
+                    <Input label="Duración" value={experience.startDateStr + ' - ' + experience.endDateStr + ' (' + experience.duration + ')'} className="w-full" />
                   </div>
                   <div className="flex flex-col md:flex-row">
 

@@ -92,7 +92,7 @@ function App() {
                 {workExperiences.map((item, index) => (
                   <li key={index}>
 
-                    {item.companyName} | {item.departmentName} |  <a className="cursor-pointer font-bold no-underline hover:underline" onClick={() => toggle(item)}>{item.proyect}</a> · <span className='text-xs'>{item.startDateStr} - {item.endDateStr}</span>
+                    {item.companyName} | {item.departmentName} |  <a className="cursor-pointer font-bold no-underline hover:underline" onClick={() => toggle(item)}>{item.proyect}</a> [<span className='text-xs'>{item.duration}</span>]
 
                   </li>
                 ))}
