@@ -1,4 +1,5 @@
 import Button from "./button";
+import Input from "./input";
 import ShowWindow from "./showWindow";
 
 
@@ -17,11 +18,16 @@ export default function Popup({ onClose, experience }) {
             <div className="flex-1  p-1 pt-2 text-white flex flex-col md:flex-row w-full h-full gap-2 overflow-auto">
 
               <div className="border-4 border-double border-white p-2  relative h-full w-full ">
-                <div className="absolute -top-3 left-3 bg-gray-400 px-1 text-sm cursor-pointer"> [<span className="text-green-400">&#9632;</span>]</div>
+                <div className="absolute -top-3 left-3 bg-gray-400 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
                 <div className="absolute -top-3 left-1/2 bg-gray-400 transform -translate-x-1/2  px-2 text-sm">{experience.proyect}</div>
 
                 <div className="font-mono px-1 pt-2 text-stone-950 selection:bg-cyan-400 flex flex-col">
 
+                  <div className="mb-3 w-full">
+                    <Input label="T. Empleo" value={experience.typeEmployment} />
+                    <Input label="Modalidad" value={experience.modality} />
+                    <Input label="Duración" value={experience.startDateStr + ' - ' + experience.endDateStr + ' (' + experience.duration + ')'} className="w-full" />
+                  </div>
                   <div className="flex flex-col md:flex-row">
 
                     <ShowWindow titleWindow="Actividades">
@@ -47,7 +53,7 @@ export default function Popup({ onClose, experience }) {
                     </div>
 
                   </div>
-                  
+
                   <div className="flex justify-center p-2">
                     <Button value="Cerrar" onClick={onClose} />
                   </div>
