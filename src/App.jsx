@@ -4,7 +4,6 @@ import Popup from './components/popup'
 import { getWorkExperiences } from './services/workExperienceService';
 import MenuBar from './components/menuBar';
 import StatusBar from './components/statusBar';
-import WindowContent from './components/windowContent';
 
 function App() {
 
@@ -20,7 +19,7 @@ function App() {
         const _endDate = new Date(we.endDate);
         we.startDateStr = `${_startDate.getMonth() + 1}/${_startDate.getFullYear()}`;
         we.endDateStr = `${_endDate.getMonth() + 1}/${_endDate.getFullYear()}`;
-        we.duration= getDuration(_startDate, _endDate)
+        we.duration = getDuration(_startDate, _endDate)
         return we
       }))
     );
@@ -29,12 +28,12 @@ function App() {
   const getDuration = (startDate, endDate) => {
     let years = endDate.getFullYear() - startDate.getFullYear();
     let months = endDate.getMonth() - startDate.getMonth();
-  
+
     if (months < 0) {
       years--;
       months += 12;
     }
-    return years >0 ? `${years} años y ${months} meses` : `${months} meses`;
+    return years > 0 ? `${years} años y ${months} meses` : `${months} meses`;
   };
 
   function toggle(workExperience) {
@@ -88,12 +87,9 @@ function App() {
                 Experiencia Laboral
               </p>
               <ul className='list-disc list-inside text-sm'>
-
                 {workExperiences.map((item, index) => (
                   <li key={index}>
-
                     {item.companyName} | {item.departmentName} |  <a className="cursor-pointer font-bold no-underline hover:underline" onClick={() => toggle(item)}>{item.proyect}</a> [<span className='text-xs'>{item.duration}</span>]
-
                   </li>
                 ))}
               </ul>
