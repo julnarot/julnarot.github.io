@@ -6,15 +6,15 @@
         "activities": [
             {
                 "name": "Desarrollé nuevas funcionalidades para el software de recaudación de impuestos en colaboración con un equipo de ingenieros.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Apliqué buenas prácticas de código limpio, asegurando que fuera legible, mantenible, escalable y testeable.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Documenté manuales de uso para cada requerimiento entregado.",
-                "skills": []
+                "skills": ["Gestión de Proyectos y Planificación"]
             }
         ],
         "tecnologies": [
@@ -41,6 +41,9 @@
             {
                 "name": "jQuery",
                 "skills": ["Desarrollo de Software"]
+            },{
+                "name": "asciidoctor",
+                "skills": ["Desarrollo de Software", "Gestión de Proyectos y Planificación"]
             }
         ],
         "startDate": "2024-10-01T12:00:00.000Z",
@@ -63,7 +66,7 @@
             },
             {
                 "name": "Analicé y diseñé un módulo de formularios dinámicos para automatizar la creación, visualización y recopilación de información en cada fase del proceso de solicitud.",
-                "skills": []
+                "skills": ["Análisis y Diseño de Software"]
             },
             {
                 "name": "Implementé una prueba de concepto para la configuración y visualización dinámica de formularios de solicitud.",
@@ -73,23 +76,23 @@
         "tecnologies": [
             {
                 "name": "ZK",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Spring Framework",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "JPA",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Oracle SQL Developer",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "JUnit",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             }
         ],
         "startDate": "2024-03-01T12:00:00.000Z",
@@ -104,37 +107,37 @@
         "activities": [
             {
                 "name": "Desarrollé e implementé nuevas funcionalidades priorizadas por el negocio en un software cliente basado en DecisionSpace® Integration Server (DSIS).",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Trabajé en la integración y sincronización de nuevos orígenes de datos en una plataforma de procesamiento de datos para Upstream.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             }
         ],
         "tecnologies": [
             {
                 "name": "Angular",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Jasmine",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Jest",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Node JS",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "DecisionSpace® Integration Server",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Apache Solr",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Azure DevOps",
@@ -153,7 +156,7 @@
         "activities": [
             {
                 "name": "Colaboré con un equipo de ingenieros, analistas, y testers para crear un sistema de gestión y configuración de recursos de sistema de control de productos fitosanitarios.",
-                "skills": []
+                "skills": ["Análisis y Diseño de Software"]
             },
             {
                 "name": "Integré tecnologías de autenticación y geolocalización para mejorar la seguridad y funcionalidad de la plataforma.",
@@ -161,7 +164,7 @@
             },
             {
                 "name": "Diseñé y desarrollé una interfaz web para la visualización de información pública como manuales, guías y documentos importantes para el sistema.",
-                "skills": []
+                "skills": ["Análisis y Diseño de Software", "Integración y Despliegue"]
             }
         ],
         "tecnologies": [
