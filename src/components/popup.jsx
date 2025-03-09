@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "./button";
 import Input from "./input";
 import ShowWindow from "./showWindow";
@@ -5,6 +6,12 @@ import ShowWindow from "./showWindow";
 
 
 export default function Popup({ onClose, experience }) {
+  const [skill, setSkill] = useState("Desarrollo de Software");
+  const skills = ["Desarrollo de Software", "Integración y Despliegue"]
+  function skillsOnChange({ target }) {
+    setSkill(target.value)
+    console.log("change", target.value)
+  }
   return (
     <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
 
@@ -28,13 +35,30 @@ export default function Popup({ onClose, experience }) {
                     <Input label="Modalidad" value={experience.modality} />
                     <Input label="Duración" value={experience.startDateStr + ' - ' + experience.endDateStr + ' (' + experience.duration + ')'} className="w-full" />
                   </div>
+
+                  <div className="px-2 w-32 flex-none ">
+                    <span className="text-white">Habilidades:</span>
+                    <ul className="grid w-full bg-blue-600 text-white bold-text inline-flex">
+                      {skills.map(
+                        (sk, index) =>
+                          <li key={index}>
+                            <input type="radio" id={"opc-" + index} name="skill" value={sk} onChange={skillsOnChange} className="hidden peer" />
+                            <label htmlFor={"opc-" + index} className="before:content-['(_)'] peer-checked:before:content-['(x)'] w-full cursor-pointer ">
+                              {sk}
+                            </label>
+                          </li>
+                      )}
+
+                    </ul>
+                  </div>
+
                   <div className="flex flex-col md:flex-row">
 
                     <ShowWindow titleWindow="Actividades">
                       <ul className='list-disc list-inside text-sm text-white'>
                         {experience.activities.map((activity, index) =>
                           <li key={index}>
-                            {activity}
+                            {activity.name}
                           </li>
                         )}
                       </ul>
@@ -45,40 +69,12 @@ export default function Popup({ onClose, experience }) {
                       <div className="bg-green-100 h-64 overflow-y-auto px-2
                       [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-bluen-600 [&::-webkit-scrollbar-thumb]:bg-cyan-500">
                         <ul className='list-none text-sm'>
-                          {experience.tecnologies.map((tecno, i) =>
-                            <li key={i}>[x] {tecno}</li>
+                          {[...experience.tecnologies].filter(f => f.skills.includes(skill)).map((tec, i) =>
+                            <li key={i}>[x] {tec.name}</li>
                           )}
                         </ul>
                       </div>
                     </div>
-
-
-
-
-
-                    <div>
-                      <h3>Habilidades: </h3>
-                      <ul className="grid w-full bg-blue-600 text-white">
-                        <li>
-                          <input type="radio" id="opc-a" name="hosting" value="opc-a" className="hidden peer" required />
-                          <label htmlFor="opc-a" className="inline-flex before:content-['(_)'] peer-checked:before:content-['(x)'] w-full cursor-pointer ">
-                            opc a
-                          </label>
-                        </li>
-                        <li>
-                          <input type="radio" id="opc-b" name="hosting" value="opc-b" className="hidden peer" />
-                          <label htmlFor="opc-b" className="inline-flex before:content-['(_)'] peer-checked:before:content-['(x)'] w-full cursor-pointer ">
-                            opc b
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-
-
-
-
-
-
 
 
 
