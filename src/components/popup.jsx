@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "./button";
 import Input from "./input";
 import ShowWindow from "./showWindow";
@@ -5,6 +6,14 @@ import ShowWindow from "./showWindow";
 
 
 export default function Popup({ onClose, experience }) {
+  const [skill, setSkill] = useState("");
+  const skills = [...new Set([
+    ...experience.activities.map(ac => ac.skills).flat(),
+    ...experience.tecnologies.map(tec => tec.skills).flat()
+  ])]
+  function skillsOnChange({ target }) {
+    setSkill(target.value)
+  }
   return (
     <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
 
@@ -23,18 +32,42 @@ export default function Popup({ onClose, experience }) {
 
                 <div className="font-mono px-1 pt-2 text-stone-950 selection:bg-cyan-400 flex flex-col">
 
-                  <div className="mb-3 w-full">
+                  <div className=" w-full">
                     <Input label="T. Empleo" value={experience.typeEmployment} />
                     <Input label="Modalidad" value={experience.modality} />
                     <Input label="Duración" value={experience.startDateStr + ' - ' + experience.endDateStr + ' (' + experience.duration + ')'} className="w-full" />
                   </div>
+
+                  <div className="mb-3">
+                    <span ><span className="text-yellow-400">H</span>abilidades:</span>
+                    <ul className=" bg-blue-600 text-white bold-text whitespace-nowrap  overflow-x-scroll overflow-y-hidden
+                    [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-bluen-600 [&::-webkit-scrollbar-thumb]:bg-cyan-500">
+                      <li className="inline-block">
+                        <input type="radio" id="opc-all" name="skill" checked={skill == '' ? 'checked' : ''} value="" onChange={skillsOnChange} className="hidden peer" />
+                        <label htmlFor="opc-all" className="before:content-['(_)'] peer-checked:before:content-['(x)']  cursor-pointer  mr-2">
+                          Todos
+                        </label>
+                      </li>
+                      {skills.map(
+                        (sk, index) =>
+                          <li key={index} className="inline-block">
+                            <input type="radio" id={"opc-" + index} name="skill" value={sk} onChange={skillsOnChange} className="hidden peer" />
+                            <label htmlFor={"opc-" + index} className="before:content-['(_)'] peer-checked:before:content-['(x)']  cursor-pointer mr-2">
+                              {sk}
+                            </label>
+                          </li>
+                      )}
+
+                    </ul>
+                  </div>
+
                   <div className="flex flex-col md:flex-row">
 
                     <ShowWindow titleWindow="Actividades">
                       <ul className='list-disc list-inside text-sm text-white'>
-                        {experience.activities.map((activity, index) =>
+                        {[...experience.activities].filter(f => skill ? f.skills.includes(skill) : true).map((activity, index) =>
                           <li key={index}>
-                            {activity}
+                            {activity.name}
                           </li>
                         )}
                       </ul>
@@ -42,15 +75,18 @@ export default function Popup({ onClose, experience }) {
 
                     <div className="px-2 w-32 flex-none ">
                       <span className="text-white">Tecnologías</span>
-                      <div className="bg-green-100  h-64 overflow-y-auto px-2
+                      <div className="bg-green-100 h-64 overflow-y-auto px-2
                       [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-bluen-600 [&::-webkit-scrollbar-thumb]:bg-cyan-500">
                         <ul className='list-none text-sm'>
-                          {experience.tecnologies.map((tecno, i) =>
-                            <li key={i}>[x] {tecno}</li>
+                          {[...experience.tecnologies].filter(f => skill ? f.skills.includes(skill) : true).map((tec, i) =>
+                            <li key={i}>[x] {tec.name}</li>
                           )}
                         </ul>
                       </div>
                     </div>
+
+
+
 
                   </div>
 

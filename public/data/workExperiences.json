@@ -4,162 +4,385 @@
         "departmentName": "DGTIC - Generalitat Valenciana",
         "proyect": "DESIGHA",
         "activities": [
-            "Desarrollé nuevas funcionalidades para el software de recaudación de impuestos en colaboración con un equipo de ingenieros.",
-            "Apliqué buenas prácticas de código limpio, asegurando que fuera legible, mantenible, escalable y testeable.",
-            "Documenté manuales de uso para cada requerimiento entregado."
+            {
+                "name": "Desarrollé nuevas funcionalidades para el software de recaudación de impuestos en colaboración con un equipo de ingenieros.",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Apliqué buenas prácticas de código limpio, asegurando que fuera legible, mantenible, escalable y testeable.",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Documenté manuales de uso para cada requerimiento entregado.",
+                "skills": ["Gestión de Proyectos y Planificación"]
+            }
         ],
         "tecnologies": [
-            "Spring Framework",
-            "JPA",
-            "Oracle SQL Developer",
-            "JUnit",
-            "Thymeleaf",
-            "jQuery"
+            {
+                "name": "Spring Framework",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "JPA",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Oracle SQL Developer",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "JUnit",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Thymeleaf",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "jQuery",
+                "skills": ["Desarrollo de Software"]
+            },{
+                "name": "asciidoctor",
+                "skills": ["Desarrollo de Software", "Gestión de Proyectos y Planificación"]
+            }
         ],
         "startDate": "2024-10-01T12:00:00.000Z",
         "endDate": "2025-01-01T12:00:00.000Z",
         "typeEmployment": "Contrato",
-        "modality":"Remoto"
+        "modality": "Remoto"
     },
     {
         "companyName": "NTT DATA",
         "departmentName": "DGTIC - Generalitat Valenciana",
         "proyect": "IGUALDAD",
         "activities": [
-            "Trabajé con ingenieros, analistas y testers en la migración de funcionalidades a una nueva tecnología para la gestión de expedientes de Dependencia.",
-            "Apliqué principios de desarrollo de software enfocados en la mantenibilidad y testabilidad del código.",
-            "Analicé y diseñé un módulo de formularios dinámicos para automatizar la creación, visualización y recopilación de información en cada fase del proceso de solicitud.",
-            "Implementé una prueba de concepto para la configuración y visualización dinámica de formularios de solicitud."
+            {
+                "name": "Trabajé con ingenieros, analistas y testers en la migración de funcionalidades a una nueva tecnología para la gestión de expedientes de Dependencia.",
+                "skills": ["Análisis y Diseño de Software", "Desarrollo de Software"]
+            },
+            {
+                "name": "Apliqué principios de desarrollo de software enfocados en la mantenibilidad y testabilidad del código.",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Analicé y diseñé un módulo de formularios dinámicos para automatizar la creación, visualización y recopilación de información en cada fase del proceso de solicitud.",
+                "skills": ["Análisis y Diseño de Software"]
+            },
+            {
+                "name": "Implementé una prueba de concepto para la configuración y visualización dinámica de formularios de solicitud.",
+                "skills": ["Desarrollo de Software"]
+            }
         ],
         "tecnologies": [
-            "ZK",
-            "Spring Framework",
-            "JPA",
-            "Oracle SQL Developer",
-            "JUnit"
+            {
+                "name": "ZK",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Spring Framework",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "JPA",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Oracle SQL Developer",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "JUnit",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "DrawIO",
+                "skills": ["Análisis y Diseño de Software"]
+            }
         ],
         "startDate": "2024-03-01T12:00:00.000Z",
         "endDate": "2024-09-01T12:00:00.000Z",
         "typeEmployment": "Contrato",
-        "modality":"Remoto"
+        "modality": "Remoto"
     },
     {
         "companyName": "NTT DATA",
         "departmentName": "YPF",
         "proyect": "Célula Unify",
         "activities": [
-            "Desarrollé e implementé nuevas funcionalidades priorizadas por el negocio en un software cliente basado en DecisionSpace® Integration Server (DSIS).",
-            "Trabajé en la integración y sincronización de nuevos orígenes de datos en una plataforma de procesamiento de datos para Upstream."
+            {
+                "name": "Desarrollé e implementé nuevas funcionalidades priorizadas por el negocio en un software cliente basado en DecisionSpace® Integration Server (DSIS).",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Trabajé en la integración y sincronización de nuevos orígenes de datos en una plataforma de procesamiento de datos para Upstream.",
+                "skills": ["Desarrollo de Software"]
+            }
         ],
         "tecnologies": [
-            "Angular",
-            "Jasmine",
-            "Jest",
-            "Node JS",
-            "DecisionSpace® Integration Server",
-            "Apache Solr",
-            "Azure DevOps"
+            {
+                "name": "Angular",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Jasmine",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Jest",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Node JS",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "DecisionSpace® Integration Server",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Apache Solr",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Azure DevOps",
+                "skills": ["Integración y Despliegue"]
+            }
         ],
         "startDate": "2022-10-01T12:00:00.000Z",
         "endDate": "2024-02-01T12:00:00.000Z",
         "typeEmployment": "Contrato",
-        "modality":"Remoto"
+        "modality": "Remoto"
     },
     {
         "companyName": "NTT DATA",
         "departmentName": "YPF",
         "proyect": "Sistema Integra",
         "activities": [
-            "Colaboré con un equipo de ingenieros, analistas, y testers para crear un sistema de gestión y configuración de recursos de sistema de control de productos fitosanitarios.",
-            "Integré tecnologías de autenticación y geolocalización para mejorar la seguridad y funcionalidad de la plataforma.",
-            "Diseñé y desarrollé una interfaz web para la visualización de información pública como manuales, guías y documentos importantes para el sistema."
+            {
+                "name": "Colaboré con un equipo de ingenieros, analistas, y testers para crear un sistema de gestión y configuración de recursos de sistema de control de productos fitosanitarios.",
+                "skills": ["Análisis y Diseño de Software"]
+            },
+            {
+                "name": "Integré tecnologías de autenticación y geolocalización para mejorar la seguridad y funcionalidad de la plataforma.",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Diseñé y desarrollé una interfaz web para la visualización de información pública como manuales, guías y documentos importantes para el sistema.",
+                "skills": ["Análisis y Diseño de Software", "Desarrollo de Software","Integración y Despliegue"]
+            }
         ],
         "tecnologies": [
-            "Angular",
-            "Jest",
-            "Azure DevOps",
-            "SAML",
-            "Maps JavaScript API"
+            {
+                "name": "Angular",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Jest",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Azure DevOps",
+                "skills": ["Integración y Despliegue"]
+            },
+            {
+                "name": "SAML",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Maps JavaScript API",
+                "skills": ["Desarrollo de Software"]
+            }
         ],
         "startDate": "2022-04-01T12:00:00.000Z",
         "endDate": "2022-09-01T12:00:00.000Z",
         "typeEmployment": "Contrato",
-        "modality":"Remoto"
+        "modality": "Remoto"
     },
     {
         "companyName": "Universidad Peruana Unión",
         "departmentName": "DIGETI",
         "proyect": "Área de desarrollo de software",
         "activities": [
-            "Colaboré con múltiples equipos de especialistas tecnológicos en la construcción del ERP institucional con enfoque financiero y educativo. Analicé, diseñé e implementé funcionalidades en módulos backend y frontend aplicando buenas prácticas de desarrollo y optimización de arquitectura de software en cada módulo del sistema",
-            "Participé en la identificación, definición y organización de los componentes clave del ecosistema de aplicaciones.",
-            "Brindé soporte y mantenimiento a una aplicación cliente-servidor para la gestión de eventos, habilitándola en un entorno local, resolviendo dependencias y agregando funcionalidades faltantes antes de prepararla para su despliegue en CI/CD.",
-            "Apoyé en el proceso de onboarding de nuevos colaboradores, facilitando su integración en tecnologías, metodologías y dinámicas del equipo."
+            {
+                "name": "Colaboré con múltiples equipos de especialistas tecnológicos en la construcción del ERP institucional con enfoque financiero y educativo. Analicé, diseñé e implementé funcionalidades en módulos backend y frontend aplicando buenas prácticas de desarrollo y optimización de arquitectura de software en cada módulo del sistema",
+                "skills": ["Análisis y Diseño de Software","Desarrollo de Software"]
+            },
+            {
+                "name": "Participé en la identificación, definición y organización de los componentes clave del ecosistema de aplicaciones.",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Brindé soporte y mantenimiento a una aplicación cliente-servidor para la gestión de eventos, habilitándola en un entorno local, resolviendo dependencias y agregando funcionalidades faltantes antes de prepararla para su despliegue en CI/CD.",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Apoyé en el proceso de onboarding de nuevos colaboradores, facilitando su integración en tecnologías, metodologías y dinámicas del equipo.",
+                "skills": ["Gestión de Proyectos y Equipos"]
+            }
         ],
         "tecnologies": [
-            "Angular",
-            "Laravel",
-            "Oracle Database",
-            "Eloquent",
-            "PostgreSQL",
-            "OAuth",
-            "Angular Material",
-            "Nebular UI",
-            "Jenkins",
-            "DjangoRestFramework",
-            "Angular JS"
+            {
+                "name": "Angular",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Laravel",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Oracle Database",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Eloquent",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "PostgreSQL",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "OAuth",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Angular Material",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Nebular UI",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Jenkins",
+                "skills": ["Integración y Despliegue"]
+            },
+            {
+                "name": "DjangoRestFramework",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Angular JS",
+                "skills": ["Desarrollo de Software"]
+            }
         ],
         "startDate": "2019-01-01T12:00:00.000Z",
         "endDate": "2021-12-01T12:00:00.000Z",
         "typeEmployment": "Contrato",
-        "modality":"Híbrido"
+        "modality": "Híbrido"
     },
     {
         "companyName": "Universidad Peruana Unión",
         "departmentName": "Vicerrectorado académico",
         "proyect": "ERP Académico",
         "activities": [
-            "Desarrollé funcionalidades para el ERP Académico y CRM institucional, colaborando con analistas y desarrolladores en aplicaciones backend y frontend.",
-            "Implementé reportes estadísticos según requerimientos utilizando herramientas de visualización de datos, gráficos y optimización de consultas SQL.",
-            "Optimizé y automatizé procesos de minificación para la generación de artefactos de software en módulos frontend.",
-            "Participé en el upgrade tecnológico de aplicaciones, migrando funcionalidades de AngularJS a Angular, asegurando la continuidad operativa y escalabilidad."
+            {
+                "name": "Desarrollé funcionalidades para el ERP Académico y CRM institucional, colaborando con analistas y desarrolladores en aplicaciones backend y frontend.",
+                "skills": ["Análisis y Diseño de Software","Desarrollo de Software"]
+            },
+            {
+                "name": "Implementé reportes estadísticos según requerimientos utilizando herramientas de visualización de datos, gráficos y optimización de consultas SQL.",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Optimizé y automatizé procesos de minificación para la generación de artefactos de software en módulos frontend.",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Participé en el upgrade tecnológico de aplicaciones, migrando funcionalidades de AngularJS a Angular, asegurando la continuidad operativa y escalabilidad.",
+                "skills": ["Desarrollo de Software"]
+            }
         ],
         "tecnologies": [
-            "Angular JS",
-            "Angular JS Material",
-            "DjangoRestFramework",
-            "Angular",
-            "Angular Material",
-            "Oracle Database"
+            {
+                "name": "Angular JS",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Angular JS Material",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "DjangoRestFramework",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Angular",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Angular Material",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Oracle Database",
+                "skills": ["Desarrollo de Software"]
+            }
         ],
         "startDate": "2018-01-01T12:00:00.000Z",
         "endDate": "2018-12-01T12:00:00.000Z",
         "typeEmployment": "Contrato",
-        "modality":"Presencial"
+        "modality": "Presencial"
     },
     {
         "companyName": "Universidad Peruana Unión - FJ",
         "departmentName": "DIGESI",
         "proyect": "Área de desarrollo de software",
         "activities": [
-            "Contribuí en el analisis y desarrollo de un sistema para la gestión de acuerdos académicos, facilitando la autoevaluación y cumplimiento de estándares del Modelo de Gestión Educativa.",
-            "Instalé y configuré servicios web para aplicaciones backend y frontend.",
-            "Implementé mecanismos de integración y despliegue en entornos de pruebas y desarrollo para aplicaciones backend y frontend.",
-            "Brindé soporte y mantenimiento a una aplicación móvil informativa para programas y conferencias, agregando nuevas secciones y vistas con contenido actualizado acorde al evento, integrando de forma embebida la transmisión en vivo y generando los APKs para su despliegue en Google Play Store."
+            {
+                "name": "Contribuí en el analisis y desarrollo de un sistema para la gestión de acuerdos académicos, facilitando la autoevaluación y cumplimiento de estándares del Modelo de Gestión Educativa.",
+                "skills": ["Análisis y Diseño de Software","Desarrollo de Software"]
+            },
+            {
+                "name": "Instalé y configuré servicios web para aplicaciones backend y frontend.",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Implementé mecanismos de integración y despliegue en entornos de pruebas y desarrollo para aplicaciones backend y frontend.",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Brindé soporte y mantenimiento a una aplicación móvil informativa para programas y conferencias, agregando nuevas secciones y vistas con contenido actualizado acorde al evento, integrando de forma embebida la transmisión en vivo y generando los APKs para su despliegue en Google Play Store.",
+                "skills": ["Desarrollo de Software"]
+            }
         ],
         "tecnologies": [
-            "Angular JS",
-            "Angular JS Material",
-            "Django",
-            "Django REST framework",
-            "MySQL",
-            "Ionic Framework",
-            "Nginx",
-            "Trello"
+            {
+                "name": "Angular JS",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Angular JS Material",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Django",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Django REST framework",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "MySQL",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Ionic Framework",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Nginx",
+                "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "Trello",
+                "skills": ["Desarrollo de Software"]
+            }
         ],
         "startDate": "2017-05-01T12:00:00.000Z",
         "endDate": "2017-12-01T12:00:00.000Z",
         "typeEmployment": "Prácticas PRE-Profesionales",
-        "modality":"Presencial"
+        "modality": "Presencial"
     }
 ]
