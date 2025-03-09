@@ -14,14 +14,27 @@ function App() {
   useEffect(() => {
     getWorkExperiences().then(data =>
 
-      setWorkExperiences(data.map(we => {
-        const _startDate = new Date(we.startDate);
-        const _endDate = new Date(we.endDate);
-        we.startDateStr = `${_startDate.getMonth() + 1}/${_startDate.getFullYear()}`;
-        we.endDateStr = `${_endDate.getMonth() + 1}/${_endDate.getFullYear()}`;
-        we.duration = getDuration(_startDate, _endDate)
-        return we
-      }))
+      setWorkExperiences(
+
+
+
+        Object.values(data.map(we => {
+          const _startDate = new Date(we.startDate);
+          const _endDate = new Date(we.endDate);
+          we.startDateStr = `${_startDate.getMonth() + 1}/${_startDate.getFullYear()}`;
+          we.endDateStr = `${_endDate.getMonth() + 1}/${_endDate.getFullYear()}`;
+          we.duration = getDuration(_startDate, _endDate)
+          return we
+        }).reduce((result, item) => {
+          const key = item['companyName'];
+          if (!result[key]) {
+            result[key] = { key, values: [] };
+          }
+          result[key].values.push(item);
+          return result;
+        }, {}))
+
+      )
     );
   }, []);
 
@@ -86,10 +99,12 @@ function App() {
               <p className='my-4'>
                 Experiencia Laboral
               </p>
-              <ul className='list-disc list-inside text-sm'>
+              <ul className='list-disc list-inside '>
                 {workExperiences.map((item, index) => (
                   <li key={index}>
-                    {item.companyName} | {item.departmentName} |  <a className="cursor-pointer font-bold no-underline hover:underline" onClick={() => toggle(item)}>{item.proyect}</a> [<span className='text-xs'>{item.duration}</span>]
+                    Empresa: {item.key} | Proyectos: [{item.values.map((exp, iexp) =>
+                      <span key={iexp} className='mr-2 text-sm'> <a className="cursor-pointer font-bold no-underline hover:underline" onClick={() => toggle(exp)}>{exp.proyect.toUpperCase()}</a> {iexp < (item.values.length - 1) ? '|' : ''}  </span>
+                    )}]
                   </li>
                 ))}
               </ul>
