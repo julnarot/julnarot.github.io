@@ -58,11 +58,11 @@
         "activities": [
             {
                 "name": "Trabajé con ingenieros, analistas y testers en la migración de funcionalidades a una nueva tecnología para la gestión de expedientes de Dependencia.",
-                "skills": []
+                "skills": ["Análisis y Diseño de Software", "Desarrollo de Software"]
             },
             {
                 "name": "Apliqué principios de desarrollo de software enfocados en la mantenibilidad y testabilidad del código.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Analicé y diseñé un módulo de formularios dinámicos para automatizar la creación, visualización y recopilación de información en cada fase del proceso de solicitud.",
@@ -70,7 +70,7 @@
             },
             {
                 "name": "Implementé una prueba de concepto para la configuración y visualización dinámica de formularios de solicitud.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             }
         ],
         "tecnologies": [
@@ -93,6 +93,10 @@
             {
                 "name": "JUnit",
                 "skills": ["Desarrollo de Software"]
+            },
+            {
+                "name": "DrawIO",
+                "skills": ["Análisis y Diseño de Software"]
             }
         ],
         "startDate": "2024-03-01T12:00:00.000Z",
@@ -160,33 +164,33 @@
             },
             {
                 "name": "Integré tecnologías de autenticación y geolocalización para mejorar la seguridad y funcionalidad de la plataforma.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Diseñé y desarrollé una interfaz web para la visualización de información pública como manuales, guías y documentos importantes para el sistema.",
-                "skills": ["Análisis y Diseño de Software", "Integración y Despliegue"]
+                "skills": ["Análisis y Diseño de Software", "Desarrollo de Software","Integración y Despliegue"]
             }
         ],
         "tecnologies": [
             {
                 "name": "Angular",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Jest",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Azure DevOps",
-                "skills": []
+                "skills": ["Integración y Despliegue"]
             },
             {
                 "name": "SAML",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Maps JavaScript API",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             }
         ],
         "startDate": "2022-04-01T12:00:00.000Z",
@@ -201,53 +205,53 @@
         "activities": [
             {
                 "name": "Colaboré con múltiples equipos de especialistas tecnológicos en la construcción del ERP institucional con enfoque financiero y educativo. Analicé, diseñé e implementé funcionalidades en módulos backend y frontend aplicando buenas prácticas de desarrollo y optimización de arquitectura de software en cada módulo del sistema",
-                "skills": []
+                "skills": ["Análisis y Diseño de Software","Desarrollo de Software"]
             },
             {
                 "name": "Participé en la identificación, definición y organización de los componentes clave del ecosistema de aplicaciones.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Brindé soporte y mantenimiento a una aplicación cliente-servidor para la gestión de eventos, habilitándola en un entorno local, resolviendo dependencias y agregando funcionalidades faltantes antes de prepararla para su despliegue en CI/CD.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Apoyé en el proceso de onboarding de nuevos colaboradores, facilitando su integración en tecnologías, metodologías y dinámicas del equipo.",
-                "skills": []
+                "skills": ["Gestión de Proyectos y Equipos"]
             }
         ],
         "tecnologies": [
             {
                 "name": "Angular",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Laravel",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Oracle Database",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Eloquent",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "PostgreSQL",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "OAuth",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Angular Material",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Nebular UI",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Jenkins",
@@ -255,11 +259,11 @@
             },
             {
                 "name": "DjangoRestFramework",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Angular JS",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             }
         ],
         "startDate": "2019-01-01T12:00:00.000Z",
@@ -274,45 +278,45 @@
         "activities": [
             {
                 "name": "Desarrollé funcionalidades para el ERP Académico y CRM institucional, colaborando con analistas y desarrolladores en aplicaciones backend y frontend.",
-                "skills": []
+                "skills": ["Análisis y Diseño de Software","Desarrollo de Software"]
             },
             {
                 "name": "Implementé reportes estadísticos según requerimientos utilizando herramientas de visualización de datos, gráficos y optimización de consultas SQL.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Optimizé y automatizé procesos de minificación para la generación de artefactos de software en módulos frontend.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Participé en el upgrade tecnológico de aplicaciones, migrando funcionalidades de AngularJS a Angular, asegurando la continuidad operativa y escalabilidad.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             }
         ],
         "tecnologies": [
             {
                 "name": "Angular JS",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Angular JS Material",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "DjangoRestFramework",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Angular",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Angular Material",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Oracle Database",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             }
         ],
         "startDate": "2018-01-01T12:00:00.000Z",
@@ -327,53 +331,53 @@
         "activities": [
             {
                 "name": "Contribuí en el analisis y desarrollo de un sistema para la gestión de acuerdos académicos, facilitando la autoevaluación y cumplimiento de estándares del Modelo de Gestión Educativa.",
-                "skills": []
+                "skills": ["Análisis y Diseño de Software","Desarrollo de Software"]
             },
             {
                 "name": "Instalé y configuré servicios web para aplicaciones backend y frontend.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Implementé mecanismos de integración y despliegue en entornos de pruebas y desarrollo para aplicaciones backend y frontend.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Brindé soporte y mantenimiento a una aplicación móvil informativa para programas y conferencias, agregando nuevas secciones y vistas con contenido actualizado acorde al evento, integrando de forma embebida la transmisión en vivo y generando los APKs para su despliegue en Google Play Store.",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             }
         ],
         "tecnologies": [
             {
                 "name": "Angular JS",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Angular JS Material",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Django",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Django REST framework",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "MySQL",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Ionic Framework",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Nginx",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             },
             {
                 "name": "Trello",
-                "skills": []
+                "skills": ["Desarrollo de Software"]
             }
         ],
         "startDate": "2017-05-01T12:00:00.000Z",
