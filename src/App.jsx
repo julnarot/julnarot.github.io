@@ -90,27 +90,53 @@ function App() {
             </div>
           </div>
 
-          <div className="border-4 border-double border-gray-400 p-2 w-50 basis-1/2 relative h-full ">
-            <div className="absolute -top-3 left-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">~/work-exp.prev</div>
-            <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm">3</div>
-            <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
-            <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto">
-              <p className='my-4'>
-                Experiencia Laboral
-              </p>
-              <ul className='list-disc list-inside '>
-                {workExperiences.map((item, index) => (
-                  <li key={index}>
-                    Empresa: {item.key} | Proyectos: [{item.values.map((exp, iexp) =>
-                      <span key={iexp} className='mr-2 text-sm'> <a className="cursor-pointer font-bold no-underline hover:underline" onClick={() => toggle(exp)}>{exp.proyect.toUpperCase()}</a> {iexp < (item.values.length - 1) ? '|' : ''}  </span>
-                    )}]
-                  </li>
-                ))}
-              </ul>
+          <div className="flex-1 bg-blue-600 text-white flex flex-col w-full h-full gap-2">
 
+            <div className="border-4 border-double border-gray-400 p-2 w-50 basis-1/2 relative  ">
+              <div className="absolute -top-3 left-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">~/work-exp.prev</div>
+              <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm">3</div>
+              <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
+              <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto">
+                <p className='my-4'>
+                  Experiencia Laboral
+                </p>
+                <ul className='list-disc list-inside '>
+                  {workExperiences.map((item, index) => (
+                    <li key={index}>
+                      Empresa: {item.key} | Proyectos: [{item.values.map((exp, iexp) =>
+                        <span key={iexp} className='mr-2 text-sm'> <a className="cursor-pointer font-bold no-underline hover:underline" onClick={() => toggle(exp)}>{exp.proyect.toUpperCase()}</a> {iexp < (item.values.length - 1) ? '|' : ''}  </span>
+                      )}]
+                    </li>
+                  ))}
+                </ul>
+
+              </div>
             </div>
+
+            <div className="border-4 border-double border-gray-400 p-2 w-50 basis-1/2 relative ">
+              <div className="absolute -top-3 left-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-2 text-sm">~/education.prev</div>
+              <div className="absolute -top-3 right-11 bg-blue-600 px-1 text-sm">3</div>
+              <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
+              <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto">
+                <p className='my-4'>
+                  Formación académica
+                </p>
+                <ul className='list-disc list-inside '>
+                    <li>
+                      Universidad peruana unión (UPeU) - Grado académico de Bachiller en Ingeniería de Sistemas. 
+                    </li>
+                    <li>
+                    Centro de Idiomas UPeU - nivel A1 y A2 Aprobados.
+                    </li>
+                </ul>
+
+              </div>
+            </div>
+
           </div>
+
 
         </div>
 
