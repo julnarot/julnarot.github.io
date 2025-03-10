@@ -9,7 +9,7 @@ import Contact from './components/contact';
 function App() {
 
   const [isOpen, setIsOpen] = useState(false);
-  const [isContactOpen, setIsContactOpen] = useState(true);
+  const [isContactOpen, setIsContactOpen] = useState(false);
   const [workExperience, setWorkExperience] = useState(null);
   const [workExperiences, setWorkExperiences] = useState([]);
 
