@@ -16,7 +16,10 @@ This project was built using the following technologies:
 - **CSS3 (Retro Theme)** → Styling inspired by classic DOS-era interfaces.
 - **JavaScript (Vanilla JS)** → Interactivity and subtle animations.
 
+## 📸 Screenshots
 
+![main page](https://raw.githubusercontent.com/julnarot/general-public-assets/refs/heads/main/screenshots/web_applications/github_julnarot/julnarot_portfolio_main.png)
+![main page popup](https://github.com/julnarot/general-public-assets/blob/main/screenshots/web_applications/github_julnarot/julnarot_portfolio_show_popup.png?raw=true)
 ## 🚀 Features
 
 ✅ Minimalist and retro design inspired by classic OLD IDE Borland C++ | Turbo C.\
