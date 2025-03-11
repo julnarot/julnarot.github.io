@@ -184,6 +184,12 @@
                 "skills": [
                     "Análisis y Diseño de Software"
                 ]
+            },
+            {
+                "name": "Sonar Qube",
+                "skills": [
+                    "Desarrollo de Software"
+                ]
             }
         ],
         "startDate": "2024-03-01T12:00:00.000Z",
@@ -197,15 +203,29 @@
         "proyect": "Célula Unify",
         "activities": [
             {
-                "name": "Desarrollé e implementé nuevas funcionalidades priorizadas por el negocio en un software cliente basado en DecisionSpace® Integration Server (DSIS).",
+                "name": "Desarrollé e implementé nuevas funcionalidades priorizadas por el negocio en un software cliente basado en DecisionSpace® Integration Server (DSIS), asegurando estándares de calidad mediante umbrales establecidos en SonarQube.",
                 "skills": [
                     "Desarrollo de Software"
                 ]
             },
             {
-                "name": "Trabajé en la integración y sincronización de nuevos orígenes de datos en una plataforma de procesamiento de datos para Upstream.",
+                "name": "Contribuí a la optimización del uso de DSIS en una aplicación cliente, mejorando la eficiencia de las consultas REST en Solr implementando técnicas avanzadas de búsqueda, agrupación y visualización para resaltar información clave y estructurar datos en formato jerárquico.",
                 "skills": [
+                    "Consultor en Integración de Datos",
                     "Desarrollo de Software"
+                ]
+            },
+            {
+                "name": "Mantuve y optimicé una aplicación de tareas encargada de la ingesta de datos en una plataforma de procesamiento para DSIS, implementando un nuevo mecanismo personalizado para integrar datos desde una fuente externa, permitiendo la incorporación dinámica de nuevas fuentes en el futuro.",
+                "skills": [
+                    "Consultor en Integración de Datos",
+                    "Desarrollo de Software"
+                ]
+            },
+            {
+                "name": "Implementé herramientas de pruebas unitarias en una aplicación frontend y backend para garantizar el cumplimiento de los lineamientos de calidad del cliente, integrándolas en la configuración del proyecto para generar reportes automáticos en SonarQube durante la fase de integración.",
+                "skills": [
+                    "Desarrollo de Software", "Integración y Despliegue"
                 ]
             }
         ],
@@ -223,13 +243,13 @@
                 ]
             },
             {
-                "name": "Jest",
+                "name": "Node JS",
                 "skills": [
                     "Desarrollo de Software"
                 ]
             },
             {
-                "name": "Node JS",
+                "name": "Jest",
                 "skills": [
                     "Desarrollo de Software"
                 ]
@@ -237,19 +257,45 @@
             {
                 "name": "DecisionSpace® Integration Server",
                 "skills": [
+                    "Consultor en Integración de Datos",
                     "Desarrollo de Software"
                 ]
             },
             {
                 "name": "Apache Solr",
                 "skills": [
-                    "Desarrollo de Software"
+                    "Consultor en Integración de Datos"
+                ]
+            },
+            {
+                "name": "DSL",
+                "skills": [
+                    "Consultor en Integración de Datos"
+                ]
+            },
+            {
+                "name": "OData",
+                "skills": [
+                    "Consultor en Integración de Datos"
+                ]
+            },
+            {
+                "name": "REST APIs",
+                "skills": [
+                    "Desarrollo de Software",
+                    "Consultor en Integración de Datos"
                 ]
             },
             {
                 "name": "Azure DevOps",
                 "skills": [
                     "Integración y Despliegue"
+                ]
+            },
+            {
+                "name": "Sonar Qube",
+                "skills": [
+                    "Desarrollo de Software","Integración y Despliegue"
                 ]
             }
         ],
@@ -264,13 +310,13 @@
         "proyect": "Sistema Integra",
         "activities": [
             {
-                "name": "Colaboré con un equipo de ingenieros, analistas, y testers para crear un sistema de gestión y configuración de recursos de sistema de control de productos fitosanitarios.",
+                "name": "Colaboré con un equipo de ingenieros de software en el desarrollo de un sistema de gestión y configuración de recursos frontend en Angular para el control de productos fitosanitarios, asegurando el cumplimiento de los requisitos funcionales y de calidad de software establecidos por el cliente.",
                 "skills": [
-                    "Análisis y Diseño de Software"
+                    "Desarrollo de Software"
                 ]
             },
             {
-                "name": "Integré tecnologías de autenticación y geolocalización para mejorar la seguridad y funcionalidad de la plataforma.",
+                "name": "Integré tecnologías de autenticación y geolocalización para mejorar la seguridad y funcionalidad de la plataforma web cliente.",
                 "skills": [
                     "Desarrollo de Software"
                 ]
@@ -282,13 +328,20 @@
                     "Desarrollo de Software",
                     "Integración y Despliegue"
                 ]
+            },
+            {
+                "name": "SonarQube",
+                "skills": [
+                    "Desarrollo de Software"
+                ]
             }
         ],
         "tecnologies": [
             {
                 "name": "Angular",
                 "skills": [
-                    "Desarrollo de Software"
+                    "Desarrollo de Software",
+                    "Análisis y Diseño de Software"
                 ]
             },
             {
@@ -311,6 +364,12 @@
             },
             {
                 "name": "Maps JavaScript API",
+                "skills": [
+                    "Desarrollo de Software"
+                ]
+            },
+            {
+                "name": "SonarQube",
                 "skills": [
                     "Desarrollo de Software"
                 ]
