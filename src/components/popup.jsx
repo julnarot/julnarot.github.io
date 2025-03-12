@@ -27,7 +27,7 @@ export default function Popup({ onClose, experience }) {
             <div className="flex-1  p-1 pt-2 text-white flex flex-col md:flex-row w-full h-full overflow-auto">
 
               <div className="border-4 border-double border-white p-2  relative h-full w-full ">
-                <div className="absolute -top-3 left-3 bg-gray-400 px-1 text-sm"> [<span className="text-green-400">&#9632;</span>]</div>
+                <div className="absolute -top-3 left-3 bg-gray-400 px-1 text-sm cursor-pointer" onClick={onClose}> [<span className="text-green-400">&#9632;</span>]</div>
                 <div className="absolute -top-3 left-1/2 bg-gray-400 transform -translate-x-1/2  px-2 text-sm">{experience.proyect}</div>
 
                 <div className="font-mono px-1 pt-2 text-stone-950 selection:bg-cyan-400 flex flex-col ">
@@ -79,7 +79,7 @@ export default function Popup({ onClose, experience }) {
 
                     <div className="px-2   ">
                       <span className="text-white">Tecnologías</span>
-                      <div className="bg-green-100 h-64 overflow-y-auto px-2
+                      <div className="bg-green-100 h-[90%] overflow-y-auto px-2
                       [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-bluen-600 [&::-webkit-scrollbar-thumb]:bg-cyan-500">
                         <ul className='list-none text-sm'>
                           {[...experience.tecnologies].filter(f => skill ? f.skills.includes(skill) : true).map((tec, i) =>
