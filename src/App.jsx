@@ -32,7 +32,12 @@ function App() {
           }
           result[key].values.push(item);
           return result;
-        }, {}))
+        }, {})).map(grouped=>{
+          const _startDate = new Date(grouped.values[grouped.values.length - 1].startDate);
+          const _endDate = new Date(grouped.values[0].endDate);
+          grouped.companyDuration = getDuration(_startDate, _endDate)
+          return grouped;
+        })
       )
 
     );
@@ -75,8 +80,8 @@ function App() {
             <div className="absolute -top-3 right-3 bg-blue-600 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
             <div className="font-mono p-2 text-yellow-300 selection:bg-cyan-400 h-full overflow-auto 
             [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-bluen-600 [&::-webkit-scrollbar-thumb]:bg-cyan-500">
-              <div className='my-4' onClick={onContactToggle}>
-                <h1 className='cursor-pointer font-bold hover:underline inline'>RAUL JONATAN </h1>| <h2 className='inline'>Full stack engineering</h2>
+              <div className='my-4'>
+                <h1 className='cursor-pointer font-bold underline decoration-wavy inline' onClick={onContactToggle}>RAUL JONATAN</h1> | <h2 className='inline'>Full stack engineering</h2>
               </div>
               <img src="https://avatars.githubusercontent.com/u/2840577?v=4" alt="@Julnarot" className='max-h-40' />
               <p className="my-4">
@@ -109,8 +114,8 @@ function App() {
                   {workExperiences.map((item, index) => (
                     <li key={index}>
                       Empresa: {item.key} | Proyectos: [{item.values.map((exp, iexp) =>
-                        <span key={iexp} className='mr-2 text-sm'> <a className="cursor-pointer font-bold no-underline hover:underline" onClick={() => toggle(exp)}>{exp.proyect.toUpperCase()}</a> {iexp < (item.values.length - 1) ? '|' : ''}  </span>
-                      )}]
+                        <span key={iexp} className='mr-2 text-sm'> <a className="cursor-pointer font-bold underline decoration-wavy" onClick={() => toggle(exp)}>{exp.proyect.toUpperCase()}</a> {iexp < (item.values.length - 1) ? '|' : ''}  </span>
+                      )}] | {item.companyDuration}
                     </li>
                   ))}
                 </ul>
