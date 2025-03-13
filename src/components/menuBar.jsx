@@ -11,7 +11,6 @@ export default function MenuBar({ onSubMenuSelected }) {
       ]
     },
     { title: 'Edit', key: 'E', opened: false, subMenuItems: [] },
-    { title: 'Search', key: 'S', opened: false, subMenuItems: [] },
     { title: 'Help', key: 'H', opened: false, subMenuItems: [{ title: 'About', shortcut: 'F9' }] },
   ];
   const [menuItems, setmenuItems] = useState(MENU_ITEMS);
@@ -25,6 +24,10 @@ export default function MenuBar({ onSubMenuSelected }) {
 
   const onSubMenuClick = () => {
     onSubMenuSelected(subMenuItem);
+    setmenuItems([...MENU_ITEMS].map(mi => {
+      mi.opened = false;
+      return mi;
+    }))
   }
 
   return (<div className="flex items-center gap-1 px-2 py-1 bg-gray-300 border-b-2 border-gray-400 w-full">

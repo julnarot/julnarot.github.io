@@ -169,7 +169,7 @@ function App() {
       <StatusBar />
 
       {isOpen && <Popup onClose={toggle} experience={workExperience} />}
-      {subMenuItem === 'About' && <AboutPopup/>}
+      {subMenuItem === 'About' && <AboutPopup onClose={()=>setSubMenuItem(null)}/>}
 
     </div>
 
