@@ -5,6 +5,7 @@ import { getWorkExperiences } from './services/workExperienceService';
 import MenuBar from './components/menuBar';
 import StatusBar from './components/statusBar';
 import Contact from './components/contact';
+import AboutPopup from './components/aboutPopup';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [workExperience, setWorkExperience] = useState(null);
   const [workExperiences, setWorkExperiences] = useState([]);
+  const [subMenuItem, setSubMenuItem] = useState(null);
 
   useEffect(() => {
     getWorkExperiences().then(data =>
@@ -64,7 +66,7 @@ function App() {
   }
 
   function menuSelected(itemSelected) {
-    alert(itemSelected)
+    setSubMenuItem(itemSelected)
   }
 
   return (
@@ -167,6 +169,7 @@ function App() {
       <StatusBar />
 
       {isOpen && <Popup onClose={toggle} experience={workExperience} />}
+      {subMenuItem === 'About' && <AboutPopup/>}
 
     </div>
 

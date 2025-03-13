@@ -1,14 +1,13 @@
 import { useState } from "react";
 
 export default function MenuBar({ onSubMenuSelected }) {
-  const [showFileMenu, setShowFileMenu] = useState(false);
   const [subMenuItem, setSubMenuItem] = useState(null);
 
   const MENU_ITEMS = [
     {
       title: 'File', key: 'F', opened: false, subMenuItems: [
         { title: 'New', shortcut: 'F3' },
-        { title: 'Open...', shortcut: 'F2' }
+        { title: 'Open', shortcut: 'F2' }
       ]
     },
     { title: 'Edit', key: 'E', opened: false, subMenuItems: [] },
@@ -16,12 +15,6 @@ export default function MenuBar({ onSubMenuSelected }) {
     { title: 'Help', key: 'H', opened: false, subMenuItems: [{ title: 'About', shortcut: 'F9' }] },
   ];
   const [menuItems, setmenuItems] = useState(MENU_ITEMS);
-
-
-  const fileMenuItems = [
-    { title: 'New', shortcut: 'F3' },
-    { title: 'Open...', shortcut: 'F2' }
-  ];
 
   const onMenuSelectItem = (itemSelected) => {
     setmenuItems([...MENU_ITEMS].map(mi => {
@@ -46,16 +39,13 @@ export default function MenuBar({ onSubMenuSelected }) {
           <span className="text-red-600">{item.key}</span>
           {item.title.slice(1)}
 
-
-
-
         </button>
         {item.opened && item.subMenuItems.length > 0 && (
           <div className="absolute top-7 w-48 bg-gray-200 border-2 border-gray-400 shadow-lg z-50">
             {item.subMenuItems.map((subItem, index) => (
               <div
                 key={index}
-                className="px-4 py-1 hover:bg-blue-600 hover:text-white cursor-pointer flex justify-between" onClick={() => { setSubMenuItem(subItem.title); onSubMenuClick() }}
+                className="px-4 py-1 hover:bg-blue-600 hover:text-white cursor-pointer flex justify-between" onMouseEnter={() => setSubMenuItem(subItem.title)} onClick={onSubMenuClick}
               >
                 <span>
                   {subItem.title.split('').map((char, i) =>
@@ -76,9 +66,7 @@ export default function MenuBar({ onSubMenuSelected }) {
       </div>
     ))}
 
-
   </div>
-
 
   )
 }
