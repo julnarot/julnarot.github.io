@@ -63,11 +63,15 @@ function App() {
     setWorkExperience(workExperience);
   }
 
+  function menuSelected(itemSelected) {
+    alert(itemSelected)
+  }
+
   return (
 
     <div className="h-screen w-screen bg-gray-800 flex flex-col overflow-hidden">
       {/* Top Menu Bar */}
-      <MenuBar />
+      <MenuBar onSubMenuSelected={menuSelected} />
 
       {/* Main Content */}
       <div className="flex-1 relative flex flex-col w-full h-full overflow-hidden">

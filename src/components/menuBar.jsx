@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-export default function MenuBar() {
+export default function MenuBar({ onSubMenuSelected }) {
   const [showFileMenu, setShowFileMenu] = useState(false);
+  const [subMenuItem, setSubMenuItem] = useState(null);
 
   const MENU_ITEMS = [
     {
@@ -29,6 +30,10 @@ export default function MenuBar() {
     }))
   }
 
+  const onSubMenuClick = () => {
+    onSubMenuSelected(subMenuItem);
+  }
+
   return (<div className="flex items-center gap-1 px-2 py-1 bg-gray-300 border-b-2 border-gray-400 w-full">
     {menuItems.map((item, index) => (
       <div key={index}>
@@ -50,7 +55,7 @@ export default function MenuBar() {
             {item.subMenuItems.map((subItem, index) => (
               <div
                 key={index}
-                className="px-4 py-1 hover:bg-blue-600 hover:text-white cursor-pointer flex justify-between"
+                className="px-4 py-1 hover:bg-blue-600 hover:text-white cursor-pointer flex justify-between" onClick={() => { setSubMenuItem(subItem.title); onSubMenuClick() }}
               >
                 <span>
                   {subItem.title.split('').map((char, i) =>
