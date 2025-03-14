@@ -1,16 +1,33 @@
 const MENU_DATA = [
     {
-        title: 'File', key: 'F', opened: false, subMenuItems: [
+        title: 'File', subMenuItems: [
             { title: 'New', shortcut: 'F3' },
             { title: 'Open', shortcut: 'F2' }
         ]
     },
-    { title: 'Edit', key: 'E', opened: false, subMenuItems: [] },
-    { title: 'Help', key: 'H', opened: false, subMenuItems: [{ title: 'About', shortcut: 'F9' }] },
+    { title: 'Edit', subMenuItems: [] },
+    {
+        title: 'Help', subMenuItems: [
+            { title: 'About', shortcut: 'F9' }
+        ]
+    },
 ];
 
 const buildMenuDefaultItems = () => {
-    return [...MENU_DATA].map(item => ({ ...item, opened: false }));
+    const generateTitleInnerHTML = (title, positionKey) => {
+        return title.split("").map((w, i) => {
+            return i === positionKey ? `<span class='text-red-600'>${w}</span>` : w
+        }).join("")
+    }
+    return [...MENU_DATA].map(item => {
+        const positionKey = 0;
+        return {
+            ...item,
+            opened: false,
+            active: item.subMenuItems.length > 0,
+            title: generateTitleInnerHTML(item.title, positionKey),           
+        }
+    });
 }
 export const getMenuItemsService = () => {
     return [...buildMenuDefaultItems()];
