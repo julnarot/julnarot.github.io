@@ -1,33 +1,26 @@
 import { useState } from "react";
+import {
+  getMenuItemsService,
+  getMenuItemsBySelectionService,
+} from "../services/menuBarService";
+
 
 export default function MenuBar({ onSubMenuSelected }) {
+  const menuItemsData = getMenuItemsService();
   const [subMenuItem, setSubMenuItem] = useState(null);
 
-  const MENU_ITEMS = [
-    {
-      title: 'File', key: 'F', opened: false, subMenuItems: [
-        { title: 'New', shortcut: 'F3' },
-        { title: 'Open', shortcut: 'F2' }
-      ]
-    },
-    { title: 'Edit', key: 'E', opened: false, subMenuItems: [] },
-    { title: 'Help', key: 'H', opened: false, subMenuItems: [{ title: 'About', shortcut: 'F9' }] },
-  ];
-  const [menuItems, setmenuItems] = useState(MENU_ITEMS);
+
+  const [menuItems, setMenuItems] = useState(getMenuItemsService());
 
   const onMenuSelectItem = (itemSelected) => {
-    setmenuItems([...MENU_ITEMS].map(mi => {
-      mi.opened = itemSelected.title === mi.title;
-      return mi;
-    }))
+    const selecteds = getMenuItemsBySelectionService(itemSelected);
+    console.log('SEL:', selecteds)
+    setMenuItems(selecteds)
   }
 
   const onSubMenuClick = () => {
     onSubMenuSelected(subMenuItem);
-    setmenuItems([...MENU_ITEMS].map(mi => {
-      mi.opened = false;
-      return mi;
-    }))
+    setMenuItems(getMenuItemsService)
   }
 
   return (<div className="flex items-center gap-1 px-2 py-1 bg-gray-300 border-b-2 border-gray-400 w-full">
@@ -35,9 +28,8 @@ export default function MenuBar({ onSubMenuSelected }) {
       <div key={index}>
 
         <button
-
-          onClick={() => onMenuSelectItem(item)}
-          className="px-2 hover:bg-blue-600 hover:text-white focus:outline-none"
+          onClick={() => onMenuSelectItem(item)} disabled={!item.subMenuItems.length>0}
+          className="px-2 enabled:hover:bg-blue-600 enabled:hover:text-white focus:outline-none disabled:opacity-50"
         >
           <span className="text-red-600">{item.key}</span>
           {item.title.slice(1)}
