@@ -6,16 +6,13 @@ import {
 
 
 export default function MenuBar({ onSubMenuSelected }) {
-  const menuItemsData = getMenuItemsService();
   const [subMenuItem, setSubMenuItem] = useState(null);
 
 
   const [menuItems, setMenuItems] = useState(getMenuItemsService());
 
   const onMenuSelectItem = (itemSelected) => {
-    const selecteds = getMenuItemsBySelectionService(itemSelected);
-    console.log('SEL:', selecteds)
-    setMenuItems(selecteds)
+    setMenuItems(getMenuItemsBySelectionService(itemSelected))
   }
 
   const onSubMenuClick = () => {
@@ -28,11 +25,10 @@ export default function MenuBar({ onSubMenuSelected }) {
       <div key={index}>
 
         <button
-          onClick={() => onMenuSelectItem(item)} disabled={!item.subMenuItems.length>0}
+          onClick={() => onMenuSelectItem(item)} disabled={!item.active}
           className="px-2 enabled:hover:bg-blue-600 enabled:hover:text-white focus:outline-none disabled:opacity-50"
         >
-          <span className="text-red-600">{item.key}</span>
-          {item.title.slice(1)}
+          <span dangerouslySetInnerHTML={{__html: item.title}}></span>
 
         </button>
         {item.opened && item.subMenuItems.length > 0 && (
