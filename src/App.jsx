@@ -6,6 +6,7 @@ import MenuBar from './components/menuBar';
 import StatusBar from './components/statusBar';
 import Contact from './components/contact';
 import AboutPopup from './components/aboutPopup';
+import { SUBMENU_ACTIONS } from './constants/popup';
 
 function App() {
 
@@ -65,8 +66,10 @@ function App() {
     setWorkExperience(workExperience);
   }
 
-  function menuSelected(itemSelected) {
-    setSubMenuItem(itemSelected)
+  function menuSelected(subItemSelected) {
+    const menuAction = SUBMENU_ACTIONS.find(sm=>sm.menuTitle === subItemSelected.menu && sm.subMenuTitle === subItemSelected.title)
+    console.log(menuAction)
+    setSubMenuItem(menuAction)
   }
 
   return (
@@ -169,7 +172,7 @@ function App() {
       <StatusBar />
 
       {isOpen && <Popup onClose={toggle} experience={workExperience} />}
-      {subMenuItem === 'About' && <AboutPopup onClose={()=>setSubMenuItem(null)}/>}
+      {subMenuItem && subMenuItem.subMenuTitle ==='About'  && <AboutPopup onClose={()=>setSubMenuItem(null)}/>}
 
     </div>
 

@@ -1,14 +1,16 @@
+import { SUBMENU_ACTIONS } from "../constants/popup";
+
 const MENU_DATA = [
     {
         title: 'File', subMenuItems: [
-            { title: 'New', shortcut: 'F3' },
-            { title: 'Open', shortcut: 'F2' }
+            { title: 'New', shortcut: 'F3', menu: 'File' },
+            { title: 'Open', shortcut: 'F2', menu: 'File' }
         ]
     },
     { title: 'Edit', subMenuItems: [] },
     {
         title: 'Help', subMenuItems: [
-            { title: 'About', shortcut: 'F9' }
+            { title: 'About', shortcut: 'F9', menu: 'Help' }
         ]
     },
 ];
@@ -26,7 +28,12 @@ const buildMenuDefaultItems = () => {
             opened: false,
             active: item.subMenuItems.length > 0,
             title: generateTitleInnerHTML(item.title, positionKey),
-            subMenuItems:item.subMenuItems.map(subItem=>({...subItem,titleInnerHTML: generateTitleInnerHTML(subItem.title, 0)}))           
+            subMenuItems: item.subMenuItems
+            .map(subItem => ({ 
+                ...subItem, 
+                titleInnerHTML: generateTitleInnerHTML(subItem.title, 0),
+                active: SUBMENU_ACTIONS.findIndex(sa=>sa.menuTitle===item.title && sa.subMenuTitle===subItem.title) >= 0
+            }))
         }
     });
 }

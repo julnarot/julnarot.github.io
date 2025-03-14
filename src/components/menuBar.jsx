@@ -37,8 +37,9 @@ export default function MenuBar({ onSubMenuSelected }) {
             {item.subMenuItems.map((subItem, index) => (
               <button
                 key={index}
-                className="px-4 py-1 w-full hover:bg-blue-600 hover:text-white cursor-pointer flex justify-between" onMouseEnter={() => setSubMenuItem(subItem.title)} onClick={onSubMenuClick}
-              >
+                disabled={!subItem.active}
+                className="px-4 py-1 w-full active:hover:bg-blue-600 active:hover:text-white flex justify-between disabled:opacity-50"
+                onMouseEnter={() => setSubMenuItem(subItem)} onClick={onSubMenuClick}>
                 <span dangerouslySetInnerHTML={{ __html: subItem.titleInnerHTML }} />
                 {subItem.shortcut && (
                   <span className="ml-4 text-gray-600">{subItem.shortcut}</span>
