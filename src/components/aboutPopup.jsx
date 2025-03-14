@@ -1,7 +1,7 @@
 import Button from "./button";
 
 export default function AboutPopup({ onClose }) {
-    
+
     return (
         <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
 
@@ -17,15 +17,15 @@ export default function AboutPopup({ onClose }) {
                             <div className="border-4 border-double border-white p-2  relative h-full w-full ">
                                 <div className="absolute -top-3 left-1/2 bg-gray-400 transform -translate-x-1/2  px-2 text-sm text-white">About</div>
 
-                                    <div class="p-4 md:p-5 text-center">
-                                        
-                                        <h3 class="mb-3 text-lg font-normal ">Borland prev++</h3>
-                                        <p class="mb-1  ">Version 1.2.0</p>
-                                        <p class="mb-1  ">Copyright (c) 2025 by</p>
-                                        <p class="mb-5  ">@Julnarot</p>
+                                <div className="p-4 md:p-5 text-center">
 
-                                        <Button value="Ok" onClick={onClose}/>
-                                    </div>
+                                    <h3 className="mb-3 text-lg font-normal ">Borland prev++</h3>
+                                    <p className="mb-1  ">Version 1.2.0</p>
+                                    <p className="mb-1  ">Copyright (c) 2025 by</p>
+                                    <p className="mb-3  ">@Julnarot</p>
+
+                                    <Button value="Ok" onClick={onClose} />
+                                </div>
 
 
 
