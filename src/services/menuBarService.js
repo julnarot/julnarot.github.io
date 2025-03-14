@@ -25,7 +25,8 @@ const buildMenuDefaultItems = () => {
             ...item,
             opened: false,
             active: item.subMenuItems.length > 0,
-            title: generateTitleInnerHTML(item.title, positionKey),           
+            title: generateTitleInnerHTML(item.title, positionKey),
+            subMenuItems:item.subMenuItems.map(subItem=>({...subItem,titleInnerHTML: generateTitleInnerHTML(subItem.title, 0)}))           
         }
     });
 }
