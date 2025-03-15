@@ -67,8 +67,13 @@ function App() {
   }
 
   function menuSelected(subItemSelected) {
-    const menuAction = SUBMENU_ACTIONS.find(sm=>sm.menuTitle === subItemSelected.menu && sm.subMenuTitle === subItemSelected.title)
-    setSubMenuItem(menuAction)
+    const menuAction = SUBMENU_ACTIONS.find(sm => sm.menuTitle === subItemSelected.menu && sm.subMenuTitle === subItemSelected.title)
+    if (menuAction.type === 'POPUP') {
+
+      setSubMenuItem(menuAction)
+    } else {
+      menuAction.component()
+    }
   }
 
   return (
@@ -171,7 +176,7 @@ function App() {
       <StatusBar />
 
       {isOpen && <Popup onClose={toggle} experience={workExperience} />}
-      {subMenuItem && subMenuItem.subMenuTitle ==='About'  && <AboutPopup onClose={()=>setSubMenuItem(null)}/>}
+      {subMenuItem && subMenuItem.subMenuTitle === 'About' && <AboutPopup onClose={() => setSubMenuItem(null)} />}
 
     </div>
 
