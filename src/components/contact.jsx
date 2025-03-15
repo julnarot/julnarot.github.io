@@ -3,7 +3,7 @@ export default function Contact({ onClose }) {
         <div className="bg-green-300 p-2 text-white ">
             <div className="border-4 border-double text-white  relative w-full ">
                 <div className="absolute -top-3 left-3 bg-green-300 px-1 text-sm cursor-pointer" onClick={onClose}> [<span className="text-green-400">&#9632;</span>]</div>
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-green-300 px-2 text-sm">Contactame</div>
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-green-300 px-2 text-sm">Contáctame</div>
                 <div className="absolute -top-3 right-11 bg-green-300 px-1 text-sm">1</div>
                 <div className="absolute -top-3 right-3 bg-green-300 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
                 <div className="font-mono p-2 pt-3 text-blue-600 selection:bg-cyan-400 h-full overflow-auto 

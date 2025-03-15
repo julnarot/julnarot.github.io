@@ -89,9 +89,6 @@ export default function Popup({ onClose, experience }) {
                       </div>
                     </div>
 
-
-
-
                   </div>
 
                   <div className="flex justify-center p-2">

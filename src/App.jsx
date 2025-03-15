@@ -5,6 +5,8 @@ import { getWorkExperiences } from './services/workExperienceService';
 import MenuBar from './components/menuBar';
 import StatusBar from './components/statusBar';
 import Contact from './components/contact';
+import AboutPopup from './components/aboutPopup';
+import { SUBMENU_ACTIONS } from './constants/popup';
 
 function App() {
 
@@ -12,6 +14,7 @@ function App() {
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [workExperience, setWorkExperience] = useState(null);
   const [workExperiences, setWorkExperiences] = useState([]);
+  const [subMenuItem, setSubMenuItem] = useState(null);
 
   useEffect(() => {
     getWorkExperiences().then(data =>
@@ -63,11 +66,21 @@ function App() {
     setWorkExperience(workExperience);
   }
 
+  function menuSelected(subItemSelected) {
+    const menuAction = SUBMENU_ACTIONS.find(sm => sm.menuTitle === subItemSelected.menu && sm.subMenuTitle === subItemSelected.title)
+    if (menuAction.type === 'POPUP') {
+
+      setSubMenuItem(menuAction)
+    } else {
+      menuAction.component()
+    }
+  }
+
   return (
 
     <div className="h-screen w-screen bg-gray-800 flex flex-col overflow-hidden">
       {/* Top Menu Bar */}
-      <MenuBar />
+      <MenuBar onSubMenuSelected={menuSelected} />
 
       {/* Main Content */}
       <div className="flex-1 relative flex flex-col w-full h-full overflow-hidden">
@@ -163,14 +176,11 @@ function App() {
       <StatusBar />
 
       {isOpen && <Popup onClose={toggle} experience={workExperience} />}
+      {subMenuItem && subMenuItem.subMenuTitle === 'About' && <AboutPopup onClose={() => setSubMenuItem(null)} />}
 
     </div>
-
-
 
   )
 }
 
 export default App
-
-
