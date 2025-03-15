@@ -17,8 +17,7 @@ export default function MenuBar({ onSubMenuSelected }) {
 
   const onSubMenuClick = () => {
     onSubMenuSelected(subMenuItem);
-    console.log(subMenuItem)
-    setMenuItems(getMenuItemsService)
+    setMenuItems(getMenuItemsService);
   }
 
   return (<div className="flex items-center gap-1 px-2 py-1 bg-gray-300 border-b-2 border-gray-400 w-full">

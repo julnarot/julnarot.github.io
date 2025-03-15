@@ -68,7 +68,6 @@ function App() {
 
   function menuSelected(subItemSelected) {
     const menuAction = SUBMENU_ACTIONS.find(sm=>sm.menuTitle === subItemSelected.menu && sm.subMenuTitle === subItemSelected.title)
-    console.log(menuAction)
     setSubMenuItem(menuAction)
   }
 
@@ -176,11 +175,7 @@ function App() {
 
     </div>
 
-
-
   )
 }
 
 export default App
-
-
