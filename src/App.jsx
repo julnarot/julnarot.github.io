@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Popup from './components/popup'
-import { getWorkExperiences } from './services/workExperienceService';
+import { getWorkExperiences, getWorkExperiencesGrouped } from './services/workExperienceService';
 import MenuBar from './components/menuBar';
 import StatusBar from './components/statusBar';
 import Contact from './components/contact';
@@ -18,49 +18,21 @@ function App() {
   const [subMenuItem, setSubMenuItem] = useState(null);
 
   useEffect(() => {
-    getWorkExperiences().then(data =>
+    //getWorkExperiences().then(data =>
 
       setWorkExperiences(
 
-        Object.values(data.map(we => {
-          const _startDate = new Date(we.startDate);
-          const _endDate = new Date(we.endDate);
-          we.startDateStr = `${_startDate.getMonth() + 1}/${_startDate.getFullYear()}`;
-          we.endDateStr = `${_endDate.getMonth() + 1}/${_endDate.getFullYear()}`;
-          we.duration = getDuration(_startDate, _endDate)
-          return we
-        }).reduce((result, item) => {
-          const key = item['companyName'];
-          if (!result[key]) {
-            result[key] = { key, values: [] };
-          }
-          result[key].values.push(item);
-          return result;
-        }, {})).map(grouped => {
-          const _startDate = new Date(grouped.values[grouped.values.length - 1].startDate);
-          const _endDate = new Date(grouped.values[0].endDate);
-          grouped.companyDuration = getDuration(_startDate, _endDate)
-          return grouped;
-        })
+        getWorkExperiencesGrouped()
       )
 
-    );
+    //);
   }, []);
 
   const onContactToggle = () => {
     setIsContactOpen(!isContactOpen)
   }
 
-  const getDuration = (startDate, endDate) => {
-    let years = endDate.getFullYear() - startDate.getFullYear();
-    let months = endDate.getMonth() - startDate.getMonth();
-
-    if (months < 0) {
-      years--;
-      months += 12;
-    }
-    return years > 0 ? `${years} años y ${months} meses` : `${months} meses`;
-  };
+  
 
   function toggle(workExperience) {
     setIsOpen((isOpen) => !isOpen);

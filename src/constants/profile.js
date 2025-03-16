@@ -1,4 +1,4 @@
-[
+export const WORK_EXPERIENCE = [
     {
         "companyName": "NTT DATA",
         "departmentName": "DGTIC - Generalitat Valenciana",
@@ -295,7 +295,7 @@
             {
                 "name": "Sonar Qube",
                 "skills": [
-                    "Desarrollo de Software","Integración y Despliegue"
+                    "Desarrollo de Software", "Integración y Despliegue"
                 ]
             }
         ],
@@ -644,4 +644,4 @@
         "typeEmployment": "Prácticas PRE-Profesionales",
         "modality": "Presencial"
     }
-]
+];
