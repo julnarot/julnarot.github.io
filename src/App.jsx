@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Popup from './components/popup'
-import { getWorkExperiences, getWorkExperiencesGrouped } from './services/workExperienceService';
+import { getWorkExperiencesGrouped } from './services/workExperienceService';
 import MenuBar from './components/menuBar';
 import StatusBar from './components/statusBar';
 import Contact from './components/contact';
 import AboutPopup from './components/aboutPopup';
-import { SUBMENU_ACTIONS } from './constants/popup';
 import EditWindow from './components/editWindow';
+import { findMenuActionBySubItem } from './services/menuBarService';
 
 function App() {
 
@@ -18,29 +18,21 @@ function App() {
   const [subMenuItem, setSubMenuItem] = useState(null);
 
   useEffect(() => {
-    //getWorkExperiences().then(data =>
-
-      setWorkExperiences(
-
-        getWorkExperiencesGrouped()
-      )
-
-    //);
+    const workExperiencesGrouped = getWorkExperiencesGrouped();
+    setWorkExperiences(workExperiencesGrouped);
   }, []);
 
   const onContactToggle = () => {
     setIsContactOpen(!isContactOpen)
   }
 
-  
-
-  function toggle(workExperience) {
+  const toggle = (workExperience) => {
     setIsOpen((isOpen) => !isOpen);
     setWorkExperience(workExperience);
   }
 
-  function menuSelected(subItemSelected) {
-    const menuAction = SUBMENU_ACTIONS.find(sm => sm.menuTitle === subItemSelected.menu && sm.subMenuTitle === subItemSelected.title)
+  const menuSelected = (subItemSelected) => {
+    const menuAction = findMenuActionBySubItem(subItemSelected);
     if (menuAction.type === 'POPUP') {
       setSubMenuItem(menuAction)
     } else if (menuAction && menuAction.type === 'LINK') {
@@ -50,13 +42,13 @@ function App() {
 
   return (
 
-    <div className="h-screen w-screen bg-gray-800 flex flex-col overflow-hidden">
+    <div className="h-screen w-screen flex flex-col overflow-hidden">
       {/* Top Menu Bar */}
       <MenuBar onSubMenuSelected={menuSelected} />
 
       {/* Main Content */}
       <div className="flex-1 relative flex flex-col w-full h-full overflow-hidden">
-        <div className="flex-1 bg-blue-600 p-4 text-white flex flex-col md:flex-row w-full h-full gap-2 overflow-auto">
+        <div className="flex-1 bg-blue-600 dark:bg-zinc-950 p-4 text-white flex flex-col md:flex-row w-full h-full gap-2 overflow-auto">
 
           <div className='basis-1/2 relative h-full'>
             <EditWindow windowTitle="~/main.prev" windowNumber="2">
@@ -79,7 +71,7 @@ function App() {
             </EditWindow>
           </div>
 
-          <div className="flex-1 bg-blue-600 text-white flex flex-col w-full gap-2">
+          <div className="flex-1 text-white flex flex-col w-full gap-2">
 
             <EditWindow windowTitle="~/work-exp.prev" windowNumber="3">
               <p className='my-4'>
