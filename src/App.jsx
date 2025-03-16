@@ -71,7 +71,7 @@ function App() {
     if (menuAction.type === 'POPUP') {
 
       setSubMenuItem(menuAction)
-    } else {
+    } else if (menuAction && menuAction.type === 'LINK') {
       menuAction.component()
     }
   }
