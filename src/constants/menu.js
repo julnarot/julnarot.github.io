@@ -8,6 +8,11 @@ export const MENU_DATA = [
     },
     { title: 'Edit', subMenuItems: [] },
     {
+        title: 'Preferences', subMenuItems: [
+            { title: 'Language', shortcut: 'F7', menu: 'Preferences' },
+        ]
+    },
+    {
         title: 'Help', subMenuItems: [
             { title: 'About', shortcut: 'F9', menu: 'Help' }
         ]
