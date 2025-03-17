@@ -4,7 +4,7 @@ import { SUBMENU_ACTIONS } from "../constants/popup";
 const buildMenuDefaultItems = () => {
     const generateTitleInnerHTML = (title, positionKey) => {
         return title.split("").map((w, i) => {
-            return i === positionKey ? `<span class='text-red-600'>${w}</span>` : w
+            return i === positionKey ? `<span class='text-red-600 dark:text-cyan-500'>${w}</span>` : w
         }).join("")
     }
     return [...MENU_DATA].map(item => {
@@ -28,5 +28,8 @@ export const getMenuItemsService = () => {
 }
 
 export const getMenuItemsBySelectionService = (itemSelected) => {
-    return getMenuItemsService().map(item => ({ ...item, opened: itemSelected.title === item.title && itemSelected.opened===false }))
+    return getMenuItemsService().map(item => ({ ...item, opened: itemSelected.title === item.title && itemSelected.opened === false }))
+}
+export const findMenuActionBySubItem = (subItemSelected) => {
+    return SUBMENU_ACTIONS.find(sm => sm.menuTitle === subItemSelected.menu && sm.subMenuTitle === subItemSelected.title);
 }
