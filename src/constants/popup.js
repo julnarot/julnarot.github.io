@@ -1,4 +1,5 @@
 import AboutPopup from "../components/aboutPopup";
+import PopupLanguageSelector from "../components/features/popupLanguageSelector";
 
 export const SUBMENU_ACTIONS = [
     {
@@ -17,5 +18,11 @@ export const SUBMENU_ACTIONS = [
             a.target = "_blank";
             a.click();
         }
-    }
+    },
+    {
+        menuTitle: 'Preferences',
+        subMenuTitle: 'Language',
+        type: 'POPUP',
+        component: PopupLanguageSelector
+    },
 ];

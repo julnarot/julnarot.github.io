@@ -9,9 +9,10 @@ import AboutPopup from './components/aboutPopup';
 import EditWindow from './components/editWindow';
 import { findMenuActionBySubItem } from './services/menuBarService';
 import { useTranslation } from 'react-i18next';
+import PopupLanguageSelector from './components/features/popupLanguageSelector';
 
 function App() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [workExperience, setWorkExperience] = useState(null);
@@ -38,8 +39,11 @@ function App() {
       setSubMenuItem(menuAction)
     } else if (menuAction && menuAction.type === 'LINK') {
       menuAction.component()
+    } else if (menuAction && menuAction.type === 'EVENT') {
+      menuAction.component()
     }
   }
+  
 
   return (
 
@@ -123,6 +127,7 @@ function App() {
 
       {isOpen && <Popup onClose={toggle} experience={workExperience} />}
       {subMenuItem && subMenuItem.subMenuTitle === 'About' && <AboutPopup onClose={() => setSubMenuItem(null)} />}
+      {subMenuItem && subMenuItem.subMenuTitle === 'Language' && <PopupLanguageSelector onClose={() => setSubMenuItem(null)} />}
 
     </div>
 
