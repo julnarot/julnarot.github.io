@@ -8,6 +8,7 @@ import Contact from './components/contact';
 import AboutPopup from './components/aboutPopup';
 import EditWindow from './components/editWindow';
 import { findMenuActionBySubItem } from './services/menuBarService';
+import { useTranslation } from 'react-i18next';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
   const [workExperience, setWorkExperience] = useState(null);
   const [workExperiences, setWorkExperiences] = useState([]);
   const [subMenuItem, setSubMenuItem] = useState(null);
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const workExperiencesGrouped = getWorkExperiencesGrouped();
@@ -57,7 +59,7 @@ function App() {
               </div>
               <img src="https://avatars.githubusercontent.com/u/2840577?v=4" alt="@Julnarot" className='max-h-40' />
               <p className="my-4">
-                ¡Hola! Soy desarrollador de software con más de 7 años de experiencia en la construcción de plataformas web corporativas para distintos sectores empresariales.
+              {t('greeting')} Soy desarrollador de software con más de 7 años de experiencia en la construcción de plataformas web corporativas para distintos sectores empresariales.
               </p>
               <p className="my-4">
                 A lo largo de mi trayectoria, he tenido la oportunidad de asumir roles clave en el análisis, diseño e implementación de soluciones tecnológicas, gracias a la confianza de mis empleadores y mi compromiso con el aprendizaje continuo.
