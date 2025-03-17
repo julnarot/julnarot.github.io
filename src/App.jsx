@@ -48,7 +48,7 @@ function App() {
 
       {/* Main Content */}
       <div className="flex-1 relative flex flex-col w-full h-full overflow-hidden">
-        <div className="flex-1 bg-blue-600 dark:bg-zinc-950 p-4 text-white flex flex-col md:flex-row w-full h-full gap-2 overflow-auto">
+        <div className="flex-1 bg-blue-600 dark:bg-zinc-900 p-4 text-white flex flex-col md:flex-row w-full h-full gap-2 overflow-auto">
 
           <div className='basis-1/2 relative h-full'>
             <EditWindow windowTitle="~/main.prev" windowNumber="2">
