@@ -11,13 +11,12 @@ import { findMenuActionBySubItem } from './services/menuBarService';
 import { useTranslation } from 'react-i18next';
 
 function App() {
-
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [workExperience, setWorkExperience] = useState(null);
   const [workExperiences, setWorkExperiences] = useState([]);
   const [subMenuItem, setSubMenuItem] = useState(null);
-  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const workExperiencesGrouped = getWorkExperiencesGrouped();
@@ -59,16 +58,16 @@ function App() {
               </div>
               <img src="https://avatars.githubusercontent.com/u/2840577?v=4" alt="@Julnarot" className='max-h-40' />
               <p className="my-4">
-              {t('greeting')} Soy desarrollador de software con más de 7 años de experiencia en la construcción de plataformas web corporativas para distintos sectores empresariales.
+                {t('main.greeting')}
               </p>
               <p className="my-4">
-                A lo largo de mi trayectoria, he tenido la oportunidad de asumir roles clave en el análisis, diseño e implementación de soluciones tecnológicas, gracias a la confianza de mis empleadores y mi compromiso con el aprendizaje continuo.
+                {t('main.professionalCareer')}
               </p>
               <p className="my-4">
-                Me especializo en desarrollo Full Stack, un campo que encuentro desafiante y emocionante, ya que me permite reinventarme constantemente, explorar tecnologías emergentes y abordar la resolución de problemas con creatividad.
+                {t('main.specialty')}
               </p>
               <p className="my-4">
-                Creo en el trabajo en equipo y la colaboración como pilares fundamentales para el éxito de cualquier proyecto. Mi objetivo es aportar valor en cada desarrollo, buscando siempre soluciones eficientes, escalables y de alta calidad.
+                {t('main.working')}
               </p>
             </EditWindow>
           </div>
@@ -77,19 +76,19 @@ function App() {
 
             <EditWindow windowTitle="~/work-exp.prev" windowNumber="3">
               <p className='my-4'>
-                Experiencia Laboral
+                {t('workExperience.title')}
               </p>
               <ul className='list-disc list-inside '>
                 {workExperiences.map((item, index) => (
                   <li key={index}>
-                    Empresa: {item.key} | Proyectos: {item.values.map((exp, iexp) =>
+                    {t('workExperience.expItemCompany')}: {item.key} | {t('workExperience.expItemProjects')}: {item.values.map((exp, iexp) =>
                       <div key={iexp} className=' text-sm inline'>
                         [<a className="cursor-pointer font-bold underline decoration-wavy" onClick={() => toggle(exp)}>
                           {exp.proyect.toUpperCase()}
                         </a>]
                         {iexp < (item.values.length - 1) ? ' ' : ''}
                       </div>
-                    )} | Duración: {item.companyDuration}
+                    )} | {t('workExperience.expItemDuration')}: {item.companyDuration}
                   </li>
                 ))}
               </ul>
@@ -97,14 +96,14 @@ function App() {
 
             <EditWindow windowTitle="~/education.prev" windowNumber="4">
               <p className='my-4'>
-                Formación académica
+                {t('academicTraining.title')}
               </p>
               <ul className='list-disc list-inside '>
                 <li>
-                  Universidad peruana unión (UPeU) - Grado académico de Bachiller en Ingeniería de Sistemas.
+                  {t('academicTraining.universityName')} - {t('academicTraining.universityGrade')}
                 </li>
                 <li>
-                  Centro de Idiomas UPeU - nivel A1 y A2 Aprobados.
+                  {t('academicTraining.languageInstituteName')} - {t('academicTraining.languageInstituteGrade')}
                 </li>
               </ul>
             </EditWindow>

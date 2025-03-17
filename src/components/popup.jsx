@@ -2,10 +2,12 @@ import { useState } from "react";
 import Button from "./button";
 import Input from "./input";
 import ShowWindow from "./showWindow";
+import { useTranslation } from "react-i18next";
 
 
 
 export default function Popup({ onClose, experience }) {
+  const { t } = useTranslation();
   const [skill, setSkill] = useState("");
   const skills = [...new Set([
     ...experience.activities.map(ac => ac.skills).flat(),
@@ -33,13 +35,13 @@ export default function Popup({ onClose, experience }) {
                 <div className="font-mono px-1 pt-2 text-stone-950 selection:bg-cyan-400 flex flex-col ">
 
                   <div className=" flex  flex-wrap max-md:flex-col">
-                    <Input label="Cliente" value={experience.departmentName} />
+                    <Input label={t('workExperience.project.labelCustomer')} value={experience.departmentName} />
 
-                    <Input label="T. Empleo" value={experience.typeEmployment} />
+                    <Input label={t('workExperience.project.labelTypeEmployment')} value={experience.typeEmployment} />
 
-                    <Input label="Modalidad" value={experience.modality} />
+                    <Input label={t('workExperience.project.labelEmploymentModality')} value={experience.modality} />
 
-                    <Input label="Duración" value={experience.startDateStr + ' - ' + experience.endDateStr + ' (' + experience.duration + ')'} className="w-full" />
+                    <Input label={t('workExperience.project.labelDuration')} value={experience.startDateStr + ' - ' + experience.endDateStr + ' (' + experience.duration + ')'} className="w-full" />
                   </div>
 
                   <div className="mb-3 flex flex-col md:flex-row">
@@ -49,7 +51,7 @@ export default function Popup({ onClose, experience }) {
                       <li className="inline-block py-1">
                         <input type="radio" id="opc-all" name="skill" checked={skill == '' ? 'checked' : ''} value="" onChange={skillsOnChange} className="hidden peer" />
                         <label htmlFor="opc-all" className="before:content-['(_)'] peer-checked:before:content-['(x)']  cursor-pointer  mr-2">
-                          Todos
+                          {t('workExperience.project.skills.labelAll')}
                         </label>
                       </li>
                       {skills.map(
@@ -67,7 +69,7 @@ export default function Popup({ onClose, experience }) {
 
                   <div className="flex flex-col md:flex-row">
 
-                    <ShowWindow titleWindow="Actividades">
+                    <ShowWindow titleWindow={t('workExperience.project.windowTitleActivities')}>
                       <ul className='list-disc list-inside text-sm text-white'>
                         {[...experience.activities].filter(f => skill ? f.skills.includes(skill) : true).map((activity, index) =>
                           <li key={index}>
@@ -78,7 +80,7 @@ export default function Popup({ onClose, experience }) {
                     </ShowWindow>
 
                     <div className="px-2   ">
-                      <span className="text-white">Tecnologías</span>
+                      <span className="text-white">{t('workExperience.project.sectionTitleTecnologies')}</span>
                       <div className="bg-green-100 dark:bg-zinc-900 h-[90%] overflow-y-auto px-2
                       [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-bluen-600 [&::-webkit-scrollbar-thumb]:bg-cyan-500">
                         <ul className='list-none text-sm'>
@@ -92,7 +94,7 @@ export default function Popup({ onClose, experience }) {
                   </div>
 
                   <div className="flex justify-center p-2">
-                    <Button value="Cerrar" onClick={onClose} />
+                    <Button value={t('workExperience.project.btnCloseName')} onClick={onClose} />
                   </div>
                 </div>
               </div>
