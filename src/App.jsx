@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import Popup from './components/popup'
+import Popup from './components/features/popup'
 import { getWorkExperiencesGrouped } from './services/workExperienceService';
-import MenuBar from './components/menuBar';
-import StatusBar from './components/statusBar';
-import Contact from './components/contact';
-import AboutPopup from './components/aboutPopup';
-import EditWindow from './components/editWindow';
+import MenuBar from './components/core/menuBar';
+import StatusBar from './components/core/statusBar';
+import Contact from './components/features/contact';
+
+import EditWindow from './components/core/editWindow';
 import { findMenuActionBySubItem } from './services/menuBarService';
 import { useTranslation } from 'react-i18next';
 import PopupLanguageSelector from './components/features/popupLanguageSelector';
+import AboutPopup from './components/core/aboutPopup';
 
 function App() {
   const { t, i18n } = useTranslation();

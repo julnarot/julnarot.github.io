@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Button from "./button";
-import Input from "./input";
+import Button from "../core/button";
+import Input from "../core/input";
 import ShowWindow from "./showWindow";
 import { useTranslation } from "react-i18next";
 
