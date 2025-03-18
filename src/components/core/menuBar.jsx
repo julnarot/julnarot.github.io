@@ -38,7 +38,7 @@ export default function MenuBar({ onSubMenuSelected }) {
                 key={index}
                 disabled={!subItem.active}
                 className="px-4 py-1 w-full active:hover:bg-blue-600 enabled:hover:text-white enabled:hover:bg-blue-600 dark:enabled:hover:bg-purple-900 flex justify-between disabled:opacity-50"
-                onMouseEnter={() => setSubMenuItem(subItem)} onClick={onSubMenuClick}>
+                onMouseEnter={() => setSubMenuItem(subItem)} onTouchStart={() => setSubMenuItem(subItem)} onClick={onSubMenuClick}>
                 <span dangerouslySetInnerHTML={{ __html: subItem.titleInnerHTML }} />
                 {subItem.shortcut && (
                   <span className="ml-4 text-gray-600 dark:text-yellow-400">{subItem.shortcut}</span>
