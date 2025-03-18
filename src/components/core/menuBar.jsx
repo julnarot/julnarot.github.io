@@ -2,7 +2,7 @@ import { useState } from "react";
 import {
   getMenuItemsService,
   getMenuItemsBySelectionService,
-} from "../services/menuBarService";
+} from "../../services/menuBarService";
 
 
 export default function MenuBar({ onSubMenuSelected }) {

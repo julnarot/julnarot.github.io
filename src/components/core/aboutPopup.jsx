@@ -1,4 +1,4 @@
-import Button from "./button";
+import Button from "./button"
 
 export default function AboutPopup({ onClose }) {
     const version = '1.2.0'
@@ -21,10 +21,6 @@ export default function AboutPopup({ onClose }) {
 
                                     <Button value="Ok" onClick={onClose} />
                                 </div>
-
-
-
-
 
                             </div>
 

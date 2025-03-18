@@ -1,4 +1,4 @@
-import AboutPopup from "../components/aboutPopup";
+import AboutPopup from "../components/core/aboutPopup";
 import PopupLanguageSelector from "../components/features/popupLanguageSelector";
 
 export const SUBMENU_ACTIONS = [
