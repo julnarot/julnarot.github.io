@@ -729,5 +729,49 @@ export const WORK_EXPERIENCE = [
         "endDate": "2017-12-01T12:00:00.000Z",
         "typeEmployment": "Prácticas PRE-Profesionales",
         "modality": "Presencial"
+    },
+    {
+        "companyName": "DISTRIBUCIONES SUVAHI S.A.C.",
+        "departmentName": "SUVAHI - TI",
+        "proyect": "TECHCOM-SUVAHI",
+        "activities": [
+            {
+                "name": "Desarrollé nuevas funcionalidades en una aplicación frontend según la definición funcional, para los módulos de configuración, compras, ventas y caja de un sistema ERP comercial.",
+                "skills": [
+                    "Desarrollo de Software"
+                ]
+            },
+            {
+                "name": "Contribuí en la identificación de bugs y la documentación de incidencias en Trello, detallando casos de prueba, adjuntando capturas de pantalla y proporcionando descripciones claras para su resolución.",
+                "skills": [
+                    "Pruebas Funcionales / QA", "Gestión de Incidencias"
+                ]
+            }
+            
+        ],
+        "tecnologies": [
+            {
+                "name": "Angular JS",
+                "skills": [
+                    "Desarrollo de Software"
+                ]
+            },
+            {
+                "name": "MaterializeCss",
+                "skills": [
+                    "Desarrollo de Software"
+                ]
+            },
+            {
+                "name": "Trello",
+                "skills": [
+                    "Pruebas Funcionales / QA", "Gestión de Incidencias"
+                ]
+            }
+        ],
+        "startDate": "2016-02-01T12:00:00.000Z",
+        "endDate": "2017-03-26T12:00:00.000Z",
+        "typeEmployment": "Profesional independiente",
+        "modality": "Presencial"
     }
 ];
