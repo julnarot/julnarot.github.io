@@ -1,4 +1,6 @@
-export const getDuration = (startDate, endDate) => {
+export const getDurationBetweenStrDates = (startStrDate, endStrDate) => {
+    const startDate = new Date(startStrDate);
+    const endDate = new Date(endStrDate);
     let years = endDate.getFullYear() - startDate.getFullYear();
     let months = endDate.getMonth() - startDate.getMonth();
 
@@ -6,5 +8,17 @@ export const getDuration = (startDate, endDate) => {
         years--;
         months += 12;
     }
-    return years > 0 ? `${years} años y ${months} meses` : `${months} meses`;
+    if (years > 0) {
+        if (months > 0) {
+            return `${years} años y ${months} meses`;
+        }
+        return `${years} años`;
+    } else {
+        return `${months} meses`;
+    }
 };
+
+export const strDateToStrMonthYear = (stringDate) => {
+    const _date = new Date(stringDate);
+    return `${_date.getMonth() + 1}/${_date.getFullYear()}`;
+}
