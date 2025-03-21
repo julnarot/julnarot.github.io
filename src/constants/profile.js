@@ -747,7 +747,7 @@ export const WORK_EXPERIENCE = [
                     "Pruebas Funcionales / QA", "Gestión de Incidencias"
                 ]
             }
-            
+
         ],
         "tecnologies": [
             {
@@ -772,6 +772,69 @@ export const WORK_EXPERIENCE = [
         "startDate": "2016-02-01T12:00:00.000Z",
         "endDate": "2017-03-26T12:00:00.000Z",
         "typeEmployment": "Profesional independiente",
+        "modality": "Presencial"
+    }
+    , {
+        "companyName": "TERMINUS DEV S.A.C",
+        "departmentName": "GRUPO EPENSA SAC",
+        "proyect": "Diario Correo reportes",
+        "activities": [
+            {
+                "name": "Elaboré consultas SQL sobre una base de datos de prueba en MySQL para extraer información relevante y facilitar su integración en vistas SQL por otro desarrollador.",
+                "skills": [
+                    "Bases de Datos y Reportes"
+                ]
+            },
+            {
+                "name": "Generé reportes en formato CSV a partir de consultas SQL.",
+                "skills": [
+                    "Bases de Datos y Reportes"
+                ]
+            },
+            {
+                "name": "Participé en un programa de formación en desarrollo web con Python, utilizando Jinja para la generación de vistas y fortaleciendo mis habilidades en programación web.",
+                "skills": [
+                    "Formación Técnica"
+                ]
+            }
+
+        ],
+        "tecnologies": [
+            {
+                "name": "Mysql workbench",
+                "skills": [
+                    "Bases de Datos y Reportes"
+                ]
+            },
+            {
+                "name": "Mysql db",
+                "skills": [
+                    "Bases de Datos y Reportes"
+                ]
+            },
+            {
+                "name": "Python",
+                "skills": [
+                    "Formación Técnica"
+                ]
+            },
+            {
+                "name": "Jinja",
+                "skills": [
+                    "Formación Técnica"
+                ]
+            },
+            {
+                "name": "Virtualenv",
+                "skills": [
+                    "Formación Técnica"
+                ]
+            }
+
+        ],
+        "startDate": "2016-02-01T12:00:00.000Z",
+        "endDate": "2017-03-26T12:00:00.000Z",
+        "typeEmployment": "Prácticas PRE-Profesionales",
         "modality": "Presencial"
     }
 ];
