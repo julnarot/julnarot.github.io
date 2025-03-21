@@ -8,7 +8,14 @@ export const getDurationBetweenStrDates = (startStrDate, endStrDate) => {
         years--;
         months += 12;
     }
-    return years > 0 ? `${years} años y ${months} meses` : `${months} meses`;
+    if (years > 0) {
+        if (months > 0) {
+            return `${years} años y ${months} meses`;
+        }
+        return `${years} años`;
+    } else {
+        return `${months} meses`;
+    }
 };
 
 export const strDateToStrMonthYear = (stringDate) => {
