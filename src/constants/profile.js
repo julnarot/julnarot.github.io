@@ -17,7 +17,7 @@ export const WORK_EXPERIENCE = [
                 ]
             },
             {
-                "name": "Configuré  entorno local de desarrollo con  base de datos local para reemplazar la conexión remota, asegurando el cumplimiento de normativas de privacidad. Para ello, creé una imagen Docker con la base de datos y ajusté la configuración del proyecto para utilizarla correctamente.",
+                "name": "Configuré  entorno local de desarrollo con  base de datos local para reemplazar la conexión remota, asegurando el cumplimiento de normativas de privacidad.",
                 "skills": [
                     "Desarrollo de Software",
                     "Integración y Despliegue"
@@ -832,8 +832,8 @@ export const WORK_EXPERIENCE = [
             }
 
         ],
-        "startDate": "2016-02-01T12:00:00.000Z",
-        "endDate": "2017-03-26T12:00:00.000Z",
+        "startDate": "2014-04-01T12:00:00.000Z",
+        "endDate": "2014-10-26T12:00:00.000Z",
         "typeEmployment": "Prácticas PRE-Profesionales",
         "modality": "Presencial"
     }
