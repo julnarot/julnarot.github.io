@@ -17,7 +17,7 @@ export const WORK_EXPERIENCE = [
                 ]
             },
             {
-                "name": "Configuré  entorno local de desarrollo con  base de datos local para reemplazar la conexión remota, asegurando el cumplimiento de normativas de privacidad. Para ello, creé una imagen Docker con la base de datos y ajusté la configuración del proyecto para utilizarla correctamente.",
+                "name": "Configuré  entorno local de desarrollo con  base de datos local para reemplazar la conexión remota, asegurando el cumplimiento de normativas de privacidad.",
                 "skills": [
                     "Desarrollo de Software",
                     "Integración y Despliegue"
@@ -89,7 +89,7 @@ export const WORK_EXPERIENCE = [
             }
         ],
         "startDate": "2024-10-01T12:00:00.000Z",
-        "endDate": "2025-01-01T12:00:00.000Z",
+        "endDate": "2025-02-01T12:00:00.000Z",
         "typeEmployment": "Contrato",
         "modality": "Remoto"
     },
@@ -121,6 +121,12 @@ export const WORK_EXPERIENCE = [
                 "name": "Implementé una prueba de concepto para la configuración y visualización dinámica de formularios de solicitud.",
                 "skills": [
                     "Desarrollo de Software"
+                ]
+            },
+            {
+                "name": "Participé en múltiples procesos de evaluación técnica para Frontend Angular Developer como entrevistador, evaluando la aptitud de los postulantes para el proyecto.",
+                "skills": [
+                    "Evaluación Técnica y Entrevistas"
                 ]
             }
         ],
@@ -189,6 +195,12 @@ export const WORK_EXPERIENCE = [
                 "name": "Sonar Qube",
                 "skills": [
                     "Desarrollo de Software"
+                ]
+            },
+            {
+                "name": "Microsoft Word | Excel",
+                "skills": [
+                    "Evaluación Técnica y Entrevistas"
                 ]
             }
         ],
@@ -322,7 +334,7 @@ export const WORK_EXPERIENCE = [
                 ]
             },
             {
-                "name": "Diseñé y desarrollé una interfaz web para la visualización de información pública como manuales, guías y documentos importantes para el sistema.",
+                "name": "Diseñé, desarrollé e implementé una interfaz web para la visualización de información pública, como manuales y guías, asegurando su despliegue automatizado mediante pipelines CI/CD en entornos de desarrollo y prueba.",
                 "skills": [
                     "Análisis y Diseño de Software",
                     "Desarrollo de Software",
@@ -330,9 +342,9 @@ export const WORK_EXPERIENCE = [
                 ]
             },
             {
-                "name": "SonarQube",
+                "name": "Participé en un procesos de evaluación técnica para Frontend Angular Developer como entrevistador, para evaluar la aptitud del postulantes para el proyecto.",
                 "skills": [
-                    "Desarrollo de Software"
+                    "Evaluación Técnica y Entrevistas"
                 ]
             }
         ],
@@ -373,6 +385,12 @@ export const WORK_EXPERIENCE = [
                 "skills": [
                     "Desarrollo de Software"
                 ]
+            },
+            {
+                "name": "Microsoft Word | Excel",
+                "skills": [
+                    "Evaluación Técnica y Entrevistas"
+                ]
             }
         ],
         "startDate": "2022-04-01T12:00:00.000Z",
@@ -381,9 +399,40 @@ export const WORK_EXPERIENCE = [
         "modality": "Remoto"
     },
     {
+        "companyName": "NTT DATA",
+        "departmentName": "GDN-e",
+        "proyect": "IBK",
+        "activities": [
+            {
+                "name": "Participé en el proceso de onboarding y formación en la compañía, adquiriendo conocimientos en gestión de actividades con Jira y Fenix, así como certificaciones en plataformas Azure, preparándome para la ejecución del proyecto asignado",
+                "skills": [
+                    "Aprendizaje Continuo / Autogestión"
+                ]
+            },
+
+        ],
+        "tecnologies": [
+            {
+                "name": "Jira",
+                "skills": [
+                    "Aprendizaje Continuo / Autogestión"
+                ]
+            }, {
+                "name": "Fenix",
+                "skills": [
+                    "Aprendizaje Continuo / Autogestión"
+                ]
+            }
+        ],
+        "startDate": "2022-02-01T12:00:00.000Z",
+        "endDate": "2022-03-27T12:00:00.000Z",
+        "typeEmployment": "Contrato",
+        "modality": "Remoto"
+    },
+    {
         "companyName": "Universidad Peruana Unión",
         "departmentName": "DIGETI",
-        "proyect": "Área de desarrollo de software",
+        "proyect": "ERP Institucional",
         "activities": [
             {
                 "name": "Colaboré con múltiples equipos de especialistas tecnológicos en la construcción del ERP institucional con enfoque financiero y educativo. Analicé, diseñé e implementé funcionalidades en módulos backend y frontend aplicando buenas prácticas de desarrollo y optimización de arquitectura de software en cada módulo del sistema",
@@ -490,15 +539,16 @@ export const WORK_EXPERIENCE = [
         "proyect": "ERP Académico",
         "activities": [
             {
-                "name": "Desarrollé funcionalidades para el ERP Académico y CRM institucional, colaborando con analistas y desarrolladores en aplicaciones backend y frontend.",
+                "name": "Colaboré con un equipo de analistas y programadores en el análisis y desarrollo de funcionalidades para aplicaciones backend y frontend de un sistema ERP académico y CRM.",
                 "skills": [
                     "Análisis y Diseño de Software",
                     "Desarrollo de Software"
                 ]
             },
             {
-                "name": "Implementé reportes estadísticos según requerimientos utilizando herramientas de visualización de datos, gráficos y optimización de consultas SQL.",
+                "name": "Analicé y optimicé consultas SQL para la generación de reportes estadísticos, implementando herramientas de visualización de datos y gráficos según los requerimientos del negocio.",
                 "skills": [
+                    "Análisis de datos",
                     "Desarrollo de Software"
                 ]
             },
@@ -549,7 +599,20 @@ export const WORK_EXPERIENCE = [
             {
                 "name": "Oracle Database",
                 "skills": [
-                    "Desarrollo de Software"
+                    "Desarrollo de Software",
+                    "Análisis de datos"
+                ]
+            },
+            {
+                "name": "JDeveloper",
+                "skills": [
+                    "Análisis de datos"
+                ]
+            },
+            {
+                "name": "Balsamiq",
+                "skills": [
+                    "Análisis y Diseño de Software"
                 ]
             }
         ],
@@ -561,29 +624,29 @@ export const WORK_EXPERIENCE = [
     {
         "companyName": "Universidad Peruana Unión - FJ",
         "departmentName": "DIGESI",
-        "proyect": "Área de desarrollo de software",
+        "proyect": "Proyectos especiales",
         "activities": [
             {
-                "name": "Contribuí en el analisis y desarrollo de un sistema para la gestión de acuerdos académicos, facilitando la autoevaluación y cumplimiento de estándares del Modelo de Gestión Educativa.",
+                "name": "Participé en el análisis y desarrollo de una prueba de concepto para un sistema de gestión de acuerdos académicos, orientado a facilitar la autoevaluación y el cumplimiento de estándares del Modelo de Gestión Educativa.",
                 "skills": [
                     "Análisis y Diseño de Software",
                     "Desarrollo de Software"
                 ]
             },
             {
-                "name": "Instalé y configuré servicios web para aplicaciones backend y frontend.",
+                "name": "Colaboré con el equipo de soporte e infraestructura en la instalación y configuración del sistema operativo y plataformas de virtualización, además de la configuración de servicios web para aplicaciones backend y frontend.",
                 "skills": [
-                    "Desarrollo de Software"
+                    "Implementación y Administración de Servidores"
                 ]
             },
             {
                 "name": "Implementé mecanismos de integración y despliegue en entornos de pruebas y desarrollo para aplicaciones backend y frontend.",
                 "skills": [
-                    "Desarrollo de Software"
+                    "Integración y Despliegue"
                 ]
             },
             {
-                "name": "Brindé soporte y mantenimiento a una aplicación móvil informativa para programas y conferencias, agregando nuevas secciones y vistas con contenido actualizado acorde al evento, integrando de forma embebida la transmisión en vivo y generando los APKs para su despliegue en Google Play Store.",
+                "name": "Di soporte y mantenimiento a una app móvil para eventos, agregando contenido, transmisión en vivo y generando APKs para su despliegue en Google Play Store.",
                 "skills": [
                     "Desarrollo de Software"
                 ]
@@ -627,9 +690,21 @@ export const WORK_EXPERIENCE = [
                 ]
             },
             {
+                "name": "Citrix",
+                "skills": [
+                    "Implementación y Administración de Servidores"
+                ]
+            },
+            {
+                "name": "CentOS",
+                "skills": [
+                    "Implementación y Administración de Servidores"
+                ]
+            },
+            {
                 "name": "Nginx",
                 "skills": [
-                    "Desarrollo de Software"
+                    "Implementación y Administración de Servidores"
                 ]
             },
             {
@@ -637,10 +712,128 @@ export const WORK_EXPERIENCE = [
                 "skills": [
                     "Desarrollo de Software"
                 ]
+            }, {
+                "name": "Jenkins",
+                "skills": [
+                    "Integración y Despliegue"
+                ]
+            },
+            {
+                "name": "Balsamiq",
+                "skills": [
+                    "Análisis y Diseño de Software"
+                ]
             }
         ],
         "startDate": "2017-05-01T12:00:00.000Z",
         "endDate": "2017-12-01T12:00:00.000Z",
+        "typeEmployment": "Prácticas PRE-Profesionales",
+        "modality": "Presencial"
+    },
+    {
+        "companyName": "DISTRIBUCIONES SUVAHI S.A.C.",
+        "departmentName": "SUVAHI - TI",
+        "proyect": "TECHCOM-SUVAHI",
+        "activities": [
+            {
+                "name": "Desarrollé nuevas funcionalidades en una aplicación frontend según la definición funcional, para los módulos de configuración, compras, ventas y caja de un sistema ERP comercial.",
+                "skills": [
+                    "Desarrollo de Software"
+                ]
+            },
+            {
+                "name": "Contribuí en la identificación de bugs y la documentación de incidencias en Trello, detallando casos de prueba, adjuntando capturas de pantalla y proporcionando descripciones claras para su resolución.",
+                "skills": [
+                    "Pruebas Funcionales / QA", "Gestión de Incidencias"
+                ]
+            }
+
+        ],
+        "tecnologies": [
+            {
+                "name": "Angular JS",
+                "skills": [
+                    "Desarrollo de Software"
+                ]
+            },
+            {
+                "name": "MaterializeCss",
+                "skills": [
+                    "Desarrollo de Software"
+                ]
+            },
+            {
+                "name": "Trello",
+                "skills": [
+                    "Pruebas Funcionales / QA", "Gestión de Incidencias"
+                ]
+            }
+        ],
+        "startDate": "2016-02-01T12:00:00.000Z",
+        "endDate": "2017-03-26T12:00:00.000Z",
+        "typeEmployment": "Profesional independiente",
+        "modality": "Presencial"
+    }
+    , {
+        "companyName": "TERMINUS DEV S.A.C",
+        "departmentName": "GRUPO EPENSA SAC",
+        "proyect": "Diario Correo reportes",
+        "activities": [
+            {
+                "name": "Elaboré consultas SQL sobre una base de datos de prueba en MySQL para extraer información relevante y facilitar su integración en vistas SQL por otro desarrollador.",
+                "skills": [
+                    "Bases de Datos y Reportes"
+                ]
+            },
+            {
+                "name": "Generé reportes en formato CSV a partir de consultas SQL.",
+                "skills": [
+                    "Bases de Datos y Reportes"
+                ]
+            },
+            {
+                "name": "Participé en un programa de formación en desarrollo web con Python, utilizando Jinja para la generación de vistas y fortaleciendo mis habilidades en programación web.",
+                "skills": [
+                    "Formación Técnica"
+                ]
+            }
+
+        ],
+        "tecnologies": [
+            {
+                "name": "Mysql workbench",
+                "skills": [
+                    "Bases de Datos y Reportes"
+                ]
+            },
+            {
+                "name": "Mysql db",
+                "skills": [
+                    "Bases de Datos y Reportes"
+                ]
+            },
+            {
+                "name": "Python",
+                "skills": [
+                    "Formación Técnica"
+                ]
+            },
+            {
+                "name": "Jinja",
+                "skills": [
+                    "Formación Técnica"
+                ]
+            },
+            {
+                "name": "Virtualenv",
+                "skills": [
+                    "Formación Técnica"
+                ]
+            }
+
+        ],
+        "startDate": "2014-04-01T12:00:00.000Z",
+        "endDate": "2014-10-26T12:00:00.000Z",
         "typeEmployment": "Prácticas PRE-Profesionales",
         "modality": "Presencial"
     }
