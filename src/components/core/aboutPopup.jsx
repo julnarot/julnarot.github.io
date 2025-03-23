@@ -1,7 +1,7 @@
 import Button from "./button"
 
 export default function AboutPopup({ onClose }) {
-    const version = '1.4.3'
+    const version = '1.4.5'
     return (
         <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
 
