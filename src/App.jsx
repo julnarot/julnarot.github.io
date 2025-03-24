@@ -39,7 +39,7 @@ function App() {
     if (menuAction.type === 'POPUP') {
       setSubMenuItem(menuAction)
     } else if (menuAction && menuAction.type === 'LINK') {
-      menuAction.component()
+      menuAction.component(i18n.language)
     } else if (menuAction && menuAction.type === 'EVENT') {
       menuAction.component()
     }
