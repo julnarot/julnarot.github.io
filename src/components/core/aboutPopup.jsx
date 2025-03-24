@@ -1,7 +1,7 @@
 import Button from "./button"
 
 export default function AboutPopup({ onClose }) {
-    const version = '1.4.5'
+    const version = '1.5.0'
     return (
         <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
 
@@ -16,8 +16,8 @@ export default function AboutPopup({ onClose }) {
                                 <div className="p-4 md:p-5 text-center  dark:text-white">
                                     <h3 className="mb-3 text-lg font-normal ">Borland prev++</h3>
                                     <p className="mb-1">Version {version}</p>
-                                    <p className="mb-1">Copyright (c) {new Date().getFullYear()} by</p>
-                                    <p className="mb-3">@Julnarot</p>
+                                    <p className="mb-1"> © {new Date().getFullYear()} MIT License by @Julnarot</p>
+                                    <p className="mb-3 text-sm"> 🛠️ Made with 💙 using [<a href="https://github.com/julnarot/julnarot.github.io?tab=readme-ov-file#-retro-portfolio---inspired-by-borland-c" target="_blank" className="cursor-pointer font-bold underline decoration-wavy dark:hover:text-blue-600 hover:text-white">React & Tailwind</a>]</p>
 
                                     <Button value="Ok" onClick={onClose} />
                                 </div>

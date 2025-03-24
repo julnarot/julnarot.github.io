@@ -21,7 +21,7 @@ function App() {
   const [subMenuItem, setSubMenuItem] = useState(null);
 
   useEffect(() => {
-    const workExperiencesGrouped = getWorkExperiencesGrouped();
+    const workExperiencesGrouped = getWorkExperiencesGrouped(i18n.language);
     setWorkExperiences(workExperiencesGrouped);
   }, []);
 
@@ -44,7 +44,12 @@ function App() {
       menuAction.component()
     }
   }
-  
+
+  const languageWasChanged = () => {
+    const workExperiencesGrouped = getWorkExperiencesGrouped(i18n.language);
+    setWorkExperiences(workExperiencesGrouped);
+  }
+
 
   return (
 
@@ -128,7 +133,7 @@ function App() {
 
       {isOpen && <Popup onClose={toggle} experience={workExperience} />}
       {subMenuItem && subMenuItem.subMenuTitle === 'About' && <AboutPopup onClose={() => setSubMenuItem(null)} />}
-      {subMenuItem && subMenuItem.subMenuTitle === 'Language' && <PopupLanguageSelector onClose={() => setSubMenuItem(null)} />}
+      {subMenuItem && subMenuItem.subMenuTitle === 'Language' && <PopupLanguageSelector onClose={() => setSubMenuItem(null)} languageChanged={() => languageWasChanged()} />}
 
     </div>
 
