@@ -12,9 +12,10 @@ export const SUBMENU_ACTIONS = [
         menuTitle: 'File',
         subMenuTitle: 'Print',
         type: 'LINK',
-        component: () => {
+        component: (lng) => {
+            const fileName = lng && lng === 'es' ? 'Profile_es.pdf' : 'Profile.pdf'
             const a = document.createElement("a");
-            a.href = "documents/Profile.pdf";
+            a.href = `documents/${fileName}`;
             a.target = "_blank";
             a.click();
         }
