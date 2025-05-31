@@ -13,6 +13,8 @@ jobs:
           node-version: 18.x
       - name: Install Dependencies
         run: npm install
+      - name: Build version
+        run: npm run build:version
       - name: Build Project
         run: npm run build
       - name: Upload artifact to enable deployment
