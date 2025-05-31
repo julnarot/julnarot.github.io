@@ -73,7 +73,7 @@ function App() {
               <img
                 src="https://avatars.githubusercontent.com/u/2840577?v=4"
                 alt="@Julnarot"
-                className="max-h-40"
+                className="max-h-40 my-2"
               />
               <p className="my-4">{t("main.greeting")}</p>
               <p className="my-4">{t("main.professionalCareer")}</p>

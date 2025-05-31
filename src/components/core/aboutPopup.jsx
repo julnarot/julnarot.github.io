@@ -14,8 +14,8 @@ export default function AboutPopup({ onClose }) {
                             <div className="border-4 border-double border-white p-2  relative h-full w-full ">
                                 <div className="absolute -top-3 left-1/2 bg-gray-400 dark:bg-zinc-800 transform -translate-x-1/2  px-2 text-sm text-white">About</div>
                                 <div className="p-4 md:p-5 text-center  dark:text-white">
-                                    <h3 className="mb-3 text-lg font-normal ">Borland prev++</h3>
-                                    <p className="mb-1">Version {version}</p>
+                                    <h3 className="mb-3 text-lg ">Inspired by Borland C++</h3>
+                                    <p className="mb-3">Version {version}</p>
                                     <p className="mb-1"> © {new Date().getFullYear()} MIT License by @Julnarot</p>
                                     <p className="mb-3 text-sm"> 🛠️ Made with 💙 using [<a href="https://github.com/julnarot/julnarot.github.io?tab=readme-ov-file#-retro-portfolio---inspired-by-borland-c" target="_blank" className="cursor-pointer font-bold underline decoration-wavy dark:hover:text-blue-600 hover:text-white">React & Tailwind</a>]</p>
 
