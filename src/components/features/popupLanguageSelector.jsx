@@ -24,10 +24,10 @@ export default function PopupLanguageSelector({ onClose, languageChanged}) {
                                 <div className="absolute -top-3 left-3 bg-gray-400 dark:bg-zinc-800 px-1 text-sm cursor-pointer" onClick={onClose}> [<span className="text-green-400">&#9632;</span>]</div>
                                 <div className="absolute -top-3 left-1/2 bg-gray-400 dark:bg-zinc-800 transform -translate-x-1/2  px-2 text-sm">Language</div>
 
-                                <div className="font-mono px-1 pt-2 text-stone-950 selection:bg-cyan-400 flex flex-col ">
+                                <div className="px-1 pt-2 text-stone-950 selection:bg-cyan-400 flex flex-col ">
 
                                     <div className="mb-3 flex flex-col md:flex-row">
-                                        <span className=" mr-2 dark:text-white"><span className="text-yellow-400 dark:text-cyan-500">L</span>anguages:</span>
+                                        <span className=" mr-2 dark:text-white"><span className="text-yellow-400 dark:text-cyan-300">L</span>anguages:</span>
                                         <ul className=" pl-2 text-white bold-text whitespace-nowrap  ">
 
                                             {languages.map(

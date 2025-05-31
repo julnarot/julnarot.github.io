@@ -10,7 +10,7 @@ const getWorkExperiencesByLng = (lng) => {
     return workExperiences.map(we => {
         we.startDateStr = strDateToStrMonthYear(we.startDate);
         we.endDateStr = strDateToStrMonthYear(we.endDate);
-        we.duration = getDurationBetweenStrDates(we.startDate, we.endDate)
+        we.duration = getDurationBetweenStrDates(lng, we.startDate, we.endDate)
         return we;
     });
 };
@@ -20,6 +20,7 @@ export const getWorkExperiencesGrouped = (lng) => {
         getWorkExperiencesByLng(lng), 'companyName'
     ).map(grouped => {
         grouped.companyDuration = getDurationBetweenStrDates(
+            lng,
             grouped.values[grouped.values.length - 1].startDate,
             grouped.values[0].endDate
         )
