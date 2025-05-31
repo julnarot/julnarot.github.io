@@ -20,7 +20,7 @@ export default function MenuBar({ onSubMenuSelected }) {
     setMenuItems(getMenuItemsService);
   }
 
-  return (<div className="flex items-center gap-1 px-2 py-1 bg-gray-300 dark:bg-blue-600 dark:text-yellow-400 border-b-2 border-gray-400 w-full">
+  return (<div className="flex items-center gap-1 px-2 py-1 bg-gray-300 dark:bg-blue-800 dark:text-yellow-400 border-b-2 border-gray-400 w-full">
     {menuItems.map((item, index) => (
       <div key={index}>
 

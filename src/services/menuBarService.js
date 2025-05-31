@@ -4,7 +4,7 @@ import { SUBMENU_ACTIONS } from "../constants/popup";
 const buildMenuDefaultItems = () => {
     const generateTitleInnerHTML = (title, positionKey) => {
         return title.split("").map((w, i) => {
-            return i === positionKey ? `<span class='text-red-600 dark:text-cyan-500'>${w}</span>` : w
+            return i === positionKey ? `<span class='font-bold text-red-800 dark:text-cyan-300'>${w}</span>` : w
         }).join("")
     }
     return [...MENU_DATA].map(item => {
