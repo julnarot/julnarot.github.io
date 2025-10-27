@@ -1,6 +1,39 @@
 export const WORK_EXPERIENCE_ES = [
   {
     companyName: "Freelance Full-Stack Engineer",
+    departmentName: "Empresa Fintech",
+    proyect: "Web platform team",
+    activities: [
+      {
+        name: "Participé en el desarrollo de una plataforma de inversión en línea, integrando servicios de notificaciones y optimizando el flujo de autenticación mediante social login en aplicaciones web. Colaboré con el equipo DevOps en la implementación de los entornos TST/DEV.",
+        skills: [
+          "Desarrollador backend",
+          "Desarrollador frontend",
+          "Integración y Despliegue",
+        ],
+      },
+    ],
+    tecnologies: [
+      {
+        name: "Flask",
+        skills: ["Desarrollador backend"],
+      },
+      {
+        name: "React",
+        skills: ["Desarrollador frontend"],
+      },
+      {
+        name: "Azure DevOps",
+        skills: ["Integración y Despliegue"],
+      },
+    ],
+    startDate: "2025-07-01T12:00:00.000Z",
+    endDate: "2025-09-01T12:00:00.000Z",
+    typeEmployment: "Independiente",
+    modality: "Remoto",
+  },
+  {
+    companyName: "Freelance Full-Stack Engineer",
     departmentName: "MINDEF",
     proyect: "Sistema control de inventarios",
     activities: [

@@ -1,6 +1,35 @@
 export const WORK_EXPERIENCE = [
   {
     companyName: "Freelance Full-Stack Engineer",
+    departmentName: "Fintech company",
+    proyect: "Web platform team",
+    activities: [
+      {
+        name: "Participated in the development of an online investment platform, integrating notification services and optimizing the authentication flow through social login in web applications. Collaborated with the DevOps team in implementing TST/DEV environments.",
+        skills: ["Backend developer", "Frontend developer", "CI/CD"],
+      },
+    ],
+    tecnologies: [
+      {
+        name: "Flask",
+        skills: ["Backend developer"],
+      },
+      {
+        name: "React",
+        skills: ["Frontend developer"],
+      },
+      {
+        name: "Azure DevOps",
+        skills: ["CI/CD"],
+      },
+    ],
+    startDate: "2025-07-01T12:00:00.000Z",
+    endDate: "2025-09-01T12:00:00.000Z",
+    typeEmployment: "Independiente",
+    modality: "Remoto",
+  },
+  {
+    companyName: "Freelance Full-Stack Engineer",
     departmentName: "MINDEF",
     proyect: "Inventory control system",
     activities: [
