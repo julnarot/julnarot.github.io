@@ -1,4 +1,5 @@
-import { WORK_EXPERIENCE, WORK_EXPERIENCE_ES } from "../constants/profile";
+import { WORK_EXPERIENCE,  } from "../constants/profile";
+import { WORK_EXPERIENCE_ES } from "../constants/profile.es";
 import { groupBy } from "../utils/ArrayObjectUtils";
 import { getDurationBetweenStrDates, strDateToStrMonthYear } from "../utils/timeUtils";
 
