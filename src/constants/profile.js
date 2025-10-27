@@ -1,6 +1,45 @@
 
 export const WORK_EXPERIENCE = [
     {
+        "companyName": "Freelance Full-Stack Engineer",
+        "departmentName": "MINDEF",
+        "proyect": "Inventory control system",
+        "activities": [
+            {
+                "name": "Contributed to backend, frontend, and database tasks in the development of an asset assignment module for an inventory control project, helping to create features that ensure control, traceability, historical records, and transparency of assets.",
+                "skills": [
+                    "Backend developer", "Frontend developer","Database development"
+                ]
+            },
+           
+        ],
+        "tecnologies": [
+            {
+                "name": "Spring Framework",
+                "skills": [
+                    "Backend developer"
+                ]
+            },
+            {
+                "name": "Angular",
+                "skills": [
+                    "Frontend developer"
+                ]
+            },
+            {
+                "name": "PostgreSQL",
+                "skills": [
+                    "Database development"
+                ]
+            },
+           
+        ],
+        "startDate": "2025-04-01T12:00:00.000Z",
+        "endDate": "2025-08-01T12:00:00.000Z",
+        "typeEmployment": "Self-employed",
+        "modality": "Remote",
+    },
+    {
         "companyName": "NTT DATA",
         "departmentName": "DGTIC - Generalitat Valenciana",
         "proyect": "DESIGHA",
@@ -841,6 +880,45 @@ export const WORK_EXPERIENCE = [
 ];
 
 export const WORK_EXPERIENCE_ES = [
+    {
+        "companyName": "Freelance Full-Stack Engineer",
+        "departmentName": "MINDEF",
+        "proyect": "Sistema control de inventarios",
+        "activities": [
+            {
+                "name": "Colaboré en tareas de backend, frontend y base de datos en el desarrollo del módulo de asignación de activos para un proyecto de control de inventarios, contribuyendo a crear funcionalidades que aseguren el control, la trazabilidad, los históricos y la transparencia de los bienes.",
+                "skills": [
+                    "Desarrollador backend", "Desarrollador frontend","Desarrollo de bases de datos"
+                ]
+            },
+           
+        ],
+        "tecnologies": [
+            {
+                "name": "Spring Framework",
+                "skills": [
+                    "Desarrollador backend"
+                ]
+            },
+            {
+                "name": "Angular",
+                "skills": [
+                    "Desarrollador frontend"
+                ]
+            },
+            {
+                "name": "PostgreSQL",
+                "skills": [
+                    "Desarrollo de bases de datos"
+                ]
+            },
+           
+        ],
+        "startDate": "2025-04-01T12:00:00.000Z",
+        "endDate": "2025-08-01T12:00:00.000Z",
+        "typeEmployment": "Independiente",
+        "modality": "Remoto",
+    },
     {
         "companyName": "NTT DATA",
         "departmentName": "DGTIC - Generalitat Valenciana",
