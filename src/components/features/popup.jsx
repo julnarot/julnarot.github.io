@@ -123,8 +123,8 @@ export default function Popup({ onClose, experience }) {
                     </ul>
                   </div>
 
-                  <div class="grid grid-cols-1 md:grid-cols-8 gap-4 mb-2">
-                    <div class="col-span-6">
+                  <div className="grid grid-cols-1 md:grid-cols-8 gap-4 mb-2">
+                    <div className="col-span-6">
                       <Label
                         label={t(
                           "workExperience.project.windowTitleActivities"
@@ -144,7 +144,7 @@ export default function Popup({ onClose, experience }) {
                         </ul>
                       </ShowWindow>
                     </div>
-                    <div class="col-span-2">
+                    <div className="col-span-2">
                       <Label
                         label={t(
                           "workExperience.project.sectionTitleTecnologies"
