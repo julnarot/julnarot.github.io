@@ -10,6 +10,7 @@ export const WORK_EXPERIENCE_ES = [
           "Desarrollador backend",
           "Desarrollador frontend",
           "Integración y Despliegue",
+          "UI/UX",
         ],
       },
     ],
@@ -25,6 +26,22 @@ export const WORK_EXPERIENCE_ES = [
       {
         name: "Azure DevOps",
         skills: ["Integración y Despliegue"],
+      },
+      {
+        name: "Firebase",
+        skills: ["Desarrollador backend", "Desarrollador frontend"],
+      },
+      {
+        name: "OAuth",
+        skills: ["Desarrollador backend", "Desarrollador frontend"],
+      },
+      {
+        name: "Tailwind CSS",
+        skills: ["UI/UX"],
+      },
+      {
+        name: "Flowbite",
+        skills: ["UI/UX"],
       },
     ],
     startDate: "2025-07-01T12:00:00.000Z",
@@ -43,6 +60,7 @@ export const WORK_EXPERIENCE_ES = [
           "Desarrollador backend",
           "Desarrollador frontend",
           "Desarrollo de bases de datos",
+          "UI/UX",
         ],
       },
     ],
@@ -58,6 +76,18 @@ export const WORK_EXPERIENCE_ES = [
       {
         name: "PostgreSQL",
         skills: ["Desarrollo de bases de datos"],
+      },
+      {
+        name: "Angular Material",
+        skills: ["UI/UX"],
+      },
+      {
+        name: "Syncfution",
+        skills: ["UI/UX"],
+      },
+      {
+        name: "Bootstrap",
+        skills: ["UI/UX"],
       },
     ],
     startDate: "2025-04-01T12:00:00.000Z",

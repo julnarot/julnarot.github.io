@@ -6,7 +6,7 @@ export const WORK_EXPERIENCE = [
     activities: [
       {
         name: "Participated in the development of an online investment platform, integrating notification services and optimizing the authentication flow through social login in web applications. Collaborated with the DevOps team in implementing TST/DEV environments.",
-        skills: ["Backend developer", "Frontend developer", "CI/CD"],
+        skills: ["Backend developer", "Frontend developer", "CI/CD", "UI/UX"],
       },
     ],
     tecnologies: [
@@ -21,6 +21,22 @@ export const WORK_EXPERIENCE = [
       {
         name: "Azure DevOps",
         skills: ["CI/CD"],
+      },
+      {
+        name: "Firebase",
+        skills: ["Backend developer", "Frontend develope"],
+      },
+      {
+        name: "OAuth",
+        skills: ["Backend developer", "Frontend develope"],
+      },
+      {
+        name: "Tailwind CSS",
+        skills: ["UI/UX"],
+      },
+      {
+        name: "Flowbite",
+        skills: ["UI/UX"],
       },
     ],
     startDate: "2025-07-01T12:00:00.000Z",
@@ -39,6 +55,7 @@ export const WORK_EXPERIENCE = [
           "Backend developer",
           "Frontend developer",
           "Database development",
+          "UI/UX",
         ],
       },
     ],
@@ -54,6 +71,18 @@ export const WORK_EXPERIENCE = [
       {
         name: "PostgreSQL",
         skills: ["Database development"],
+      },
+      {
+        name: "Angular Material",
+        skills: ["UI/UX"],
+      },
+      {
+        name: "Syncfution",
+        skills: ["UI/UX"],
+      },
+      {
+        name: "Bootstrap",
+        skills: ["UI/UX"],
       },
     ],
     startDate: "2025-04-01T12:00:00.000Z",
