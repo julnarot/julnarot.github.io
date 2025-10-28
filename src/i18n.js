@@ -37,7 +37,7 @@ const resources = {
                 "universityName": "Universidad peruana unión (UPeU)",
                 "universityGrade": "Bachelor's degree in Systems Engineering",
                 "languageInstituteName": "Centro de Idiomas UPeU",
-                "languageInstituteGrade": "Level A1 and A2 Passed.",
+                "languageInstituteGrade": "Level A1/A2 and B1/B2 Passed.",
             },
             "contactMe": {
                 "title": "Contact me"
@@ -76,7 +76,7 @@ const resources = {
                 "universityName": "Universidad peruana unión (UPeU)",
                 "universityGrade": "Grado académico de Bachiller en Ingeniería de Sistemas",
                 "languageInstituteName": "Centro de Idiomas UPeU",
-                "languageInstituteGrade": "Nivel A1 y A2 Aprobados.",
+                "languageInstituteGrade": "Nivel A1/A2 y B1/B2 Aprobados.",
             },
             "contactMe": {
                 "title": "Contáctame"
