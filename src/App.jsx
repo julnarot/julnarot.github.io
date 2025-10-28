@@ -12,6 +12,8 @@ import { useTranslation } from "react-i18next";
 import PopupLanguageSelector from "./components/features/popupLanguageSelector";
 import AboutPopup from "./components/core/aboutPopup";
 
+import { menuStore } from "./stores/menuStore";
+
 function App() {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +34,8 @@ function App() {
   const toggle = (workExperience) => {
     setIsOpen((isOpen) => !isOpen);
     setWorkExperience(workExperience);
+    setIsContactOpen(false);
+    menuStore.close();
   };
 
   const menuSelected = (subItemSelected) => {
