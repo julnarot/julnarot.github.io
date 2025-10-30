@@ -79,7 +79,7 @@ function App() {
                 alt="@Julnarot"
                 className="max-h-40 my-2"
               />
-              <p className="my-4">{t("main.greeting")}</p>
+              {/* <p className="my-4">{t("main.greeting")}</p> */}
               <p className="my-4">{t("main.professionalCareer")}</p>
               <p className="my-4">{t("main.specialty")}</p>
               <p className="my-4">{t("main.working")}</p>
