@@ -109,10 +109,6 @@ export const WORK_EXPERIENCE_ES = [
         skills: ["Desarrollo de Software"],
       },
       {
-        name: "Configuré  entorno local de desarrollo con  base de datos local para reemplazar la conexión remota, asegurando el cumplimiento de normativas de privacidad.",
-        skills: ["Desarrollo de Software", "Integración y Despliegue"],
-      },
-      {
         name: "Documenté manuales de uso para cada requerimiento entregado.",
         skills: ["Gestión de Proyectos y Planificación"],
       },
@@ -158,6 +154,17 @@ export const WORK_EXPERIENCE_ES = [
         ],
       },
     ],
+    achievements: [
+      {
+        challenge: "Acceso limitado a la información",
+        solution:
+          "Implementé un entorno local de persistencia de datos alternativo fácil de usar e importar información",
+        benefit:
+          "Permitió que el equipo de desarrollo continuara trabajando sin interrupciones y cumpliera con sus objetivos de manera efectiva",
+        type: "Aporte",
+        primary: true,
+      },
+    ],
     startDate: "2024-10-01T12:00:00.000Z",
     endDate: "2025-02-01T12:00:00.000Z",
     typeEmployment: "Contrato",
@@ -175,18 +182,6 @@ export const WORK_EXPERIENCE_ES = [
       {
         name: "Apliqué principios de desarrollo de software enfocados en la mantenibilidad y testabilidad del código.",
         skills: ["Desarrollo de Software"],
-      },
-      {
-        name: "Analicé y diseñé un módulo de formularios dinámicos para automatizar la creación, visualización y recopilación de información en cada fase del proceso de solicitud.",
-        skills: ["Análisis y Diseño de Software"],
-      },
-      {
-        name: "Implementé una prueba de concepto para la configuración y visualización dinámica de formularios de solicitud.",
-        skills: ["Desarrollo de Software"],
-      },
-      {
-        name: "Participé en múltiples procesos de evaluación técnica para Frontend Angular Developer como entrevistador, evaluando la aptitud de los postulantes para el proyecto.",
-        skills: ["Evaluación Técnica y Entrevistas"],
       },
     ],
     tecnologies: [
@@ -234,9 +229,36 @@ export const WORK_EXPERIENCE_ES = [
         name: "Sonar Qube",
         skills: ["Desarrollo de Software"],
       },
+    ],
+    achievements: [
       {
-        name: "Microsoft Word | Excel",
-        skills: ["Evaluación Técnica y Entrevistas"],
+        challenge:
+          "Configurar un módulo para crear formularios dinámicos con entradas configurables",
+        problem:
+          "Visualizar el contenido del formulario con entradas de diferentes tipos según la solicitud seleccionada",
+        solution:
+          "Analicé, Diseñé e Implementé una prueba de concepto (demo funcional) que simulaba el funcionamiento de visualización de entradas previamente configuradas",
+        benefit:
+          "Permitió al equipo funcional evaluar la solución y tener una solición alternativa para validar su implementación con el cliente",
+        type: "Reto",
+        primary: true,
+      },
+      {
+        challenge: "Asignar formulario dinámico a un estado de proceso",
+        solution:
+          "Presenté un diseño de negocio como propuesta para relacionar formulario dinámico con flujo según estado de solicitud",
+        benefit: "Aporte coMejoró la integración del módulo con el marco de procesos",
+        type: "Aporte",
+        primary: true,
+      },
+      {
+        challenge: "Evaluar candidatos técnicos para un equipo",
+        solution:
+          "Evalué a candidatos técnicos y generé informes de cumplimiento con el perfil",
+        benefit:
+          "Contribuí a la selección de candidatos técnicos de alta calidad",
+        type: "Aporte",
+        primary: true,
       },
     ],
     startDate: "2024-03-01T12:00:00.000Z",
@@ -312,6 +334,7 @@ export const WORK_EXPERIENCE_ES = [
         skills: ["Desarrollo de Software", "Integración y Despliegue"],
       },
     ],
+  
     startDate: "2022-10-01T12:00:00.000Z",
     endDate: "2024-02-01T12:00:00.000Z",
     typeEmployment: "Contrato",

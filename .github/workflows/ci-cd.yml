@@ -17,6 +17,8 @@ jobs:
         run: npm run build:version
       - name: Build Project
         run: npm run build
+        env:
+          VITE_GA4_ID: ${{ secrets.VITE_GA4_ID }}
       - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v4
         with:
