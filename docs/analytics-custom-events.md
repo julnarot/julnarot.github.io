@@ -46,9 +46,21 @@ los usuarios usan el contenido.
 ## Implementación
 
 - Crear utilidad `src/services/analytics.js` con helper `trackEvent(name, params)`
-  que llame a `window.gtag`.
+  que llame a `window.gtag('event', name, params)`.
 - Integrar la llamada en cada punto indicado.
 - Verificar en GA4 > Realtime que los eventos aparezcan.
+
+### Referencias
+
+- **Cómo enviar eventos desde código (gtag.js)**: [Google tag (gtag.js) - Reference
+  events](https://developers.google.com/tag-platform/gtagjs/reference/events)
+  — documenta `gtag('event', '<event_name>', { <parameter>: <value> })`.
+- **Eventos en GA4 (recomendados, personalizados y parámetros)**:
+  [Events - Analytics Help](https://support.google.com/analytics/answer/12229021).
+- **Marcar eventos como key event / conversión (paso final, sin código)**:
+  [Create or modify key events](https://support.google.com/analytics/answer/12844695)
+  — útil solo para convertir `contact_click` o `download_cv` en conversión
+  desde Admin > Events, **no** para enviar los eventos.
 
 ## Criterios de aceptación
 
