@@ -33,6 +33,7 @@ export default function AboutPopup({ onClose }) {
                     <a
                       href="https://github.com/julnarot/julnarot.github.io?tab=readme-ov-file#-retro-portfolio---inspired-by-borland-c"
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="cursor-pointer font-bold underline decoration-wavy dark:hover:text-blue-600 hover:text-white"
                     >
                       React & Tailwind

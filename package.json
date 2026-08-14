@@ -27,6 +27,10 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
-    "vite": "^5.4.14"
+    "vite": "^5.4.14",
+    "vite-plugin-prerender": "^1.0.8"
+  },
+  "overrides": {
+    "puppeteer": "^21.11.0"
   }
 }
