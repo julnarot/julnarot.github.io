@@ -57,21 +57,27 @@ function App() {
   return (
     <div className="h-screen w-screen flex flex-col overflow-hidden">
       {/* Top Menu Bar */}
-      <MenuBar onSubMenuSelected={menuSelected} />
+      <header>
+        <MenuBar onSubMenuSelected={menuSelected} />
+      </header>
 
       {/* Main Content */}
-      <div className="flex-1 relative flex flex-col w-full h-full overflow-hidden">
+      <main className="flex-1 relative flex flex-col w-full h-full overflow-hidden">
+        <h1 className="sr-only">Raul Jonatan | Software Developer</h1>
         <div className="flex-1 bg-blue-600 dark:bg-zinc-900 p-4 text-white flex flex-col md:flex-row w-full h-full gap-2 overflow-auto">
-          <div className="basis-1/2 relative h-full">
+          <section id="about" className="basis-1/2 relative h-full">
             <EditWindow windowTitle="~/main.prev" windowNumber="2">
               <div className="my-2">
                 [
-                <h1
+                <span
                   className="cursor-pointer font-bold underline decoration-wavy inline"
                   onClick={onContactToggle}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => e.key === "Enter" && onContactToggle()}
                 >
                   RAUL JONATAN
-                </h1>
+                </span>
                 ] | <h2 className="inline">Full stack engineering</h2>
               </div>
               <img
@@ -87,9 +93,10 @@ function App() {
               <p className="my-4">{t("main.specialty")}</p>
               <p className="my-4">{t("main.working")}</p>
             </EditWindow>
-          </div>
+          </section>
 
           <div className="flex-1 text-white flex flex-col w-full gap-2">
+            <section id="projects" className="contents">
             <EditWindow windowTitle="~/work-exp.prev" windowNumber="3">
               <p>{t("workExperience.title")}</p>
               <ul className="list-disc list-outside p-3">
@@ -116,7 +123,9 @@ function App() {
                 ))}
               </ul>
             </EditWindow>
+            </section>
 
+            <section id="education" className="contents">
             <EditWindow windowTitle="~/education.prev" windowNumber="4">
               <p>{t("academicTraining.title")}</p>
               <ul className="list-disc list-outside p-3 ">
@@ -130,14 +139,17 @@ function App() {
                 </li>
               </ul>
             </EditWindow>
+            </section>
           </div>
         </div>
 
         {isContactOpen && <Contact onClose={onContactToggle} />}
-      </div>
+      </main>
 
       {/* Status Bar */}
-      <StatusBar />
+      <footer>
+        <StatusBar />
+      </footer>
 
       {isOpen && <Popup onClose={toggle} experience={workExperience} />}
       {subMenuItem && subMenuItem.subMenuTitle === "About" && (

@@ -11,10 +11,10 @@ export default function Contact({ onClose }) {
                 <div className="absolute -top-3 right-3 bg-cyan-400 dark:bg-purple-900 px-1 text-sm"> [<span className="text-green-400">&#8593;</span>]</div>
                 <div className="p-2 pt-3 text-blue-600 dark:text-white selection:bg-cyan-600 h-full overflow-auto 
   [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-bluen-600 [&::-webkit-scrollbar-thumb]:bg-cyan-500">
-                    <a href='https://linkedin.com/in/julnarot' target='_blank' rel='noopener noreferrer' className="flex cursor-pointer font-bold no-underline hover:bg-lime-500  hover:text-white">(🌏︎) Linkedin</a>
-                    <a href='https://github.com/julnarot' target='_blank' rel='noopener noreferrer' className="flex cursor-pointer font-bold no-underline hover:bg-lime-500 hover:text-white">(🌏︎) Github</a>
-                    <a href='https://x.com/julnarot' target='_blank' rel='noopener noreferrer' className="flex cursor-pointer font-bold no-underline hover:bg-lime-500 hover:text-white">(🌏︎) Twitter</a>
-                    <a href='mailto:rauljhonatan.tola@gmail.com' rel='noopener noreferrer' className="flex cursor-pointer font-bold no-underline hover:bg-lime-500 hover:text-white">(@) Write me</a>
+                    <a href='https://linkedin.com/in/julnarot' target='_blank' rel='noopener noreferrer' aria-label='LinkedIn - Raul Jonatan' className="flex cursor-pointer font-bold no-underline hover:bg-lime-500  hover:text-white">(🌏︎) Linkedin</a>
+                    <a href='https://github.com/julnarot' target='_blank' rel='noopener noreferrer' aria-label='GitHub - Raul Jonatan' className="flex cursor-pointer font-bold no-underline hover:bg-lime-500 hover:text-white">(🌏︎) Github</a>
+                    <a href='https://x.com/julnarot' target='_blank' rel='noopener noreferrer' aria-label='Twitter / X - Raul Jonatan' className="flex cursor-pointer font-bold no-underline hover:bg-lime-500 hover:text-white">(🌏︎) Twitter</a>
+                    <a href='mailto:rauljhonatan.tola@gmail.com' rel='noopener noreferrer' aria-label='Send an email to Raul Jonatan' className="flex cursor-pointer font-bold no-underline hover:bg-lime-500 hover:text-white">(@) Write me</a>
                 </div>
             </div>
         </div>
