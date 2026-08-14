@@ -1,0 +1,17 @@
+{
+  "name": "Raul Jonatan | Full Stack Engineer",
+  "short_name": "Raul Jonatan",
+  "description": "Personal portfolio of Raul Jonatan, Full Stack Engineer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2563eb",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/rj.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

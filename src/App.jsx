@@ -78,6 +78,9 @@ function App() {
                 src="https://avatars.githubusercontent.com/u/2840577?v=4"
                 alt="@Julnarot"
                 className="max-h-40 my-2"
+                loading="lazy"
+                width="160"
+                height="160"
               />
               {/* <p className="my-4">{t("main.greeting")}</p> */}
               <p className="my-4">{t("main.professionalCareer")}</p>
@@ -97,12 +100,13 @@ function App() {
                     {item.values.map((exp, iexp) => (
                       <div key={iexp} className=" text-sm inline">
                         [
-                        <a
+                        <button
+                          type="button"
                           className="cursor-pointer font-bold underline decoration-wavy"
                           onClick={() => toggle(exp)}
                         >
                           {exp.proyect.toUpperCase()}
-                        </a>
+                        </button>
                         ]{iexp < item.values.length - 1 ? " " : ""}
                       </div>
                     ))}{" "}
