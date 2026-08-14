@@ -13,6 +13,7 @@ import PopupLanguageSelector from "./components/features/popupLanguageSelector";
 import AboutPopup from "./components/core/aboutPopup";
 
 import { menuStore } from "./stores/menuStore";
+import { trackEvent } from "./services/analytics";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -32,6 +33,12 @@ function App() {
   };
 
   const toggle = (workExperience) => {
+    if (workExperience) {
+      trackEvent("project_open", {
+        company: workExperience.companyName,
+        project: workExperience.proyect,
+      });
+    }
     setIsOpen((isOpen) => !isOpen);
     setWorkExperience(workExperience);
     setIsContactOpen(false);
@@ -41,6 +48,9 @@ function App() {
   const menuSelected = (subItemSelected) => {
     const menuAction = findMenuActionBySubItem(subItemSelected);
     if (menuAction.type === "POPUP") {
+      if (menuAction.subMenuTitle === "About") {
+        trackEvent("about_open");
+      }
       setSubMenuItem(menuAction);
     } else if (menuAction && menuAction.type === "LINK") {
       menuAction.component(i18n.language);

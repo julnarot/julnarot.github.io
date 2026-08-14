@@ -64,10 +64,10 @@ los usuarios usan el contenido.
 
 ## Criterios de aceptación
 
-- [ ] Helper `trackEvent` en `src/services/analytics.js`
-- [ ] `language_changed` con parámetro `language`
-- [ ] `project_open` con `company` y `project`
-- [ ] `contact_click` con `network`
-- [ ] `download_cv` con `language`
-- [ ] `about_open`
+- [x] Helper `trackEvent` en `src/services/analytics.js`
+- [x] `language_changed` con parámetro `language`
+- [x] `project_open` con `company` y `project`
+- [x] `contact_click` con `network`
+- [x] `download_cv` con `language`
+- [x] `about_open`
 - [ ] Eventos visibles en GA4 Realtime tras deploy

@@ -1,11 +1,13 @@
 import { useTranslation } from "react-i18next";
 import Button from "../core/button";
+import { trackEvent } from "../../services/analytics";
 
 export default function PopupLanguageSelector({ onClose, languageChanged}) {
     const { i18n } = useTranslation();
     const languages = [{ value: 'en', name: 'English' }, { value: 'es', name: 'Spanish' }]
     function languagesOnChange({ target }) {
         i18n.changeLanguage(target.value);
+        trackEvent('language_changed', { language: target.value });
         languageChanged()
     }
 

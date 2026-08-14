@@ -1,5 +1,6 @@
 import AboutPopup from "../components/core/aboutPopup";
 import PopupLanguageSelector from "../components/features/popupLanguageSelector";
+import { trackEvent } from "../services/analytics";
 
 export const SUBMENU_ACTIONS = [
     {
@@ -14,6 +15,7 @@ export const SUBMENU_ACTIONS = [
         type: 'LINK',
         component: (lng) => {
             const fileName = lng && lng === 'es' ? 'Profile_es.pdf' : 'Profile.pdf'
+            trackEvent('download_cv', { language: lng && lng === 'es' ? 'es' : 'en' })
             const a = document.createElement("a");
             a.href = `documents/${fileName}`;
             a.target = "_blank";
